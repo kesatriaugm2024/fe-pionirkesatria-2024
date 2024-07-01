@@ -16,6 +16,16 @@
   }
 }
 
+@font-face {
+  font-family: 'legendaire';
+  src: url('/fonts/legendaire/Legendaire FREE.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'publica-sans';
+  src: url('/fonts/publicasans/ZPublicaSans.otf') format('opentype');
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
