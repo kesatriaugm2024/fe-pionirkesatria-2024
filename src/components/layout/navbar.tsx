@@ -56,6 +56,8 @@ export default function Navbar(){
     return(
     <nav 
     className={"fixed z-[999] w-full bg-gradient-to-r from-[#34144E] to-[#5E1675] from-50% py-[0.25vw] px-[3.75vw] flex justify-between text-[1.25vw]/[1.5vw] font-publica-sans text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-300 " + (isHide? "translate-y-[-5vw]" : "translate-y-0")}>
+    {/* <nav 
+    className={"fixed z-[999] w-full bg-gradient-to-r from-[#34144E] to-[#5E1675] from-50% py-[0.25vw] px-[3.75vw] flex justify-between text-[1.25vw]/[1.5vw] font-publica-sans text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-300 "}> */}
             <div 
             className="flex items-center gap-x-[0.5vw] font-">
                 <Image 

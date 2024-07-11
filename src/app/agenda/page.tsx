@@ -5,6 +5,17 @@ import { Day2 } from "@/app/agenda/rundown/day2";
 import Image from "next/image";
 // import AOS from "aos";
 
+const BUTTONOPTION = [
+  {
+    'name' : 'Day1',
+    'label' : 'Hari Pertama'
+  },
+  {
+    'name' : 'Day2',
+    'label' : 'Hari Kedua'
+  },
+]
+
 export default function Agenda() {
   const [activePage, setActivePage] = useState("Day1")
 
@@ -18,25 +29,26 @@ export default function Agenda() {
 
   return (
 
-    <main className="bg-[url('/images/background/background-agenda.svg')] w-full bg-cover h-[250vh] bg-top">
-      <div>
-        <h1 className="font-legendaire gradient-text-purple text-9xl text-center pt-[18vh]">
-          Agenda
-        </h1>
-      </div>
-      <div className="font font-publica-sans text-[#FFE5C7] flex flex-row gap-x-[8vw] place-content-center mt-5">
-        <div>
-          <button onClick={handleDay1} className={`p-1 pr-14 pl-14 rounded-2xl hover:bg-[#EA5571] ${activePage =="Day1"?  'bg-[#EA5571]' : 'bg-[#CD4258]'}`}>
-            Hari Pertama
+    <main 
+    className="bg-[url('/images/background/background-agenda.svg')] w-full bg-cover min-h-screen flex flex-col pt-[5vw]"
+    >
+      <h1 
+      className="font-legendaire bg-gradient-to-t from-[#5E1675] to-[#CD4258] via-[#982D66] text-[8.4vw] text-center bg-clip-text text-transparent"
+      >
+        Agenda
+      </h1>
+      <div className="w-full flex justify-center py-[1vw] gap-x-[4vw]">
+        {BUTTONOPTION.map((item, index) =>(
+          <button 
+          key={index}
+          className={"w-[20.8vw] h-[2.9vw] rounded-[1.7vw] font-publica-sans font-medium text-[#FFE5C7] text-[1.7vw] " + (activePage==item.name?'bg-[#EA5571] ' : 'bg-[#CD4258] hover:bg-[#EA5571]')}
+          onClick={item.name=='Day1'?handleDay1:handleDay2}
+          >
+            {item.label}
           </button>
-        </div>
-        <div>
-          <button onClick={handleDay2} className={`p-1 pr-14 pl-14 rounded-2xl hover:bg-[#EA5571] ${activePage =="Day2"?  'bg-[#EA5571]' : 'bg-[#CD4258]'}`}>
-            Hari Kedua
-          </button>
-        </div>
+        ))}
       </div>
-      <div className="pt-8">
+      <div className="py-[1vw]">
         {activePage=="Day1" && <Day1/>}
         {activePage=="Day2" && <Day2/>}
       </div>
