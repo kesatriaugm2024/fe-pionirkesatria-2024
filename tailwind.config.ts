@@ -8,6 +8,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     extend: {
       colors: {
         yellow: {
@@ -43,6 +53,11 @@ const config: Config = {
       const newUtilities = {
         ".gradient-text-yellow": {
           background: "linear-gradient(90deg, #FFD23F, #FFA514)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
+        ".gradient-text-yellow-up-down": {
+          background: "linear-gradient(180deg, #FFD23F, #FFA514)",
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },

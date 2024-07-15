@@ -40,7 +40,7 @@ export default function MainDokumentasi() {
           Dokumentasi
         </p>
         <div className="z-10">
-          <Parallax translateY={[30, -30]} scale={[1, 1]} easing="easeOutSine">
+          <Parallax translateY={[20, -30]} scale={[1, 1]} easing="easeOutSine">
             <Image
               src="/images/dokumentasi/nala.png"
               alt=""
@@ -53,18 +53,18 @@ export default function MainDokumentasi() {
           </Parallax>
         </div>
         <div className="absolute w-full h-full z-0 hidden lg:flex justify-center items-center drop-shadow-2xl">
-          <Parallax translateY={[0, -10]} scale={[1, 1]} easing="easeOutSine">
+          <Parallax translateY={[0, -20]} scale={[1, 1]} easing="easeOutSine">
             <Image
               src="/images/background/element-kain-merah-full.svg"
               alt=""
               width={`${position.width}`}
               height={`${position.height}`}
-              style={{
-                transform: `translateX(${position.x / 4}px) translateY(${
-                  position.y / 4
-                }px)`,
-                scale: "1.1",
-              }}
+              // style={{
+              //   transform: `translateX(${position.x / 4}px) translateY(${
+              //     position.y / 4
+              //   }px)`,
+              //   scale: "1.1",
+              // }}
             ></Image>
           </Parallax>
         </div>
