@@ -6,12 +6,12 @@ import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[url('/images/background/Background_beranda.svg')] bg-repeat bg-[size:25%]">
-      <SelamatDatang/>
-      <SelamatDatangVideo/>
-      <Chapter1/>
+    <main className="min-h-screen">
+      {/* <SelamatDatang/> */}
+      {/* <SelamatDatangVideo/> */}
+      {/* <Chapter1/> */}
       <Chapter2/>
-      <Chapter3/>
+      {/* <Chapter3/> */}
     </main>
   );
 }

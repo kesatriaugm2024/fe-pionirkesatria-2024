@@ -132,3 +132,14 @@ body {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
+
+html, body {
+  /* overflow-y: hidden; Hides vertical scrollbar */
+  /* For cross-browser compatibility */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Webkit browsers (Chrome, Safari) */
+}
