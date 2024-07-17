@@ -6,7 +6,7 @@ export default function Chapter1() {
 
 export function Chapter1_Desktop() {
   return (
-    <div className="flex flex-col bg-pattern-ungu-kesat bg-top bg-repeat pt-[5vw]">
+    <div className="mb-[8vw] flex flex-col bg-transparent pt-[5vw]">
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
         <h1 className="text-center font-legendaire text-[4vw] text-white drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
@@ -177,7 +177,7 @@ export function Chapter1_Desktop() {
 
       {/* Transisi */}
       <div className="h-[0vh] w-full pb-[6vw]">
-        <div className="absolute w-full -translate-y-[30vw]">
+        <div className="absolute w-full -translate-y-[19vw]">
           <Image
             className="absolute z-[1] w-[100vw]"
             alt=""
@@ -186,11 +186,11 @@ export function Chapter1_Desktop() {
             height={1265}
           />
           <Image
-            className="absolute -left-[12vw] -top-[18vw] z-0 w-full scale-[0.5]"
+            className="absolute -left-[12vw] -top-[32vw] z-0 w-full scale-[0.5]"
             alt=""
             src={"/images/beranda/aset-kain-ungu-1.svg"}
-            width={1000}
-            height={1400}
+            width={500}
+            height={100}
           />
         </div>
       </div>

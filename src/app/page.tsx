@@ -7,11 +7,11 @@ import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* <SelamatDatang/> */}
-      {/* <SelamatDatangVideo/> */}
-      {/* <Chapter1/> */}
-      <Chapter2/>
-      {/* <Chapter3/> */}
+      <SelamatDatang />
+      <SelamatDatangVideo />
+      <Chapter1 />
+      <Chapter2 />
+      <Chapter3 />
     </main>
   );
 }
