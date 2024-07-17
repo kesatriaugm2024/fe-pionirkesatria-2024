@@ -1,6 +1,6 @@
 import Chapter1 from "@/components/beranda/chapter1";
 import Chapter2 from "@/components/beranda/chapter2";
-import Chapter3 from "@/components/beranda/chapter3";
+// import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/selamatdatang";
 import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 
@@ -11,7 +11,7 @@ export default function Home() {
       <SelamatDatangVideo/>
       <Chapter1/>
       <Chapter2/>
-      <Chapter3/>
+      {/* <Chapter3/> */}
     </main>
   );
 }
