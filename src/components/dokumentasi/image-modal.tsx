@@ -37,19 +37,19 @@ export default function ImageModal({
 
   return (
     <div
-      className="min-w-screen h-screen fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover transition duration-150 ease-in-out"
+      className="min-w-screen fixed inset-0 left-0 top-0 z-[1000] flex h-screen items-center justify-center bg-cover bg-center bg-no-repeat outline-none transition duration-150 ease-in-out focus:outline-none"
       id="modal-id"
     >
-      <div className="absolute bg-black opacity-80 inset-0 z-1"></div>
-      <div className="w-full max-w-md mx-5 sm:max-w-3xl sm:mx-10 lg:max-w-6xl md:mx-20 p-2 md:p-3 lg:p-4 relative my-auto rounded-xl shadow-lg bg-gradient-to-b from-[#FFD23F] to-[#FFA514] ">
+      <div className="z-1 absolute inset-0 bg-black opacity-80"></div>
+      <div className="relative mx-5 my-auto w-full max-w-md rounded-xl bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-2 shadow-lg sm:mx-10 sm:max-w-3xl md:mx-20 md:p-3 lg:max-w-6xl lg:p-4">
         {/* Image Content */}
         <div className="">
-          <Image src={image} alt="image" className="w-full h-full rounded-xl" />
+          <Image src={image} alt="image" className="h-full w-full rounded-xl" />
         </div>
 
         {/* Close Button */}
         <div
-          className="absolute top-3 right-3 bg-gradient-to-b from-[#EA5571] to-[#843040]  w-10 h-10 -mt-6 -mr-6 rounded-full hover:scale-110 hover:cursor-pointer transition active:scale-100"
+          className="absolute right-3 top-3 -mr-6 -mt-6 h-10 w-10 rounded-full bg-gradient-to-b from-[#EA5571] to-[#843040] transition hover:scale-110 hover:cursor-pointer active:scale-100"
           onClick={() => setModalIsOpen(false)}
         >
           <svg

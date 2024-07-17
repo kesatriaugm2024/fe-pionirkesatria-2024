@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-pattern-ungu-kesat  bg-repeat bg-[size:25%]"}>
+      <body
+        className={
+          inter.className + " bg-pattern-ungu-kesat bg-[size:25%] bg-repeat"
+        }
+      >
         <Navbar />
         <Providers>{children}</Providers>
         <Footer />
