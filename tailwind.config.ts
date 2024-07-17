@@ -38,6 +38,8 @@ const config: Config = {
       backgroundImage: {
         "pattern-ungu-kesat":
           "url('/images/background/pattern-ungu-kesat.jpg')",
+        "faq-background":
+          "url('/images/background/faq-background.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

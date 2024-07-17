@@ -36,7 +36,6 @@ const RUNDOWN = [
   },
 ];
 
-
 const Timeline = ({item, index} : {item:any, index:number}) => {
   const [isOpen, setIsOpen] = useState(false)
   

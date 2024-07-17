@@ -53,5 +53,5 @@ export default function Agenda() {
         {activePage=="Day2" && <Day2/>}
       </div>
     </main>
-  );
+  ); 
 }
