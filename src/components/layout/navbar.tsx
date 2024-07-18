@@ -151,10 +151,10 @@ export default function Navbar(){
                     className="flex flex-col place-content-center items-center translate-y-[0.25vw]"
                     >
                         <div className={'bg-[#FFE5C7] bg-transparent h-[0.75vw] rounded-[1vw] w-[4vw] duration-100 ' + (isOpen?"rotate-45":"rotate-0")}/>
-                        <div className={'bg-[#FFE5C7] absolute h-[0.75vw] rounded-[1vw] w-[4vw] duration-100 ' + (isOpen?"rotate-45":"rotate-0")}/>
-                        <div className={'bg-[#FFE5C7] absolute h-[0.75vw] rounded-[1vw] w-[4vw] duration-100 ' + (isOpen?"-rotate-45":"rotate-0")}/>
-                        <div className={'bg-[#FFE5C7] h-[0.75vw] rounded-[1vw] absolute duration-200 ' + (isOpen?"translate-y-0 w-0":"translate-y-[-1.5vw] w-[4vw]" )}/>
-                        <div className={'bg-[#FFE5C7] h-[0.75vw] rounded-[1vw] absolute duration-200 ' + (isOpen?"translate-y-0 w-0":"translate-y-[1.5vw] w-[4vw]" )}/>
+                        <div className={'bg-[#FFE5C7] absolute h-[0.75vw] rounded-[1vw] w-[4vw] duration-300 ' + (isOpen?"rotate-45":"rotate-0")}/>
+                        <div className={'bg-[#FFE5C7] absolute h-[0.75vw] rounded-[1vw] w-[4vw] duration-300 ' + (isOpen?"-rotate-45":"rotate-0")}/>
+                        <div className={'bg-[#FFE5C7] h-[0.75vw] rounded-[1vw] absolute duration-300 ' + (isOpen?"translate-y-0 w-0":"translate-y-[-1.5vw] w-[4vw]" )}/>
+                        <div className={'bg-[#FFE5C7] h-[0.75vw] rounded-[1vw] absolute duration-300 ' + (isOpen?"translate-y-0 w-0":"translate-y-[1.5vw] w-[4vw]" )}/>
                     </div>
                 </div>
                 <div className={'w-full m-auto flex flex-col items-end place-content-center duration-300 overflow-hidden  border-[#FFE5C7]   '+ (isOpen?"h-[12vh] border-t-[0.5vw]":"h-0 border-0")} >
