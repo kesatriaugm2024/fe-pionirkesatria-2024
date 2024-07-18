@@ -63,6 +63,11 @@ const config: Config = {
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },
+        ".gradient-text-red-up-down": {
+          background: "linear-gradient(180deg, #B22635, #EA5571)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
         ".gradient-bg-yellow": {
           background: "linear-gradient(90deg, #FFD23F, #FFA514)",
         },
