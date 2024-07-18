@@ -204,7 +204,7 @@ const Chapter2_Tablet =()=>{
 
   const Title = () =>{
     return(
-      <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw]/[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000] text-transparent">
+      <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[6vw]/[6vw] drop-shadow-[0_0.5vw_0.2vw_#000000] text-transparent">
         Bagian II: Lika-Liku Kesatria
       </h1>
     )
@@ -212,7 +212,7 @@ const Chapter2_Tablet =()=>{
 
   const Descrtiption=()=>{
     return(
-      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2vw]/[3vw] text-center">
+      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2.5vw]/[3.2vw] custom-shadow-text text-center">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan kesibukan akademik dan di luar akademik yang cukup kompleks semasa kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik pada modul ini.
       </p>
     )
@@ -237,7 +237,7 @@ const Chapter2_Tablet =()=>{
                 alt=""
                 width={100}
                 height={100}
-                className="w-full scale-[0.5]"
+                className="w-full scale-[0.5] custom-shadow-box"
               />
             </div>
             <div className="absolute -bottom-[5.9vw] -left-[7.9vw] w-full">
@@ -246,7 +246,7 @@ const Chapter2_Tablet =()=>{
                 alt=""
                 width={100}
                 height={100}
-                className="w-full scale-[0.5]"
+                className="w-full scale-[0.5] custom-shadow-box"
               />
             </div>
           </div>
@@ -334,7 +334,7 @@ const Chapter2_Tablet =()=>{
 
 
   return(
-    <div className="w-full min-h-screen flex flex-col items-center place-content-center gap-[3vw] py-[10vw] max-md:hidden">
+    <div className="w-full min-h-screen flex flex-col items-center place-content-center gap-[3vw] py-[10vw] max-md:hidden lg:hidden">
       <Title/>
       <Descrtiption/>
       <div className="w-screen ">

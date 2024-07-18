@@ -5,10 +5,6 @@ import { ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 
 const Content = () => {
-    const parallax = useParallax({
-        speed: -10,
-    });
-    
     const VideoSelamatDatang= () =>{
         return(
             <iframe 
@@ -24,10 +20,10 @@ const Content = () => {
     }
     return(
         <div className="min-h-[90vh] py-[20vh] flex flex-col items-center place-content-center"
-        ref={parallax.ref}>
+        >
             <div className="flex flex-col font-legendaire z-[1] items-center">
-                <h2 className="text-[3vw]/[3vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Selamat Datang</h2>
-                <h1 className="text-[5vw]/[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Kesatria Muda <span className="font-publica-sans font-medium text-[4.4vw]">2024!</span></h1>
+                <h2 className="text-[3vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Selamat Datang</h2>
+                <h1 className="text-[4vw]/[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Kesatria Muda <span className="font-publica-sans font-medium text-[4.4vw]">2024!</span></h1>
             </div>
             <Image
             className="absolute translate-x-[-29vw] w-[25vw] translate-y-[3vw]"

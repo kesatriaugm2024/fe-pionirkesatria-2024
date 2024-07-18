@@ -518,13 +518,13 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
     >
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
-        <h1 className="text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h1 className="text-center font-legendaire text-[5vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Halo Kesatria Muda!
         </h1>
-        <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[7.5vw]/[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[6vw]/[6vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: <br /> Kesatria Merajut Karsa
         </h2>
-        <p className="mx-[8vw] py-[2vw] text-center font-publica-sans text-[3.1vw]/[3.6vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="mx-[8vw] py-[2vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -559,7 +559,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
               />
             </div>
           </div>
-          <div className="z-10 flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[3vw]/[3vw] font-medium text-[#491772]">
+          <div className="z-10 flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[2.5vw] font-medium text-[#491772]">
             Personal Branding dapat diartikan sebagai sebuah proses pengenalan
             potensi yang dimiliki seorang individu dalam masyarakat. Personal
             branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
@@ -624,7 +624,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             <h1 className="mb-[0.5vw] text-center font-legendaire text-[7vw] gradient-text-yellow-up-down">
               Sejarah Teknik
             </h1>
-            <p className="text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7]">
+            <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7]">
               Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu
               fakultas tertua di Universitas Gadjah Mada. Sampai saat ini
               Fakultas Teknik terus mengalami berbagai penyesuaian dan
@@ -667,11 +667,11 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       <div className="mx-[8vw] mb-[7vw] flex flex-row items-center justify-center py-[5vw]">
         <div className="relative flex w-full flex-col items-center justify-between gap-[0vw]">
           {/* Text Sejarah Kesatria */}
-          <h2 className="z-10 text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+          <h2 className="z-10 text-center font-legendaire text-[5vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
             Sejarah Kesatria
           </h2>
           {/* Text */}
-          <p className="z-10 mx-[8vw] mb-[4vw] text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          <p className="z-10 mx-[8vw] mb-[4vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
             Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
             perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
@@ -700,7 +700,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             />
           </div>
 
-          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Selengkapnya
           </div>
         </div>

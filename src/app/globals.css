@@ -146,6 +146,10 @@ body::-webkit-scrollbar {
   display: none; /* Hides scrollbar for Webkit browsers (Chrome, Safari) */
 }
 
-/* .btn {
-  @apply rounded px-4 py-2 font-bold;
-} */
+.custom-shadow-text {
+  @apply drop-shadow-[0_0.5vw_0.2vw_#000000];
+}
+
+.custom-shadow-box {
+  @apply drop-shadow-[0_0.1vw_1vw_#000000];
+}
