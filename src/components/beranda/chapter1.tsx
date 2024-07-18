@@ -5,6 +5,7 @@ export default function Chapter1() {
     <>
       <Chapter1_Desktop className="hidden lg:block" />
       <Chapter1_Tablet className="hidden sm:block lg:hidden" />
+      <Chapter1_Mobile className="block sm:hidden" />
     </>
   );
 }
@@ -351,8 +352,8 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[0.8vw]">
               <iframe
                 className="h-full w-full rounded-[1.8vw]"
-                src="https://www.youtube.com/embed/oHzXxIKJJ70"
-                title="Kenapa Anak Muda Suka Banget Istilah Baru?"
+                src="https://www.youtube.com/embed/ejwpfohGQPg"
+                title="[SEJARAH KESATRIA]"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -413,7 +414,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
               alt=""
               width={100}
               height={100}
-              className="absolute -bottom-[25vw] -right-[95.1vw] z-0 w-full scale-[8]"
+              className="absolute -bottom-[25vw] -right-[95.5vw] z-0 w-full scale-[8]"
             />
           </div>
           <div className="absolute -bottom-[50vw] right-[3vw] w-[30vw]">
@@ -425,6 +426,212 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
               className="absolute -bottom-[0vw] z-0 w-full scale-[1]"
             />
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Chapter1_Mobile({ className }: { className?: string }) {
+  return (
+    <div
+      className={`mb-[0vw] flex flex-col overflow-x-hidden bg-transparent pt-[5vw] ${className}`}
+    >
+      {/* Halo Kesatria Muda! */}
+      <div className="flex w-full flex-col items-center justify-center px-[5vw]">
+        <h1 className="text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+          Halo Kesatria Muda!
+        </h1>
+        <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[7.5vw]/[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+          Selamat Datang di Bagian I: <br /> Kesatria Merajut Karsa
+        </h2>
+        <p className="mx-[8vw] py-[2vw] text-center font-publica-sans text-[3.1vw]/[3.6vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
+          Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
+          dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
+          Selain mengenal lingkungan baru, Kesatria Muda juga diharapkan dapat
+          mulai mengenal diri yang akan menunjukkan pribadi Kesatria Muda di
+          lingkungan Fakultas Teknik UGM. Selain itu, disini juga terdapat 2
+          video menarik yaitu “Sejarah Teknik” dan “Sejarah Kesatria” yang wajib
+          ditonton sebelum kita bertemu secara offline di Pionir Kesatria nanti.
+        </p>
+      </div>
+
+      {/* PERSONAL BRANDING */}
+      <div className="mx-[15vw] my-[5vw] flex flex-row items-center justify-center">
+        <div className="relative flex w-full flex-col items-center gap-[2vw] rounded-[5vw] bg-[#FFE5C7] px-[7vw] py-[8vw]">
+          <div className="relative aspect-[4/3] w-3/4 rounded-[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+            <div className="absolute -right-[13.6vw] -top-[16vw] w-full">
+              <Image
+                src="/images/beranda/pita-box-ungu-1.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-full scale-[0.6]"
+              />
+            </div>
+            <div className="absolute -bottom-[14vw] -left-[17.7vw] w-full">
+              <Image
+                src="/images/beranda/pita-box-ungu-2.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-full scale-[0.4]"
+              />
+            </div>
+          </div>
+          <div className="flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[3vw]/[3vw] font-medium text-[#491772]">
+            Personal Branding dapat diartikan sebagai sebuah proses pengenalan
+            potensi yang dimiliki seorang individu dalam masyarakat. Personal
+            branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
+            diri, nilai, kelebihan, serta persepsi positif yang ada dalam diri
+            dan dapat dituangkan dalam bentuk curriculum vitae (CV) atau resume.
+            Get to Know FT UGM merupakan rangkaian pengenalan lingkungan
+            Fakultas Teknik UGM yang meliputi pengetahuan umum tentang FT UGM.
+            Pengetahuan umum ini berupa Sejarah berdirinya FT UGM, Kiprah FT UGM
+            dari masa perjuangan hingga kini, serta perkenalan departemen dan
+            prodi yang ada di FT UGM saat ini.
+          </div>
+          <div className="absolute -bottom-[4vw] transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+            Lihat Modul
+          </div>
+        </div>
+      </div>
+
+      {/* SEJARAH TEKNIK */}
+      <div className="mx-[15vw] my-[10vw] flex flex-row items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-between gap-[4vw]">
+          {/* Text Sejarah Teknik */}
+          <div className="relative flex w-full flex-col rounded-[5vw] bg-[#491772] pb-[4vw] pl-[7vw] pr-[4vw] pt-[2vw]">
+            <h1 className="mb-[0.5vw] text-center font-legendaire text-[7vw] gradient-text-yellow-up-down">
+              Sejarah Teknik
+            </h1>
+            <p className="text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7]">
+              Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu
+              fakultas tertua di Universitas Gadjah Mada. Sampai saat ini
+              Fakultas Teknik terus mengalami berbagai penyesuaian dan
+              perkembangan. Mari simak video berikut ini!
+            </p>
+
+            <Image
+              src={"/images/beranda/bulu-kuning-1.svg"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute -bottom-[115vw] -left-[34vw] w-full scale-[0.15]"
+            />
+          </div>
+          {/* Box */}
+          <div className="relative h-[41.2vw] w-[70vw]">
+            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw]">
+              <iframe
+                className="h-full w-full rounded-[4vw]"
+                src="https://www.youtube.com/embed/oHzXxIKJJ70"
+                title="Kenapa Anak Muda Suka Banget Istilah Baru?"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <Image
+              src={"/images/beranda/gerigi-merah.png"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* SEJARAH KESATRIA */}
+      <div className="mx-[8vw] mb-[7vw] flex flex-row items-center justify-center py-[5vw]">
+        <div className="relative flex w-full flex-col items-center justify-between gap-[0vw]">
+          {/* Text Sejarah Kesatria */}
+          <h2 className="z-10 text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+            Sejarah Kesatria
+          </h2>
+          {/* Text */}
+          <p className="z-10 mx-[8vw] mb-[4vw] text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+            Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
+            perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
+            terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
+            dalamnya. Penasaran bagaimana PPSMB Kesatria dapat mempertahankan
+            esensinya? Yuk, simak video berikut untuk memahami lebih dalam!
+          </p>
+          {/* BOX */}
+          <div className="relative h-[41.2vw] w-[70vw]">
+            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw]">
+              <iframe
+                className="h-full w-full rounded-[4vw]"
+                src="https://www.youtube.com/embed/ejwpfohGQPg"
+                title="[SEJARAH KESATRIA]"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <Image
+              src={"/images/beranda/gerigi-merah.png"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute z-0 w-full -translate-x-[30vw] scale-[0.35]"
+            />
+          </div>
+
+          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+            Lihat Selengkapnya
+          </div>
+        </div>
+      </div>
+
+      {/* Transisi Bawah*/}
+      <div className="h-[0vh] w-full overflow-x-hidden pb-[18vw]">
+        <div className="absolute w-full -translate-y-[30vw]">
+          <Image
+            className="absolute z-[0] w-[100vw]"
+            alt=""
+            src={"/images/beranda/asset-kain-ungu-3.png"}
+            width={1920}
+            height={1265}
+          />
+          <Image
+            className="absolute -left-[0vw] top-[10vw] z-[2] w-full scale-[1]"
+            alt=""
+            src={"/images/beranda/asset-kain-merah-3.png"}
+            width={2000}
+            height={1000}
+          />
+          <div className="absolute w-[30vw] translate-x-[60vw] translate-y-[45vw]">
+            <Image
+              src={"/images/beranda/tugu-teknik-kuning.svg"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute -bottom-[5vw] z-[1] w-full scale-[1]"
+            />
+          </div>
+          {/* <div className="absolute w-[1vw]">
+            <Image
+              src={"/images/beranda/gerigi-kuning-12.svg"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute -bottom-[25vw] -right-[95.5vw] z-0 w-full scale-[8]"
+            />
+          </div> */}
+          {/* <div className="absolute -bottom-[50vw] right-[3vw] w-[30vw]">
+            <Image
+              src={"/images/beranda/gerigi-kuning.svg"}
+              alt=""
+              width={100}
+              height={100}
+              className="absolute -bottom-[0vw] z-0 w-full scale-[1]"
+            />
+          </div> */}
         </div>
       </div>
     </div>
