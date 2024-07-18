@@ -277,7 +277,7 @@ const Chapter2_Tablet =()=>{
           width={528}
           height={549}
         />
-        <div className="w-[65vw] h-[55vw] rounded-[2vw] bg-[#FFE5C7] drop-shadow-[0_0.5vw_1vw_#000000] z-[1] flex flex-col items-center place-content-center gap-[1vw]">
+        <div className="w-[65vw] h-[55vw] rounded-[2vw] bg-[#FFE5C7] drop-shadow-[0_0.5vw_1vw_#000000] z-[1] flex flex-col items-center place-content-center gap-[2vw]">
           <h1 className="font-legendaire text-[5vw] bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text text-transparent">
             {title}
           </h1>
