@@ -1,23 +1,14 @@
 "use client";
-
-import { RiArrowDownSLine } from "react-icons/ri";
-import { useEffect, useState } from "react";
+import { FaPlus } from "react-icons/fa6";
+import { useState } from "react";
 import {
   listPertanyaanUmum,
   listPertanyaanMateri,
 } from "@/app/faq/listPertanyaan";
-import AOS from "aos";
-import Image from "next/image";
 
 export default function DesignGuidelinePage() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleOpen() {
-    setIsOpen(true);
-  }
-
   return (
-    <main className="bg-faq-background min-h-screen w-full flex-col bg-cover bg-top bg-repeat py-10">
+    <main className="min-h-screen w-full flex-col bg-faq-background bg-cover bg-top bg-repeat py-10">
       <div className="flex w-full flex-col items-center justify-center">
         <h1 className="ml-[4vw] mt-[6vw] self-start bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently Asked Question
@@ -25,22 +16,34 @@ export default function DesignGuidelinePage() {
 
         <div className="bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
           Punya Pertanyaan?
-          <div className="h-[4vw] w-[86vw] rounded-xl bg-[#5E1675]"></div>
-          <div className="relative mt-[1.5vw] flex h-[30vw] w-[86vw] flex-col items-center rounded-xl bg-[#5E1675] py-[1vw]">
-            <p className="bg-gradient-to-b from-[#FFA514] to-[#FFD23F] bg-clip-text font-legendaire text-[3vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          <div className="flex h-[4vw] w-[86vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]">
+            <div className="flex w-full items-center">
+              <input
+                type="text"
+                placeholder="Cari di sini..."
+                // w-full bg-transparent border-none text-[1.5vw] text-[#FFFFFF] placeholder:text-[1.2vw] placeholder-[#FFB314] outline-none focus:outline-4 focus:outline-[#FFA514]
+                // w-full bg-transparent border-none text-[1.5vw] text-[#FFFFFF] placeholder:text-[1.2vw] placeholder-[#FFB314] outline-none focus:outline-4 focus:outline-[#FFA514]
+                className="w-full border-none bg-transparent font-publica-sans text-[1.5vw] text-[#FFB314] placeholder-[#FFB314] placeholder:text-[1.5vw] outline-none"
+              />
+            </div>
+            <button className="mr-3 h-[3vw] w-[7vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+              <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent">
+                Search
+              </div>
+            </button>
+          </div>
+          <div className="relative mt-[1.5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw]">
+            <p className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
-            {/* Bungkus Pertanyaan */}
             <div className="relative flex flex-col gap-[1.5vw]">
-              {/* Item Pertanyaan */}
-              <ItemPertanyaan
-                question={`Q: Pembagian forum dan link Google Classroom dapat dilihat di mana?`}
-                answer={`A: Di Simaster (Kemahasiswaan → PIONIR → Fakultas/Sekolah Vokasi).`}
-              />
-              <ItemPertanyaan
-                question={`Q: Pembagian forum dan link Google Classroom ?`}
-                answer={`A: Di Simaster (KemahasisSekolah Vokasi).`}
-              />
+              {listPertanyaanUmum.map((pertanyaan, index) => (
+                <ItemPertanyaan
+                  key={index}
+                  question={`Q: ${pertanyaan.question}`}
+                  answer={`A: ${pertanyaan.answer}`}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -56,15 +59,33 @@ export const ItemPertanyaan = ({
   question: any;
   answer: any;
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="flex h-[6vw] w-[80vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571]">
-      <div className="flex h-[3vw] w-full items-center rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F]">
+    <div
+      className={`flex w-[80vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 ${
+        isOpen ? "h-[6vw]" : "h-[3vw]"
+      }`}
+      onClick={handleClick}
+    >
+      <div className="flex h-[3vw] w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw]">
         <p className="px-[1vw] font-publica-sans text-[1.4vw] font-medium text-[#5E1675]">
           {question}
         </p>
+        <div className="h-4 w-4 items-end">
+          <FaPlus className="h-full text-black" />
+        </div>
       </div>
-      <div className="flex h-[3vw] w-full items-center">
-        <p className="px-[1vw] font-publica-sans text-[1.4vw] font-medium gradient-text-yellow-up-down">
+      <div
+        className={`h-[3vw] w-full items-center ${isOpen ? "flex" : "hidden"}`}
+      >
+        <p
+          className={`px-[1vw] font-publica-sans text-[1.4vw] font-medium gradient-text-yellow-up-down ${isOpen ? "block" : "hidden"}`}
+        >
           {answer}
         </p>
       </div>
