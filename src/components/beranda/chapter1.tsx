@@ -208,7 +208,7 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
 export function Chapter1_Tablet({ className }: { className?: string }) {
   return (
     <div
-      className={`mb-[8vw] flex flex-col bg-transparent pt-[5vw] ${className}`}
+      className={`mb-[8vw] flex flex-col overflow-x-hidden bg-transparent pt-[5vw] ${className}`}
     >
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
@@ -382,7 +382,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
       </div>
 
       {/* Transisi Bawah*/}
-      <div className="h-[0vh] w-full pb-[18vw]">
+      <div className="h-[0vh] w-full overflow-x-hidden pb-[18vw]">
         <div className="absolute w-full -translate-y-[40vw]">
           <Image
             className="absolute z-[1] w-[100vw]"
@@ -407,13 +407,13 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
               className="absolute -bottom-[5vw] z-0 w-full scale-[1]"
             />
           </div>
-          <div className="absolute -bottom-[38vw] -right-[15vw] w-[30vw]">
+          <div className="absolute w-[1vw]">
             <Image
-              src={"/images/beranda/gerigi-kuning.svg"}
+              src={"/images/beranda/gerigi-kuning-12.svg"}
               alt=""
               width={100}
               height={100}
-              className="absolute -bottom-[0vw] z-0 w-full scale-[0.65]"
+              className="absolute -bottom-[25vw] -right-[95.1vw] z-0 w-full scale-[8]"
             />
           </div>
           <div className="absolute -bottom-[50vw] right-[3vw] w-[30vw]">
