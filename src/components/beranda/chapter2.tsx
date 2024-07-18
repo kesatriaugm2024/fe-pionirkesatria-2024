@@ -25,7 +25,7 @@ const Chapter2_Desktop = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     return (
       <div className="flex items-center justify-center gap-[2.5vw]">
-        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[url('/images/beranda/pita-box-ungu-1.png')]/ bg-cover">
+        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover">
             <Image
             className="absolute w-full h-full rounded-[2vw]"
             alt=""
@@ -212,14 +212,48 @@ const Chapter2_Tablet =()=>{
 
   const Descrtiption=()=>{
     return(
-      <p className=" w-[80vw] font-publica-sans text-[#FFE5C7] text-[3vw]/[3vw] text-center">
+      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2vw]/[3vw] text-center">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan kesibukan akademik dan di luar akademik yang cukup kompleks semasa kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik pada modul ini.
       </p>
     )
   }
   const SwiperCard = ({title, desc, imgpath, link})=>{
+    const Gambar = () =>{
+      return(
+        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover">
+            <Image
+            className="absolute w-full h-full rounded-[2vw]"
+            alt=""
+            src={imgpath}
+            width={100}
+            height={100}
+            />
+            <div className="absolute w-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] h-full rounded-[2vw] opacity-50">
+              {/* Opacity */}
+            </div>
+            <div className="absolute -right-[7vw] -top-[8vw] w-full">
+              <Image
+                src="/images/beranda/pita-box-ungu-1.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-full scale-[0.5]"
+              />
+            </div>
+            <div className="absolute -bottom-[5.9vw] -left-[7.9vw] w-full">
+              <Image
+                src="/images/beranda/pita-box-ungu-2.png"
+                alt=""
+                width={100}
+                height={100}
+                className="w-full scale-[0.5]"
+              />
+            </div>
+          </div>
+      )
+    }
     return(
-      <div className="w-full flex flex-col items-center place-content-center">
+      <div className="w-full flex flex-col py-[4vw] items-center place-content-center">
         <Image
           className="absolute right-0 z-[0] w-[48vw] translate-y-[8vw]"
           alt=""
@@ -236,16 +270,50 @@ const Chapter2_Tablet =()=>{
         />
         <div className="w-[65vw] h-[55vw] rounded-[2vw] bg-[#FFE5C7] drop-shadow-[0_0.5vw_1vw_#000000] z-[1] flex flex-col items-center place-content-center">
           <h1 className="font-legendaire text-[5vw] bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text text-transparent">
-            Lika-Liku Kesatria
+            {title}
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquam.</p>
-
+          <div className="flex items-center justify-center gap-[6vw]">
+            <button className="w-[8vw] flex justify-end"
+            onClick={() => {
+              if (swiper.activeIndex == CARDCONTENT.length) return;
+              swiper.slidePrev();
+              setActiveSwiper(swiper.activeIndex);
+            }}
+            >
+              <Image
+                className="w-[4vw] hover:w-[6vw] duration-100 z-[1]"
+                alt=""
+                src={"/images/assets_beranda_chapter2_arrow_kiri.svg"}
+                width={52.7}
+                height={95.23}
+              />
+            </button>
+            <Gambar/>
+            <button className="w-[8vw] flex justify-start"
+            onClick={() => {
+              if (swiper.activeIndex == CARDCONTENT.length) return;
+              swiper.slideNext();
+              setActiveSwiper(swiper.activeIndex);
+            }}
+            >
+              <Image
+                className="w-[4vw] hover:w-[6vw] duration-100 z-[1]"
+                alt=""
+                src={"/images/assets_beranda_chapter2_arrow_kanan.svg"}
+                width={52.7}
+                height={95.23}
+              />
+            </button>
+          </div>
+          <p className="px-[5vw] font-publica-sans text-[2vw]">
+            {desc}
+          </p>
         </div>
         <div className="flex z-[0]">
           <div className="w-[15vw] h-[6vw] bg-gradient-to-br from-[#491772] to-[#5E1675] rounded-b-[3vw] drop-shadow-[0_1vw_1vw_#000000]"/>
           <div className="w-[25vw] h-[6vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-b-[3vw] drop-shadow-[0_1vw_1vw_#000000] flex items-center justify-center z-[1] hover:bg-gradient-to-t">
             <button className=" font-legendaire text-center text-[3vw] bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text text-transparent ">
-              Lika Liku Kesatria
+              {title}
             </button>
           </div>
           <div className="w-[15vw] h-[6vw] bg-gradient-to-b from-[#491772] to-[#5E1675] z-[0] rounded-b-[3vw] drop-shadow-[0_1vw_1vw_#000000]"/>
@@ -260,7 +328,28 @@ const Chapter2_Tablet =()=>{
     <div className="w-full min-h-screen flex flex-col items-center place-content-center gap-[3vw] py-[10vw]">
       <Title/>
       <Descrtiption/>
-      <SwiperCard />
+      <div className="w-screen ">
+      <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            grabCursor={true}
+            onSwiper={setSwiper}
+            onSlideChange={(swiper) => {
+              setActiveSwiper(swiper.activeIndex);
+            }}
+          >
+            {CARDCONTENT.map((item, index) => (
+              <SwiperSlide key={index}>
+                <SwiperCard
+                  imgpath={item.imgpath}
+                  title={item.title}
+                  desc={item.desc}
+                  link={item.link}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+      </div>
     </div>
   )
 }
