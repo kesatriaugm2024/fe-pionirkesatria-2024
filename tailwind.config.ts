@@ -38,6 +38,8 @@ const config: Config = {
       backgroundImage: {
         "pattern-ungu-kesat":
           "url('/images/background/pattern-ungu-kesat.jpg')",
+        "faq-background":
+          "url('/images/background/faq-background.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -58,6 +60,11 @@ const config: Config = {
         },
         ".gradient-text-yellow-up-down": {
           background: "linear-gradient(180deg, #FFD23F, #FFA514)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
+        ".gradient-text-red-up-down": {
+          background: "linear-gradient(180deg, #B22635, #EA5571)",
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },
