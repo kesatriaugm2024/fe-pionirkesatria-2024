@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import MainDokumentasi from "@/components/dokumentasi/main-dokumentasi";
-
+import Footer from "@/components/layout/footer";
 import { Mobile_A, Mobile_B } from "@/components/dokumentasi/mobile";
 import { Tablet_A, Tablet_B } from "@/components/dokumentasi/tablet";
 import {
@@ -47,7 +47,7 @@ export default function Dokumentasi() {
 
   return (
     <>
-      <div className="relative w-full bg-pattern-ungu-kesat bg-top bg-repeat pt-32">
+      <div className="relative w-full bg-top bg-repeat pt-32">
         {/* Main Section */}
         <MainDokumentasi />
         {/* Desktop */}
@@ -112,6 +112,8 @@ export default function Dokumentasi() {
       {modalIsOpen && (
         <ImageModal image={selectedImage} setModalIsOpen={setModalIsOpen} />
       )}
+
+      <Footer />
     </>
   );
 }
