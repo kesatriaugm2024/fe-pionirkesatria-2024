@@ -153,3 +153,5 @@ body::-webkit-scrollbar {
 .custom-shadow-box {
   @apply drop-shadow-[0_0.1vw_1vw_#000000];
 }
+
+@import 'aos/dist/aos.css';

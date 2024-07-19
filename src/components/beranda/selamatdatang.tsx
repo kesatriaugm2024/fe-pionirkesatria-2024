@@ -5,6 +5,7 @@ import { ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 const TransitiAtasSelamatDatang = () =>{
     return(
+        <div data-aos="fade-up">
         <div
         className="absolute w-full"
         >
@@ -16,6 +17,7 @@ const TransitiAtasSelamatDatang = () =>{
             height={816}
             />
             <Image
+            data-aos="fade-up"
             className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw] z-[1]"
             alt="Burung Emas Atas"
             src={'/images/assets_beranda_selamatdatang_burung.svg'}
@@ -23,21 +25,25 @@ const TransitiAtasSelamatDatang = () =>{
             height={271}
             />
         </div>
+        </div>
     )
 }
 
 const TransisiBawahSelamatDatang = () => {
     return(
-        <div className="w-full h-[10vh] overflow-hidden">
+        <div data-aos="">
+        <div 
+        className="w-full h-[10vh] overflow-hidden">
             <Image
-            className="absolute overflow-hidden right-0 w-[25vw] translate-y-[-30vw] drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] translate-x-[-7vw] max-lg::w-[77.5vw] max-lg:translate-y-[-80vw] max-lg:hidden"
+            className="absolute overflow-hidden right-0 w-[25vw] translate-y-[-30vw] drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] translate-x-[-7vw] max-lg:hidden"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungu.svg'}
             width={424}
             height={271}
             />
             <Image
-            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden z-[0] max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
+            data-aos=""
+            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] translate-x-[2vw]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungumobile.svg'}
             width={424}
@@ -72,16 +78,18 @@ const TransisiBawahSelamatDatang = () => {
             height={271}
             />
         </div>
+        </div>
     )
 }
 
 const Content = () => {
     return(
         <div
+        data-aos="fade-up"
         className="min-h-[90vh] flex items-center justify-center max-lg:flex-col overflow-hidden z-[1]"
         >
             <Image
-            className="w-[27.5vw] drop-shadow-[0_1vw_1vw_#000000] z-[1] max-lg:w-[56.25vw]"
+            className="w-[27.5vw] drop-shadow-[0_1vw_1vw_#000000] z-[1] max-lg:w-[56.25vw] "
             alt=""
             src={'images/logo/Nala_melambai.svg'}
             width={577}
@@ -89,17 +97,17 @@ const Content = () => {
             />
             <div className="flex flex-col z-[1]">
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[7vw]/[7vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
                 >
                     PIONIR
                 </h2>
                 <h1
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[14vw]/[14vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[10vw]/[10vw]"
                 >
                     KesatriA
                 </h1>
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[7vw]/[7vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw] z-[1]"
                 >
                     2024!
                 </h2>
