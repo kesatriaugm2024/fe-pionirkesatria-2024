@@ -72,11 +72,11 @@ export default function MateriPage() {
                     </div>
                     <div className="w-full flex flex-col items-center place-content-center p-[2vw]">
                         <h2
-                            className="font-legendaire text-[6vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent"
+                            className="font-legendaire text-[6vw]/[6vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent"
                         >
                             {modulTitle}
                         </h2>
-                        <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+                        <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] text-justify">
                             {modulDesc}
                         </p>
                     </div>
@@ -84,7 +84,15 @@ export default function MateriPage() {
             )
         }
 
-        const SwiperCard = ({ index, title, desc, link, imgpath }) => {
+        interface SwiperCardProps {
+            index: number; // or another appropriate type
+            title: string;
+            desc: string;
+            link: string;
+            imgpath: string;
+        }
+
+        const SwiperCard = ({ index, title, desc, link, imgpath }:SwiperCardProps) => {
             return (
                 <div
                     onMouseEnter={() => {
@@ -94,7 +102,8 @@ export default function MateriPage() {
                     }}
                     className="">
                     <div
-                        className={"bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-100 hover:w-[15.6vw] hover:h-[27.8vw] w-[13vw] h-[23vw]"}>
+                    className={"bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-100 hover:w-[15.6vw] hover:h-[27.8vw] w-[13vw] h-[23vw]"}>
+                        <Image alt={title} src={imgpath} width={100} height={100} className="w-full h-full rounded-[1.7vw]"/>
                     </div>
                 </div>
             )
@@ -203,21 +212,6 @@ export default function MateriPage() {
                 ></div>
             </div>
         );
-    
-        // useEffect(() => {
-        //     if (swiper) {
-        //         swiper.on('slideChange', () => {
-        //             const currentIndex = swiper.realIndex;
-        //             const middleIndex = Math.floor(swiper.params.slidesPerView / 2);
-        //             const newIndex = currentIndex + middleIndex;
-        //             if (newIndex >= 0 && newIndex < MODUL.length) {
-        //                 setActiveSwiper(newIndex);
-        //                 setModulTitle(MODUL[newIndex].title || MODUL[0].title);
-        //                 setModulDesc(MODUL[newIndex].desc || MODUL[0].desc);
-        //             }
-        //         });
-        //     }
-        // }, [swiper]);
     
         return (
             <div className="min-h-screen w-full flex flex-col items-center place-content-center">

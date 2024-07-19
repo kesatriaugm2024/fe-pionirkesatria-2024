@@ -95,7 +95,7 @@ const Chapter2_Desktop = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col place-content-center items-center gap-[2.5vw] pt-[5vw] max-lg:hidden">
+    <div data-aos="fade-up" className="flex min-h-screen flex-col place-content-center items-center gap-[2.5vw] pt-[5vw] max-lg:hidden">
       <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[4vw] text-transparent custom-shadow-text">
         Bagian II: Lika-Liku Kesatria
       </h1>
@@ -110,6 +110,7 @@ const Chapter2_Desktop = () => {
         yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
         pada modul ini.
       </p>
+      <div>
       <div className="flex flex-col py-[6vw]">
         <Image
           className="absolute right-0 z-[0] w-[35vw] translate-y-[-12vw]"
@@ -215,6 +216,7 @@ const Chapter2_Desktop = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );
@@ -359,9 +361,11 @@ const Chapter2_Tablet =()=>{
 
   return(
     <div className="w-full min-h-screen flex flex-col items-center place-content-center gap-[3vw] py-[10vw] max-md:hidden lg:hidden">
-      <Title/>
-      <Descrtiption/>
-      <div className="w-screen ">
+      <div data-aos="fade-up" className="flex flex-col items-center">
+        <Title/>
+        <Descrtiption/>
+      </div>
+      <div data-aos="fade-up" className="w-screen ">
       <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -528,9 +532,11 @@ const Chapter2_HP =()=>{
 
   return(
     <div className="w-full min-h-screen flex flex-col items-center place-content-center gap-[3vw] py-[10vw] md:hidden">
-      <Title/>
-      <Descrtiption/>
-      <div className="w-screen ">
+      <div data-aos="fade-up" className="flex flex-col items-center">
+        <Title/>
+        <Descrtiption/>
+      </div>
+      <div data-aos="fade-up" className="w-screen ">
       <Swiper
             slidesPerView={1}
             spaceBetween={10}

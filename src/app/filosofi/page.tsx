@@ -10,7 +10,7 @@ export default function Filosofi() {
 }
 
 // Desktop
-export function Filosofi_Desktop({ className }: { className?: string }) {
+function Filosofi_Desktop({ className }: { className?: string }) {
   return (
     <div
       className={`relative z-10 flex max-h-[100dvh] min-h-[100dvh] w-full flex-col items-center justify-center gap-[1vw] overflow-clip pb-[0vw] ${className}`}
@@ -173,7 +173,7 @@ export function Filosofi_Desktop({ className }: { className?: string }) {
 }
 
 // Tablet
-export function Filosofi_Tablet({ className }: { className?: string }) {
+function Filosofi_Tablet({ className }: { className?: string }) {
   return (
     <div
       className={`relative z-10 flex max-h-[100dvh] min-h-[100dvh] w-full flex-col items-center justify-center gap-[3vw] overflow-clip pb-[10vw] ${className}`}
@@ -308,7 +308,7 @@ export function Filosofi_Tablet({ className }: { className?: string }) {
 }
 
 // HP
-export function Filosofi_Mobile({ className }: { className?: string }) {
+function Filosofi_Mobile({ className }: { className?: string }) {
   return (
     <div
       className={`relative z-10 flex max-h-[100dvh] min-h-[100dvh] w-full flex-col items-center justify-center gap-[3vw] overflow-clip pb-[10vw] ${className}`}

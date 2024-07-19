@@ -10,7 +10,7 @@ const Content = () => {
             <iframe 
             id="video"
             className="w-full h-full rounded-[1.8vw]" 
-            src="https://www.youtube.com/embed/-jNK03W1M2g?si=Zu-xFOJxMxd3tCDL" 
+            src="https://www.youtube.com/embed/zvbdEJgUSb0?si=Nc5-cCmNifvP8s0U"  
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -19,9 +19,13 @@ const Content = () => {
         )
     }
     return(
-        <div className="min-h-[90vh] py-[20vh] flex flex-col items-center place-content-center"
+        <div 
+        data-aos="fade-up"
+        className="min-h-[90vh] py-[20vh] flex flex-col items-center place-content-center"
         >
-            <div className="flex flex-col font-legendaire z-[1] items-center">
+            <div
+            data-aos="fade-up"
+            className="flex flex-col font-legendaire z-[1] items-center">
                 <h2 className="text-[3vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Selamat Datang</h2>
                 <h1 className="text-[4vw]/[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">Kesatria Muda <span className="font-publica-sans font-medium text-[4.4vw]">2024!</span></h1>
             </div>
@@ -39,7 +43,8 @@ const Content = () => {
             width={317.2}
             height={501.35}
             />
-            <div className="w-[48vw] h-[27vw] bg-[#CD4258] rounded-[1.8vw] flex items-center justify-center z-[1]">
+            <div 
+            className="w-[48vw] h-[27vw] bg-[#CD4258] rounded-[1.8vw] flex items-center justify-center z-[1]">
                 <div className="w-[44vw] h-[25vw] bg-[#FFFFFF] rounded-[1.8vw]">
                     <VideoSelamatDatang/>
                 </div>
@@ -50,6 +55,7 @@ const Content = () => {
 
 const TransisiBawahSelamatDatangVideo = () => {
     return(
+        <div>
         <div className="w-full h-[10vh]">
             <div className="w-full absolute translate-y-[-18vw]">
                 <Image
@@ -81,6 +87,7 @@ const TransisiBawahSelamatDatangVideo = () => {
                 height={501.35}
                 />
             </div>
+        </div>
         </div>
     )
 }
