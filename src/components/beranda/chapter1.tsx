@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Chapter1() {
   return (
@@ -23,7 +24,7 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
         <h2 className="z-20 text-center font-legendaire text-[3vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: Kesatria Merajut Karsa
         </h2>
-        <p className="z-20 mx-[10vw] text-center font-publica-sans text-[1.5vw]/[2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="z-20 mx-[10vw] text-justify font-publica-sans text-[1.5vw]/[2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -70,9 +71,11 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[1.5vw] left-1/2 z-10 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.2vw] font-legendaire text-[2vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link
+          href={'/materi'}
+          className="absolute -bottom-[1.5vw] left-1/2 z-10 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.2vw] font-legendaire text-[2vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Modul
-          </div>
+          </Link>
           <div className="absolute z-[1] h-full w-full rounded-[3vw] bg-[#FFE5C7]"></div>
           {/* Dekor Pita Kiri */}
           <div className="absolute -left-[15vw] -top-[22vw] z-[0] w-full">
@@ -119,11 +122,11 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
       <div className="mx-[9vw] my-[2vw] flex flex-row items-center justify-center">
         <div className="flex w-full flex-row items-center justify-between">
           {/* Text Sejarah Teknik */}
-          <div className="relative flex h-[18.6vw] w-[40vw] flex-col rounded-[2vw] bg-[#491772] p-[1.3vw] pl-[5vw]">
+          <div className="relative flex h-[19vw] w-[40vw] flex-col rounded-[2vw] bg-[#491772] p-[1.3vw] pl-[5vw]">
             <h1 className="mb-[0.5vw] font-legendaire text-[3.4vw] gradient-text-yellow-up-down">
               Sejarah Teknik
             </h1>
-            <p className="font-publica-sans text-[1.5vw]/[1.8vw] font-light text-[#FFE5C7]">
+            <p className="font-publica-sans text-[1.5vw]/[1.8vw] font-light text-[#FFE5C7] text-justify pr-[1.5vw]">
               Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu
               fakultas tertua di Universitas Gadjah Mada. Sampai saat ini
               Fakultas Teknik terus mengalami berbagai penyesuaian dan
@@ -216,9 +219,11 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
               lebih dalam!
             </p>
           </div>
-          <div className="absolute -bottom-[4vw] right-0 z-10 w-fit transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.5vw] font-legendaire text-[1.7vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link
+          href={'/filosofi'}
+          className="absolute -bottom-[4vw] right-0 z-10 w-fit transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.5vw] font-legendaire text-[1.7vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Selengkapnya
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -258,7 +263,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
         <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[6vw]/[6vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: <br /> Kesatria Merajut Karsa
         </h2>
-        <p className="mx-[8vw] text-center font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="mx-[8vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -419,7 +424,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             Sejarah Kesatria
           </h2>
           {/* Text */}
-          <p className="z-10 mx-[8vw] text-center font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          <p className="z-10 mx-[8vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
             Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
             perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
@@ -455,9 +460,11 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             />
           </div>
 
-          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link 
+          href={'/filosofi'}
+          className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Selengkapnya
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -524,7 +531,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
         <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[6vw]/[6vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: <br /> Kesatria Merajut Karsa
         </h2>
-        <p className="mx-[8vw] py-[2vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="mx-[8vw] py-[2vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -571,9 +578,11 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[7vw] z-10 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link
+          href={'/materi'}
+          className="absolute -bottom-[7vw] z-10 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Modul
-          </div>
+          </Link>
           <div className="absolute z-[1] h-full w-full rounded-[5vw] bg-[#FFE5C7]"></div>
           {/* Dekor Pita Kiri */}
           <div className="absolute -left-[10vw] -top-[13vw] z-[0] w-full">
@@ -671,7 +680,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             Sejarah Kesatria
           </h2>
           {/* Text */}
-          <p className="z-10 mx-[8vw] mb-[4vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          <p className="z-10 mx-[8vw] mb-[4vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
             Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
             perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
@@ -700,9 +709,11 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             />
           </div>
 
-          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link
+          href={'/filosofi'}
+          className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Selengkapnya
-          </div>
+          </Link>
         </div>
       </div>
 
