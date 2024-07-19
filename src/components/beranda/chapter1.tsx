@@ -153,8 +153,8 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
             <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[0.8vw] drop-shadow-[0_1vw_2vw_rgba(0,0,0,0.6)]">
               <iframe
                 className="h-full w-full rounded-[1.8vw]"
-                src="https://www.youtube.com/embed/oHzXxIKJJ70"
-                title="Kenapa Anak Muda Suka Banget Istilah Baru?"
+                src="https://www.youtube.com/embed/XrgvvCpavbU"
+                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -392,8 +392,8 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[0.8vw] drop-shadow-[0_0.4vw_1vw_rgba(0,0,0,0.6)]">
               <iframe
                 className="h-full w-full rounded-[1.8vw]"
-                src="https://www.youtube.com/embed/oHzXxIKJJ70"
-                title="Kenapa Anak Muda Suka Banget Istilah Baru?"
+                src="https://www.youtube.com/embed/XrgvvCpavbU"
+                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -657,8 +657,8 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)]">
               <iframe
                 className="h-full w-full rounded-[4vw]"
-                src="https://www.youtube.com/embed/oHzXxIKJJ70"
-                title="Kenapa Anak Muda Suka Banget Istilah Baru?"
+                src="https://www.youtube.com/embed/XrgvvCpavbU"
+                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
