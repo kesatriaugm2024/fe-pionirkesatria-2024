@@ -184,10 +184,10 @@ export default function MateriPage() {
         }
             return(
             <div className="w-full flex flex-col text-center">
-                <h2 className="font-legendaire text-[15vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
+                <h2 className="font-legendaire text-[7vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
                     {modulTitle}
                 </h2>
-                <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+                <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] px-[20vw]">
                     {modulDesc}
                 </p>
             </div>
@@ -249,6 +249,13 @@ export default function MateriPage() {
                 <div className="flex flex-row justify-end gap-[60vw] px-[7vw] translate-y-[-5vw] z-[1]">
                     <button
                         onClick={() => {
+                            if (activeSwiper == 1) {
+                                if (swiper) swiper.slidePrev();
+                                setActiveSwiper(0)
+                                setModulTitle(MODUL[activeSwiper].title)
+                                setModulDesc(MODUL[activeSwiper].desc)
+                                return
+                            }
                             if (swiper) swiper.slidePrev();
                         }}
                     >
@@ -262,6 +269,13 @@ export default function MateriPage() {
                     </button>
                     <button
                         onClick={() => {
+                            if (activeSwiper == MODUL.length-1) {
+                                if (swiper) swiper.slideNext();
+                                setActiveSwiper(0)
+                                setModulTitle(MODUL[activeSwiper].title)
+                                setModulDesc(MODUL[activeSwiper].desc)
+                                return
+                            }
                             if (swiper) swiper.slideNext();
                         }}
                     >

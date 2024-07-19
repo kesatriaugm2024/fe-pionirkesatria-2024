@@ -13,7 +13,7 @@ const CONTENT = [
       "Para kesatria muda diharapkan mampu mengaplikasikan pengetahuan dan keterampilan yang relevan serta pemahaman mendalam mengenai  jurusan Teknik yang kesatria muda ambil untuk kontribusi mereka bagi bangsa dan negara di masa depan.",
     subtitle2: "Karya Aplikatif",
     subtitle2desc:
-      "Para kesatria muda diharapkan mampu mengaplikasikan pengetahuan dan keterampilan yang relevan serta pemahaman mendalam men.",
+      "Indonesia sebagai negara berkembang terus menghadapi berbagai tantangan dalam sektor manufaktur, infrastruktur, dan energi. Di era globalisasi dan revolusi industri 4.0, kebutuhan akan tenaga ahli di bidang teknik semakin meningkat. Kesatria muda sebagai calon-calon insinyur muda berperan penting dalam pembangunan berkelanjutan dan peningkatan kualitas hidup masyarakat. Oleh karena itu, pendidikan teknik harus dapat membekali pengetahuan dan keterampilan yang relevan serta pemahaman mendalam tentang kontribusi mereka bagi bangsa.",
   },
 ];
 

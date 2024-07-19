@@ -89,17 +89,17 @@ const Content = () => {
             />
             <div className="flex flex-col z-[1]">
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[7vw]/[7vw]"
                 >
-                    Selamat Datang
+                    PIONIR
                 </h2>
                 <h1
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[9vw]/[9vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[14vw]/[14vw]"
                 >
-                    Kesatria Muda
+                    KesatriA
                 </h1>
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[7vw]/[7vw]"
                 >
                     2024!
                 </h2>

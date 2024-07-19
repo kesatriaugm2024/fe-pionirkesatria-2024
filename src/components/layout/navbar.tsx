@@ -126,7 +126,7 @@ export default function Navbar(){
     }
 
     const NavbarHP=()=>{
-        const [isOpen, setIsOpen] = useState(true)
+        const [isOpen, setIsOpen] = useState(false)
         const handleOpen=()=>{
             setIsOpen(!isOpen)
         }
@@ -144,7 +144,7 @@ export default function Navbar(){
         }
         return(
             <nav 
-            className={"fixed z-[999] w-full bg-gradient-to-r from-[#34144E] to-[#5E1675] from-50% py-[1vw] px-[2vw] flex flex-col text-[2vw]/[2vw] font-publica-sans text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000]  md:hidden " + (isHide? "translate-y-[-11vw] duration-300" : "translate-y-0 duration-300")}>
+            className={"fixed z-[999] w-full bg-gradient-to-r from-[#34144E] to-[#5E1675] from-50% py-[1vw] px-[2vw] flex flex-col text-[2vw]/[2vw] font-publica-sans text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000]  md:hidden " + (isHide? "translate-y-[-20vw] duration-300" : "translate-y-0 duration-300")}>
                 <div className='w-full flex justify-between px-[]'>
                     <div
                     className="flex items-center gap-x-[0.5vw] ">
