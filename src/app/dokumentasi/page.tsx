@@ -92,7 +92,7 @@ export default function Dokumentasi() {
         </div>
 
         {/* Mobile */}
-        <div className="flex w-full flex-col items-center justify-center overflow-x-clip sm:hidden">
+        <div className="-mb-[20vw] flex w-full flex-col items-center justify-center overflow-x-clip sm:hidden">
           {imgArrayMobile.map((item: any, index: number) => (
             <div className="flex w-full flex-wrap justify-center" key={index}>
               <Mobile_A

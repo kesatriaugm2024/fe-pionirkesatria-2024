@@ -36,16 +36,22 @@ export default function MainDokumentasi() {
   return (
     <>
       <div className="relative flex h-[90vh] w-full flex-col items-center justify-center overflow-x-clip">
-        <p className="z-[11] font-legendaire text-6xl gradient-text-yellow-up-down sm:text-7xl lg:text-8xl">
+        <p className="z-[11] font-legendaire text-6xl drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] gradient-text-yellow-up-down sm:text-7xl lg:text-8xl">
           Dokumentasi
         </p>
         <div className="z-10">
-          <Parallax translateY={[-10, -10]} scale={[1, 1]} easing="easeOutSine">
+          <Parallax
+            translateY={[-10, 10]}
+            translateX={[-10, -10]}
+            scale={[1, 1]}
+            easing="easeOutSine"
+          >
             <Image
-              src="/images/dokumentasi/nala.png"
+              src="/images/logo/nala-kamera.png"
               alt=""
-              width={600}
+              width={500}
               height={600}
+              className="w-[70vw] drop-shadow-[0_0.1vw_2vw_rgba(0,0,0,0.6)] sm:max-w-[50vw] lg:max-w-[28vw]"
               // style={{
               //   transform: `translateX(${position.x}px) translateY(${position.y}px)`,
               // }}
@@ -71,7 +77,7 @@ export default function MainDokumentasi() {
           ></Image>
         </div>
         {/* Kain Ungu */}
-        <div className="absolute -bottom-[2vw] -right-[15vw] z-0 hidden h-full w-full scale-[0.5] items-center justify-center drop-shadow-2xl lg:flex">
+        <div className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[10vw] sm:-right-[15vw] sm:flex sm:scale-[0.8] lg:-bottom-[2vw] lg:-right-[15vw] lg:scale-[0.5]">
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""
@@ -79,7 +85,7 @@ export default function MainDokumentasi() {
             height={`${position.height}`}
           ></Image>
         </div>
-        <div className="absolute -bottom-[2vw] -left-[15vw] z-0 hidden h-full w-full scale-x-[-0.5] scale-y-[0.5] items-center justify-center drop-shadow-2xl lg:flex">
+        <div className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[10vw] sm:-left-[15vw] sm:flex sm:scale-[0.8] sm:scale-x-[-0.8] sm:scale-y-[0.8] lg:-bottom-[2vw] lg:-left-[15vw] lg:scale-[0.5] lg:scale-x-[-0.5]">
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""

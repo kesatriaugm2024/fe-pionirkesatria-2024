@@ -33,7 +33,7 @@ export function Mobile_A({
       easing="easeInOutSine"
     >
       <div
-        className="flex drop-shadow shadow-slate-700/70 shadow-2xl justify-center items-center w-[53vw] aspect-[5/4] bg-gradient-to-b from-[#EA5571] to-[#843040] rounded-2xl hover:cursor-pointer hover:scale-105 transition hover:from-[#FFD23F] hover:to-[#FFA514] active:scale-100"
+        className="flex aspect-[5/4] w-[53vw] items-center justify-center rounded-2xl bg-gradient-to-b from-[#EA5571] to-[#843040] shadow-2xl shadow-slate-700/70 drop-shadow transition hover:scale-105 hover:cursor-pointer hover:from-[#FFD23F] hover:to-[#FFA514] active:scale-100"
         onClick={() => handleClick(img)}
       >
         <Image src={img} alt="" className={className} />
@@ -68,7 +68,7 @@ export function Mobile_B({
       easing="easeInOutSine"
     >
       <div
-        className="flex drop-shadow shadow-slate-700/70 shadow-2xl justify-center items-center w-[53vw] aspect-[5/4] bg-gradient-to-b from-[#EA5571] to-[#843040] rounded-2xl hover:cursor-pointer hover:scale-105 transition hover:from-[#FFD23F] hover:to-[#FFA514] active:scale-100"
+        className="flex aspect-[5/4] w-[53vw] items-center justify-center rounded-2xl bg-gradient-to-b from-[#EA5571] to-[#843040] shadow-2xl shadow-slate-700/70 drop-shadow transition hover:scale-105 hover:cursor-pointer hover:from-[#FFD23F] hover:to-[#FFA514] active:scale-100"
         onClick={() => handleClick(img)}
       >
         <Image src={img} alt="" className={className} />
