@@ -5,12 +5,12 @@ const PRODI = [
     {
         name:"Hari ke 3",
         link:"12zubIS9OxEX3WIItJJKNUGeu6aBmsA-u",
-        imgpath:""
+        imgpath:"/images/covermodul/Pages from PIONIR FAKULTAS TEKNIK 2024 Hari Ke-3.pdf.png"
     },
     {
         name:"Hari ke 4",
         link:"17uTHDSMay6Y6HcsaswLbFJpvg6s7Y9Gk",
-        imgpath:""
+        imgpath:"/images/covermodul/Pages from PIONIR FAKULTAS TEKNIK 2024 Hari Ke-4.pdf.png"
     },
 ]
 

@@ -14,12 +14,12 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Arsitektur",
                 link:"1WE9n9aLgGgPli2c5crFcOFa73rGEkv83",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Arsitektur.pdf.png"
             },
             {
                 namaprodi:"Perencanaan Wilayah Kota",
                 link:"163KaAm1aVLO2lFQoCxUSSB2Oe78PvzH0",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Perencanaan Wilayah dan Kota.pdf.png"
             },
         ]
     },
@@ -29,17 +29,17 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Elektro",
                 link:"WqCID-FAz3zm8PxOoot7Ial3rf9bpsPI",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Elektro (DONE).docx.pdf.png"
             },
             {
                 namaprodi:"Teknologi Informasi",
                 link:"1FeMeOPvvplVnfXh2KP0GDtGk__3eihYX",
-                imgpath:""
+                imgpath:"/images/covermodul/Modul Prodi Teknologi Informasi_Page_1.png"
             },
             {
                 namaprodi:"Teknik Biomedis",
                 link:"1IkwwlbENfG_NcXeKZE0cGIKIle0VzveX",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Biomedis (DONE).docx.pdf.png"
             },
         ]
     },
@@ -49,12 +49,12 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Nuklir",
                 link:"1QQZEqIXEn63ad8UpKPIY2NN9wzl4Reu3",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Nuklir.pdf.png"
             },
             {
                 namaprodi:"Teknik Fisika",
                 link:"1nJuu5tQWI2136rxl5u-UnNBafCQ2bPpK",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Fisika (DONE).docx.pdf.png"
             },
         ]
     },
@@ -64,7 +64,7 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Geodesi",
                 link:"19DoXIk_GZlrTfh9LAnnFv0tMfyNoGs00",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Geodesi (DONE).docx.pdf.png"
             },
         ]
     },
@@ -74,7 +74,7 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Geologi",
                 link:"17zstl6s9gmRWGkLINwpLUaWYXLoo1RVa",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Geologi (DONE).docx.pdf.png"
             },
         ]
     },
@@ -84,7 +84,7 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Kimia",
                 link:"1VHVlEHJRbQL7Wi8l8oQhuBrMEJ1REPHt",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Kimia.pdf.png"
             },
         ]
     },
@@ -94,12 +94,12 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Mesin",
                 link:"1vJ0pwnzHOZPk2XZg_kjvjezwvm0Icj7B",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Mesin.pdf.png"
             },
             {
                 namaprodi:"Teknik Industri",
                 link:"14OR3K0NBrd7tPRMc_fcM5okf9KrDWdeT",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Industri.pdf.png"
             },
         ]
     },
@@ -109,17 +109,17 @@ const DEPARTEMEN = [
             {
                 namaprodi:"Teknik Sipil",
                 link:"1ZapisYGM7MzxZsyfex-ttBnbjYsyINy_",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Sipil.pdf.png"
             },
             {
                 namaprodi:"Teknik Infrastruktur Lingkungan",
                 link:"1AA_QooNb1gkwglp-e8HAEgiGdwKMtWtd",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Infrastruktur Lingkungan.pdf.png"
             },
             {
                 namaprodi:"Teknik Sumber Daya Air",
                 link:"1Vck7DS_OcnV93_zyrBC6MG_1RJH3hZcc",
-                imgpath:""
+                imgpath:"/images/covermodul/Pages from Modul Prodi Teknik Sumber Daya Air.pdf.png"
             },
         ]
     },
