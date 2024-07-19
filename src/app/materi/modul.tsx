@@ -7,13 +7,13 @@ export const MODUL = [
     {
       title: "Lika-Liku Kesatria",
       desc: "Perkuliahan adalah jenjang lebih tinggi yang diambil oleh seseorang setelah menyelesaikan pendidikan menengah atas (SMA/SMK) atau sederajat. Sebelum memasuki dunia perkuliahan, sebaiknya kesatria muda harus mengenal terlebih dahulu seputar perkuliahan sehingga nantinya dapat mempersiapkan diri untuk menyesuaikan diri dengan lingkungan yang baru.",
-      link: "",
+      link: "https://youtube.com",
       imgpath:"/vercel.svg"
     },
     {
       title: "Pengenalan Jurusan",
       desc: "Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!",
-      link: "",
+      link: "/",
       imgpath:'/next.svg'
     },
     {
@@ -31,7 +31,7 @@ export const MODUL = [
     {
       title: "Fasilitas Teknik",
       desc: "Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!",
-      link: "",
+      link: "https://youtube.com",
       imgpath:'/next.svg'
     },
   ];

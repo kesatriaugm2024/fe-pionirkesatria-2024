@@ -8,7 +8,7 @@ import {
 
 export default function DesignGuidelinePage() {
   return (
-    <main className="min-h-screen w-full flex-col bg-faq-background bg-cover bg-top bg-repeat py-10">
+    <main className="min-h-screen w-full flex-col bg-pattern-krem-kesat bg-cover bg-top bg-repeat py-10">
       <>
         <FAQ_Desktop className="hidden lg:block" />
         <FAQ_Tablet className="hidden sm:block lg:hidden" />
@@ -100,10 +100,10 @@ export function FAQ_Desktop({ className }: { className?: string }) {
   };
   return (
     <main
-      className={`min-h-screen w-full flex-col bg-faq-background-1 bg-cover bg-top bg-repeat py-10 ${className} `}
+      className={`min-h-screen w-full flex-col bg-faq-background-1 bg-top bg-repeat py-10 ${className} `}
     >
       <div className={`flex w-full flex-col items-center justify-center`}>
-        <h1 className="ml-[4vw] mt-[6vw] self-start bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 className="ml-[4vw] mt-[10vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently Asked Question
         </h1>
 
@@ -189,7 +189,7 @@ export function FAQ_Tablet({ className }: { className?: string }) {
   };
   return (
     <main
-      className={`min-h-screen w-full flex-col bg-faq-background-2 bg-cover bg-top bg-repeat py-10 ${className} `}
+      className={`min-h-screen w-full flex-col bg-faq-background-2 bg-top bg-repeat py-10 ${className} `}
     >
       <div className={`flex w-full flex-col items-center justify-center mt-[10vw]`}>
         <h1 className="ml-[4vw] mt-[6vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
@@ -282,7 +282,7 @@ export function FAQ_Mobile({ className }: { className?: string }) {
 
   return(
     <main
-    className={`min-h-screen w-full flex-col bg-faq-background-3 bg-cover bg-top bg-repeat py-10 ${className} `}
+    className={`min-h-screen w-full flex-col bg-faq-background-3 bg-top bg-repeat py-10 ${className} `}
   >
     <div className={`flex w-full flex-col items-center justify-center`}>
     <h1 className="ml-[4vw] mt-[25vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
