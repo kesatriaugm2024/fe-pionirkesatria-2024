@@ -16,7 +16,7 @@ const TransitiAtasSelamatDatang = () =>{
             height={816}
             />
             <Image
-            className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_#000000] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw]"
+            className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw]"
             alt="Burung Emas Atas"
             src={'/images/assets_beranda_selamatdatang_burung.svg'}
             width={424}
@@ -30,14 +30,14 @@ const TransisiBawahSelamatDatang = () => {
     return(
         <div className="w-full h-[10vh] overflow-hidden">
             <Image
-            className="absolute overflow-hidden right-0 w-[25vw] translate-y-[-30vw] drop-shadow-[0_0.5vw_1vw_#000000] translate-x-[-7vw] max-lg::w-[77.5vw] max-lg:translate-y-[-80vw] max-lg:hidden"
+            className="absolute overflow-hidden right-0 w-[25vw] translate-y-[-30vw] drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] translate-x-[-7vw] max-lg::w-[77.5vw] max-lg:translate-y-[-80vw] max-lg:hidden"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungu.svg'}
             width={424}
             height={271}
             />
             <Image
-            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.5vw_1vw_#000000]  max-lg:w-[77.5vw] max-lg:translate-y-[-100vw] lg:hidden z-[0]"
+            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)]  max-lg:w-[77.5vw] max-lg:translate-y-[-100vw] lg:hidden z-[0]"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungumobile.svg'}
             width={424}
@@ -89,17 +89,17 @@ const Content = () => {
             />
             <div className="flex flex-col z-[1]">
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[4.7vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5.2vw]/[5vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
                 >
                     Selamat Datang
                 </h2>
                 <h1
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8.3vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[9vw]/[9vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-legendaire text-[8vw]/[8vw] font-normal text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[9vw]/[9vw]"
                 >
                     Kesatria Muda
                 </h1>
                 <h2
-                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4.7vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5.2vw]/[5vw]"
+                className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans font-bold text-[4vw]/[4vw] text-center drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
                 >
                     2024!
                 </h2>

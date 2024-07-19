@@ -13,17 +13,17 @@ export default function Chapter1() {
 export function Chapter1_Desktop({ className }: { className?: string }) {
   return (
     <div
-      className={`mb-[8vw] flex flex-col bg-transparent pt-[5vw] ${className}`}
+      className={`mb-[8vw] flex flex-col bg-transparent pt-[5vw] ${className} overflow-x-hidden`}
     >
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
-        <h1 className="text-center font-legendaire text-[4vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h1 className="z-20 text-center font-legendaire text-[4vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Halo Kesatria Muda!
         </h1>
-        <h2 className="text-center font-legendaire text-[3vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h2 className="z-20 text-center font-legendaire text-[3vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: Kesatria Merajut Karsa
         </h2>
-        <p className="mx-[10vw] text-center font-publica-sans text-[1.5vw]/[2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="z-20 mx-[10vw] text-center font-publica-sans text-[1.5vw]/[2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -36,9 +36,9 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
       </div>
 
       {/* PERSONAL BRANDING */}
-      <div className="mx-[9vw] my-[5vw] flex flex-row items-center justify-center">
-        <div className="relative flex w-full flex-row items-center rounded-[3vw] bg-[#FFE5C7] px-[4vw] py-[3.5vw]">
-          <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+      <div className="mx-[9vw] my-[10vw] flex flex-row items-center justify-center">
+        <div className="relative flex w-full flex-row items-center px-[0vw] py-[3.5vw]">
+          <div className="relative z-10 ml-[4vw] h-[13.5vw] w-[20vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
             <div className="absolute -right-[7vw] -top-[8vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
@@ -58,7 +58,7 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
               />
             </div>
           </div>
-          <div className="w-1/2 flex-grow pl-[3vw] text-justify font-publica-sans text-[1.2vw] font-medium text-[#491772]">
+          <div className="z-10 mr-[4vw] w-1/2 flex-grow pl-[3vw] text-justify font-publica-sans text-[1.2vw] font-medium text-[#491772]">
             Personal Branding dapat diartikan sebagai sebuah proses pengenalan
             potensi yang dimiliki seorang individu dalam masyarakat. Personal
             branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
@@ -70,8 +70,47 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[1.5vw] left-1/2 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.2vw] font-legendaire text-[2vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <div className="absolute -bottom-[1.5vw] left-1/2 z-10 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.2vw] font-legendaire text-[2vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Modul
+          </div>
+          <div className="absolute z-[1] h-full w-full rounded-[3vw] bg-[#FFE5C7]"></div>
+          {/* Dekor Pita Kiri */}
+          <div className="absolute -left-[15vw] -top-[22vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-2.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[0.8]"
+            />
+          </div>
+          <div className="absolute -left-[30vw] -top-[16.8vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-1.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[0.38]"
+            />
+          </div>
+          {/* Dekor Pita Kanan */}
+          <div className="absolute -right-[16vw] -top-[7vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-2.png"}
+              alt=""
+              width={1000}
+              height={500}
+              className="w-full scale-[0.8]"
+            />
+          </div>
+          <div className="absolute -bottom-[16.8vw] -right-[31vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-1.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="w-full scale-[0.38]"
+            />
           </div>
         </div>
       </div>
@@ -232,9 +271,9 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
       </div>
 
       {/* PERSONAL BRANDING */}
-      <div className="mx-[12vw] my-[5vw] flex flex-row items-center justify-center">
-        <div className="relative flex w-full flex-col items-center gap-[2vw] rounded-[3vw] bg-[#FFE5C7] px-[4vw] py-[4vw]">
-          <div className="relative aspect-[4/3] w-1/2 rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+      <div className="mx-[12vw] my-[10vw] flex flex-row items-center justify-center">
+        <div className="relative flex w-full flex-col items-center rounded-[3vw] px-[4vw] py-[2vw]">
+          <div className="relative z-[10] mt-[5vw] aspect-[4/3] w-1/2 rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
             <div className="absolute -right-[12vw] -top-[13vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
@@ -254,7 +293,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
               />
             </div>
           </div>
-          <div className="flex-grow px-[3vw] py-[2vw] text-justify font-publica-sans text-[2.2vw]/[3vw] font-medium text-[#491772]">
+          <div className="z-[10] flex-grow px-[3vw] py-[2vw] text-justify font-publica-sans text-[2.2vw]/[3vw] font-medium text-[#491772]">
             Personal Branding dapat diartikan sebagai sebuah proses pengenalan
             potensi yang dimiliki seorang individu dalam masyarakat. Personal
             branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
@@ -266,8 +305,48 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[1.5vw] left-1/2 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <div className="absolute -bottom-[4vw] left-1/2 z-[10] w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Modul
+          </div>
+
+          <div className="absolute z-[1] h-full w-full rounded-[3vw] bg-[#FFE5C7]"></div>
+          {/* Dekor Pita Kiri */}
+          <div className="absolute -left-[15vw] -top-[17.4vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-2.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[0.8]"
+            />
+          </div>
+          <div className="absolute -left-[28.7vw] -top-[12.6vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-1.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[0.38]"
+            />
+          </div>
+          {/* Dekor Pita Kanan */}
+          <div className="absolute -bottom-[22vw] -right-[20vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-2.png"}
+              alt=""
+              width={1000}
+              height={500}
+              className="w-full scale-[0.8]"
+            />
+          </div>
+          <div className="absolute -bottom-[17.3vw] -right-[34vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-1.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="w-full scale-[0.38]"
+            />
           </div>
         </div>
       </div>
@@ -439,13 +518,13 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
     >
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
-        <h1 className="text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h1 className="text-center font-legendaire text-[5vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Halo Kesatria Muda!
         </h1>
-        <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[7.5vw]/[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+        <h2 className="pb-[2vw] pt-[0.5vw] text-center font-legendaire text-[6vw]/[6vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
           Selamat Datang di Bagian I: <br /> Kesatria Merajut Karsa
         </h2>
-        <p className="mx-[8vw] py-[2vw] text-center font-publica-sans text-[3.1vw]/[3.6vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="mx-[8vw] py-[2vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
           Dalam mengenal Fakultas Teknik UGM sebagai lingkungan baru bagi
           Kesatria Muda yang akan menapaki dunia perkuliahan, tentunya
           dibutuhkan pengetahuan tentang apa saja yang ada di Fakultas Teknik.
@@ -458,9 +537,9 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       </div>
 
       {/* PERSONAL BRANDING */}
-      <div className="mx-[15vw] my-[5vw] flex flex-row items-center justify-center">
-        <div className="relative flex w-full flex-col items-center gap-[2vw] rounded-[5vw] bg-[#FFE5C7] px-[7vw] py-[8vw]">
-          <div className="relative aspect-[4/3] w-3/4 rounded-[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+      <div className="mx-[15vw] my-[10vw] flex flex-row items-center justify-center">
+        <div className="relative flex w-full flex-col items-center gap-[2vw] rounded-[5vw] px-[7vw] py-[4vw]">
+          <div className="relative z-10 mt-[8vw] aspect-[4/3] w-3/4 rounded-[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
             <div className="absolute -right-[13.6vw] -top-[16vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
@@ -480,7 +559,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
               />
             </div>
           </div>
-          <div className="flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[3vw]/[3vw] font-medium text-[#491772]">
+          <div className="z-10 flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[2.5vw] font-medium text-[#491772]">
             Personal Branding dapat diartikan sebagai sebuah proses pengenalan
             potensi yang dimiliki seorang individu dalam masyarakat. Personal
             branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
@@ -492,8 +571,47 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[4vw] transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <div className="absolute -bottom-[7vw] z-10 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Modul
+          </div>
+          <div className="absolute z-[1] h-full w-full rounded-[5vw] bg-[#FFE5C7]"></div>
+          {/* Dekor Pita Kiri */}
+          <div className="absolute -left-[10vw] -top-[13vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-2.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[1.04]"
+            />
+          </div>
+          <div className="absolute -left-[26.5vw] -top-[9.8vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kiriatas-1.png"}
+              alt=""
+              width={1231}
+              height={771}
+              className="w-full scale-[0.494]"
+            />
+          </div>
+          {/* Dekor Pita Kanan */}
+          <div className="absolute -bottom-[22vw] -right-[10vw] z-[0] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-2.png"}
+              alt=""
+              width={1000}
+              height={500}
+              className="w-full scale-[1.04]"
+            />
+          </div>
+          <div className="absolute -bottom-[19vw] -right-[26.5vw] z-[2] w-full">
+            <Image
+              src={"/images/beranda/asset-pitabox-kananbawah-1.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="w-full scale-[0.494]"
+            />
           </div>
         </div>
       </div>
@@ -506,7 +624,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             <h1 className="mb-[0.5vw] text-center font-legendaire text-[7vw] gradient-text-yellow-up-down">
               Sejarah Teknik
             </h1>
-            <p className="text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7]">
+            <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7]">
               Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu
               fakultas tertua di Universitas Gadjah Mada. Sampai saat ini
               Fakultas Teknik terus mengalami berbagai penyesuaian dan
@@ -549,11 +667,11 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       <div className="mx-[8vw] mb-[7vw] flex flex-row items-center justify-center py-[5vw]">
         <div className="relative flex w-full flex-col items-center justify-between gap-[0vw]">
           {/* Text Sejarah Kesatria */}
-          <h2 className="z-10 text-center font-legendaire text-[7vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
+          <h2 className="z-10 text-center font-legendaire text-[5vw] drop-shadow-[0_4px_5px_rgba(0,0,0,1)] gradient-text-yellow-up-down">
             Sejarah Kesatria
           </h2>
           {/* Text */}
-          <p className="z-10 mx-[8vw] mb-[4vw] text-center font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
+          <p className="z-10 mx-[8vw] mb-[4vw] text-justify font-publica-sans text-[2vw]/[3vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
             Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
             perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
@@ -582,7 +700,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             />
           </div>
 
-          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <div className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
             Lihat Selengkapnya
           </div>
         </div>

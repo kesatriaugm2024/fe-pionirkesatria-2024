@@ -22,7 +22,7 @@ const JudulChapter = () => {
       <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw] text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000] max-lg:text-[4.8vw]">
         {CONTENT[0].title}
       </h1>
-      <p className="text-center font-publica-sans text-[1.7vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[2.5vw]">
+      <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[3.2vw] text-justify custom-shadow-text">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -32,7 +32,7 @@ const JudulChapter = () => {
 const JudulChapterHP = () => {
   return (
     <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center md:hidden">
-      <h1 className="font-legendaire text-[6.7vw]/[6.7vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+      <h1 className="font-legendaire text-[6vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
         <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
           {CONTENT[0].titleHP[0]}
         </span>
@@ -41,7 +41,7 @@ const JudulChapterHP = () => {
           {CONTENT[0].titleHP[1]}
         </span>
       </h1>
-      <p className="text-center font-publica-sans text-[2.5vw]/[2.5vw] text-[#FFE5C7]">
+      <p className="text-justify font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -52,14 +52,14 @@ const KesatriaMudaBerkarya = () => {
   return (
     <div className="flex w-full items-center justify-between max-lg:hidden">
       <div className="flex max-w-[40vw] flex-col gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="text-justify font-publica-sans text-[1.7vw]/[2vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
           {CONTENT[0].subtitle1desc}
         </p>
         <button className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2.2vw] text-transparent">
+          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent z-[10]">
             Baca Modul
           </p>
         </button>
@@ -74,14 +74,14 @@ const KaryaAplikatif = () => {
     <div className="flex w-full items-center justify-between max-lg:hidden">
       <div className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]"></div>
       <div className="flex max-w-[40vw] flex-col gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="text-justify font-publica-sans text-[1.7vw]/[2vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
           {CONTENT[0].subtitle2desc}
         </p>
-        <button className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2.2vw] text-transparent">
+        <button className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F] z-[10]">
+          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent ">
             Baca Modul
           </p>
         </button>
@@ -94,10 +94,10 @@ const KesatriaMudaBerkaryaTab = () => {
   return (
     <div className="flex w-[71vw] flex-col place-content-center items-center justify-between max-md:hidden lg:hidden">
       <div className="flex w-full flex-col items-center gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4.8vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[2.5vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] custom-shadow-text">
           {CONTENT[0].subtitle1desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -119,7 +119,7 @@ const KesatriaMudaBerkaryaTab = () => {
             {/* Tablet */}
           </div>
           <button className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3.9vw] text-transparent">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
               Baca Modul
             </p>
           </button>
@@ -133,10 +133,10 @@ const KaryaAplikatifTab = () => {
   return (
     <div className="flex w-[71vw] flex-col place-content-center items-center justify-between max-md:hidden lg:hidden">
       <div className="flex w-full flex-col items-center gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4.8vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[2.5vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] custom-shadow-text">
           {CONTENT[0].subtitle2desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -148,7 +148,7 @@ const KaryaAplikatifTab = () => {
             height={880}
           />
           <Image
-            className="absolute right-0 w-[50vw] translate-y-[5vw]"
+            className="absolute right-0 w-[50vw] translate-y-[5vw] "
             alt=""
             src={"/images/assets_beranda_chapter3_pitaungu_kanan.svg"}
             width={1965}
@@ -158,7 +158,7 @@ const KaryaAplikatifTab = () => {
             {/* Tablet */}
           </div>
           <button className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3.9vw] text-transparent">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
               Baca Modul
             </p>
           </button>
@@ -172,12 +172,12 @@ const KesatriaMudaBerkaryaHP = () => {
   return (
     <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] md:hidden">
       <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center md:hidden">
-        <h1 className="font-legendaire text-[6.7vw]/[6.7vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+        <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle1}
           </span>
         </h1>
-        <p className="text-center font-publica-sans text-[2.5vw]/[2.5vw] text-[#FFE5C7]">
+        <p className="font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text text-justify">
           {CONTENT[0].subtitle1desc}
         </p>
       </div>
@@ -194,7 +194,7 @@ const KesatriaMudaBerkaryaHP = () => {
         />
       </div>
       <button className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[5vw] text-transparent">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
           Baca Modul
         </p>
       </button>
@@ -206,12 +206,12 @@ const KaryaAplikasiHP = () => {
   return (
     <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] md:hidden">
       <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center md:hidden">
-        <h1 className="font-legendaire text-[6.7vw]/[6.7vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+        <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle2}
           </span>
         </h1>
-        <p className="text-center font-publica-sans text-[2.5vw]/[2.5vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text">
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
@@ -228,7 +228,7 @@ const KaryaAplikasiHP = () => {
         />
       </div>
       <button className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[5vw] text-transparent">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
           Baca Modul
         </p>
       </button>
@@ -275,7 +275,7 @@ const TransitiAtas = () => {
 
 const Content = () => {
   return (
-    <div className="z-[1] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[10vw]">
+    <div className="z-[10] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[10vw]">
       <JudulChapter />
       <JudulChapterHP />
       <KesatriaMudaBerkarya />
