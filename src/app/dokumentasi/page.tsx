@@ -47,13 +47,13 @@ export default function Dokumentasi() {
 
   return (
     <>
-      <div className="w-full relative bg-pattern-ungu-kesat bg-top bg-repeat pt-32">
+      <div className="relative w-full bg-pattern-ungu-kesat bg-top bg-repeat pt-32">
         {/* Main Section */}
         <MainDokumentasi />
         {/* Desktop */}
-        <div className="w-full hidden lg:flex flex-col items-center justify-center overflow-x-clip">
+        <div className="hidden w-full flex-col items-center justify-center overflow-x-clip lg:flex">
           {imgArrayDesktop.map((item: any, index: number) => (
-            <div className="w-full flex justify-center flex-wrap" key={index}>
+            <div className="flex w-full flex-wrap justify-center" key={index}>
               <Desktop_Left
                 img={item[0]}
                 setModalIsOpen={setModalIsOpen}
@@ -74,9 +74,9 @@ export default function Dokumentasi() {
         </div>
 
         {/* Tablet */}
-        <div className="w-full hidden sm:flex lg:hidden flex-col items-center justify-center overflow-x-clip">
+        <div className="hidden w-full flex-col items-center justify-center overflow-x-clip sm:flex lg:hidden">
           {imgArrayMobile.map((item: any, index: number) => (
-            <div className="w-full flex justify-center flex-wrap" key={index}>
+            <div className="flex w-full flex-wrap justify-center" key={index}>
               <Tablet_A
                 img={item[0]}
                 setModalIsOpen={setModalIsOpen}
@@ -92,9 +92,9 @@ export default function Dokumentasi() {
         </div>
 
         {/* Mobile */}
-        <div className="w-full sm:hidden flex flex-col items-center justify-center overflow-x-clip">
+        <div className="flex w-full flex-col items-center justify-center overflow-x-clip sm:hidden">
           {imgArrayMobile.map((item: any, index: number) => (
-            <div className="w-full flex justify-center flex-wrap" key={index}>
+            <div className="flex w-full flex-wrap justify-center" key={index}>
               <Mobile_A
                 img={item[0]}
                 setModalIsOpen={setModalIsOpen}
