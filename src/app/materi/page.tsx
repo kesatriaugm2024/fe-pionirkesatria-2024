@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Swiper as SwiperClass } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Link from "next/link";
 
 
 export default function MateriPage() {
@@ -72,13 +73,13 @@ export default function MateriPage() {
                     </div>
                     <div className="w-full flex flex-col items-center place-content-center p-[2vw]">
                         <h2
-                            className="font-legendaire text-[6vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent"
+                            className="font-legendaire text-[4vw]/[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent"
                         >
                             {modulTitle}
                         </h2>
-                        <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+                        {/* <p className="font-publica-sans text-[1vw]/[1.5vw] text-[#FFE5C7] text-justify">
                             {modulDesc}
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             )
@@ -86,7 +87,8 @@ export default function MateriPage() {
 
         const SwiperCard = ({ index, title, desc, link, imgpath }) => {
             return (
-                <div
+                <Link
+                href={'/materi/'+link}
                     onMouseEnter={() => {
                         setModulTitle(title)
                         setModulDesc(desc)
@@ -97,7 +99,7 @@ export default function MateriPage() {
                     className={"bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-100 hover:w-[15.6vw] hover:h-[27.8vw] w-[13vw] h-[23vw]"}>
                         <Image className="w-full h-full rounded-[1.7vw]" alt="" src={imgpath} width={100} height={100} />
                     </div>
-                </div>
+                </Link>
             )
         }
         return (
@@ -185,17 +187,19 @@ export default function MateriPage() {
         }
             return(
             <div className="w-full flex flex-col text-center">
-                <h2 className="font-legendaire text-[15vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
+                <h2 className="font-legendaire text-[7vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
                     {modulTitle}
                 </h2>
-                <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+                {/* <p className="font-publica-sans text-[1vw]/[2vw] text-[#FFE5C7] h-[5vw] px-[20vw]">
                     {modulDesc}
-                </p>
+                </p> */}
             </div>
     )};
     
-        const SwiperCard = ({ index, imgpath }) => (
-            <div className="h-[60vw] flex items-center justify-center">
+        const SwiperCard = ({ index, imgpath , link}) => (
+            <Link 
+            href={'/materi/'+ link}
+            className="h-[60vw] flex items-center justify-center">
                 <div
                 className={
                     "bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-200 " +
@@ -204,7 +208,7 @@ export default function MateriPage() {
                 >
                     <Image className="w-full h-full rounded-[1.7vw]" alt="" src={imgpath} width={100} height={100} />
                 </div>
-            </div>
+            </Link>
         );
         return (
             <div className="min-h-screen w-full flex flex-col items-center place-content-center">
@@ -228,7 +232,7 @@ export default function MateriPage() {
                     >
                         {MODUL.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <SwiperCard index={index} imgpath={item.imgpath}/>
+                                <SwiperCard index={index} imgpath={item.imgpath} link={item.link}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -236,7 +240,14 @@ export default function MateriPage() {
                 <div className="flex flex-row justify-end gap-[60vw] px-[7vw] translate-y-[-5vw] z-[1]">
                     <button
                         onClick={() => {
-                            if (swiper) swiper.slidePrev();
+                            if (activeSwiper == 1) {
+                                if (swiper) swiper.slidePrev();
+                                setActiveSwiper(0);
+                                setModulTitle(MODUL[activeSwiper].title);
+                                setModulDesc(MODUL[activeSwiper].desc);
+                                return;
+                            }
+                            else if (swiper) swiper.slidePrev();
                         }}
                     >
                         <Image
@@ -249,7 +260,14 @@ export default function MateriPage() {
                     </button>
                     <button
                         onClick={() => {
-                            if (swiper) swiper.slideNext();
+                            if (activeSwiper == MODUL.length-1) {
+                                if (swiper) swiper.slideNext();
+                                setActiveSwiper(0);
+                                setModulTitle(MODUL[activeSwiper].title);
+                                setModulDesc(MODUL[activeSwiper].desc);
+                                return;
+                            }
+                            else if (swiper) swiper.slideNext();
                         }}
                     >
                         <Image
