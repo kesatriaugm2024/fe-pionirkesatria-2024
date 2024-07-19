@@ -1,40 +1,40 @@
 export const listPertanyaanUmum = [
   {
     question:
-      "Pembagian forum dan link Google Classroom dapat dilihat di mana?",
-    answer: "Di Simaster (Kemahasiswaan → PIONIR → Fakultas/Sekolah Vokasi).",
+      "Untuk ketentuan topi cap berwarna hitam apakah harus polos ?",
+    answer: "Disarankan untuk polos tetapi apabila tidak memungkinkan setidaknya terlihat dominan hitam",
   },
   {
-    question: "Untuk ketentuan topi cap berwarna hitam, apakah harus polos?",
+    question: "Pembagian forum dan akses eLOk dapat dilihat dimana ?",
     answer:
-      "Warna topi dominan hitam, jika ada sedikit warna lain masih diperbolehkan.",
+      "Di Simaster (Kemahasiswaan -> Pionir Gadjah Mada (d.h. PPSMB) -> Fakultas/Sekolah Vokasi ",
   },
   {
     question:
-      "Untuk ketentuan rambut menyentuh alis dan telinga, ditujukan untuk mahasiswa atau mahasiswi baru?",
-    answer: "Ketentuan bersifat umum bagi semua mahasiswa dan mahasiswi.",
+      "Untuk atribut formasi, apakah harus menggunakan karton dengan menggunakan ketebalan 0.5 mm ?",
+    answer: "Diwajibkan untuk menggunakan karton 0.5 mm",
   },
   {
     question:
-      "Untuk atribut formasi, menggunakan karton dengan ketebalan berapa mm?",
+      "Untuk ID Card apakah boleh dipotong menyesuaikan wadah dengan ukuran B4 ?",
     answer:
-      "Disarankan 2 mm hingga 3 mm. Namun, ketebalan lain tetap diperbolehkan asalkan karton tetap kokoh.",
+      "Lembar ID Card boleh dipotong menyesuaikan ukuran asalkan data diri Kesatria Muda tetap terlihat dengan jelas",
   },
   {
     question:
-      "Untuk ID Card, apakah boleh dipotong menyesuaikan wadah dengan ukuran B4?",
+      "Ukuran untuk tanda pengenal tas apakah ditentukan ?",
     answer:
-      "Lembar ID Card boleh dipotong menyesuaikan ukuran asalkan data diri Kesatria Muda tetap jelas.",
+      "Ukuran untuk tanda pengenal tas yaitu 100 mm x 100 mm",
   },
   {
     question:
-      "Untuk atribut formasi, apakah diperbolehkan menggunakan kertas putih selain HVS?",
-    answer: "Diperbolehkan asalkan warna kertasnya sama putihnya dengan HVS.",
+      "Untuk warna dari atribut formasi, apakah kertas putih dapat menggunakan bahan selain hvs ?",
+    answer: "diizinkan asal tidak memunculkan perbedaan warna dengan kertas hvs",
   },
   {
-    question: "Untuk warna tas Kesatria Muda, apakah dibebaskan?",
+    question: "Apakah Jurnal harus dijilid dengan metode tertentu ?",
     answer:
-      "Dibebaskan asalkan dalam bentuk ransel dan dapat membawa seluruh keperluan PIONIR Kesatria",
+      "Penjilidan untuk jurnal dibebaskan, dapat seperti dengan menggunakan staples",
   },
 ];
 
