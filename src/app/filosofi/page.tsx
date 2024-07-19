@@ -103,14 +103,14 @@ export function Filosofi_Desktop({ className }: { className?: string }) {
         />
       </div>
       <p className="z-10 mx-[15vw] text-center font-publica-sans text-[1.5vw]/[1.5vw] text-[#FFE5C7]">
-        Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-        "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-        Gamadhira layaknya burung merak yang identik dengan keberagaman,
-        ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-        memiliki perjalanan yang indah di Fakultas Teknik Universitas Gadjah
-        Mada dalam keberagaman latar belakang. Sehingga dapat menghasilkan
-        individu yang bijaksana, cerdas, tangguh dan juga kolaboratif antar
-        sesama.
+        Gamadhira berasal dari kata &quot;gamadi&quot; yang berarti perjalanan
+        dan kata &quot;dhira&quot; yang berarti kebijaksanaan, kecerdasan, dan
+        keberagaman. Gamadhira layaknya burung merak yang identik dengan
+        keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
+        Kesatria Muda memiliki perjalanan yang indah di Fakultas Teknik
+        Universitas Gadjah Mada dalam keberagaman latar belakang. Sehingga dapat
+        menghasilkan individu yang bijaksana, cerdas, tangguh dan juga
+        kolaboratif antar sesama.
       </p>
 
       {/* ATAS */}
@@ -252,14 +252,14 @@ export function Filosofi_Tablet({ className }: { className?: string }) {
         />
       </div>
       <p className="z-10 mx-[15vw] text-center font-publica-sans text-[2vw]/[2.5vw] text-[#FFE5C7]">
-        Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-        "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-        Gamadhira layaknya burung merak yang identik dengan keberagaman,
-        ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-        memiliki perjalanan yang indah di Fakultas Teknik Universitas Gadjah
-        Mada dalam keberagaman latar belakang. Sehingga dapat menghasilkan
-        individu yang bijaksana, cerdas, tangguh dan juga kolaboratif antar
-        sesama.
+        Gamadhira berasal dari kata &quot;gamadi&quot; yang berarti perjalanan
+        dan kata &quot;dhira&quot; yang berarti kebijaksanaan, kecerdasan, dan
+        keberagaman. Gamadhira layaknya burung merak yang identik dengan
+        keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
+        Kesatria Muda memiliki perjalanan yang indah di Fakultas Teknik
+        Universitas Gadjah Mada dalam keberagaman latar belakang. Sehingga dapat
+        menghasilkan individu yang bijaksana, cerdas, tangguh dan juga
+        kolaboratif antar sesama.
       </p>
 
       {/* ATAS */}
@@ -390,14 +390,14 @@ export function Filosofi_Mobile({ className }: { className?: string }) {
       </div>
 
       <p className="z-10 mx-[15vw] text-center font-publica-sans text-[3vw]/[3.5vw] text-[#FFE5C7]">
-        Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-        "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-        Gamadhira layaknya burung merak yang identik dengan keberagaman,
-        ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-        memiliki perjalanan yang indah di Fakultas Teknik Universitas Gadjah
-        Mada dalam keberagaman latar belakang. Sehingga dapat menghasilkan
-        individu yang bijaksana, cerdas, tangguh dan juga kolaboratif antar
-        sesama.
+        Gamadhira berasal dari kata &quot;gamadi&quot; yang berarti perjalanan
+        dan kata &quot;dhira&quot; yang berarti kebijaksanaan, kecerdasan, dan
+        keberagaman. Gamadhira layaknya burung merak yang identik dengan
+        keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
+        Kesatria Muda memiliki perjalanan yang indah di Fakultas Teknik
+        Universitas Gadjah Mada dalam keberagaman latar belakang. Sehingga dapat
+        menghasilkan individu yang bijaksana, cerdas, tangguh dan juga
+        kolaboratif antar sesama.
       </p>
 
       {/* ATAS */}

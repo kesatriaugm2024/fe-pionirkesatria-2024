@@ -13,7 +13,7 @@ export default function Chapter1() {
 export function Chapter1_Desktop({ className }: { className?: string }) {
   return (
     <div
-      className={`mb-[8vw] flex flex-col bg-transparent pt-[5vw] ${className} overflow-x-hidden`}
+      className={`mb-[8vw] flex flex-col bg-transparent pt-[5vw] ${className} overflow-x-clip`}
     >
       {/* Halo Kesatria Muda! */}
       <div className="flex w-full flex-col items-center justify-center px-[5vw]">
