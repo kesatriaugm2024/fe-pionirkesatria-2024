@@ -36,10 +36,14 @@ export default function MainDokumentasi() {
   return (
     <>
       <div className="relative flex h-[90vh] w-full flex-col items-center justify-center overflow-x-clip">
-        <p className="z-[11] font-legendaire text-6xl drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] gradient-text-yellow-up-down sm:text-7xl lg:text-8xl">
+        <p
+          className="z-[11] font-legendaire text-6xl drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] gradient-text-yellow-up-down sm:text-7xl lg:text-8xl"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           Dokumentasi
         </p>
-        <div className="z-10">
+        <div className="z-10" data-aos="zoom-in">
           <Parallax
             translateY={[-10, 10]}
             translateX={[-10, -10]}
@@ -60,37 +64,57 @@ export default function MainDokumentasi() {
         </div>
 
         {/* Kain Merah */}
-        <div className="absolute -bottom-[12vw] -right-[30vw] z-0 hidden h-full w-full scale-[0.75] items-center justify-center drop-shadow-2xl lg:flex">
+        <div
+          className="absolute -bottom-[12vw] -right-[30vw] z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl lg:flex"
+          data-aos="zoom-in-left"
+          data-aos-delay="1000"
+        >
           <Image
             src="/images/dokumentasi/pita-merah.png"
             alt=""
             width={`${position.width}`}
             height={`${position.height}`}
+            className="scale-[0.75]"
           ></Image>
         </div>
-        <div className="absolute -bottom-[12vw] -left-[30vw] z-0 hidden h-full w-full scale-x-[-0.75] scale-y-[0.75] items-center justify-center drop-shadow-2xl lg:flex">
+        <div
+          className="absolute -bottom-[12vw] -left-[30vw] z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl lg:flex"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <Image
             src="/images/dokumentasi/pita-merah.png"
             alt=""
             width={`${position.width}`}
             height={`${position.height}`}
+            className="scale-x-[-0.75] scale-y-[0.75]"
           ></Image>
         </div>
         {/* Kain Ungu */}
-        <div className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[10vw] sm:-right-[15vw] sm:flex sm:scale-[0.8] lg:-bottom-[2vw] lg:-right-[15vw] lg:scale-[0.5]">
+        <div
+          className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[2vw] sm:-right-[15vw] sm:flex"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+        >
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""
             width={`${position.width}`}
             height={`${position.height}`}
+            className="sm:scale-[0.8] lg:-bottom-[2vw] lg:-right-[15vw] lg:scale-[0.5]"
           ></Image>
         </div>
-        <div className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[10vw] sm:-left-[15vw] sm:flex sm:scale-[0.8] sm:scale-x-[-0.8] sm:scale-y-[0.8] lg:-bottom-[2vw] lg:-left-[15vw] lg:scale-[0.5] lg:scale-x-[-0.5]">
+        <div
+          className="absolute z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl sm:-bottom-[2vw] sm:-left-[15vw] sm:flex"
+          data-aos="zoom-in-left"
+          data-aos-delay="300"
+        >
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""
             width={`${position.width}`}
             height={`${position.height}`}
+            className="sm:scale-[0.8] sm:scale-x-[-0.8] sm:scale-y-[0.8] lg:-bottom-[2vw] lg:-left-[15vw] lg:scale-[0.5] lg:scale-x-[-0.5]"
           ></Image>
         </div>
       </div>

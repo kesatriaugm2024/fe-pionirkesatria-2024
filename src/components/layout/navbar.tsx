@@ -119,7 +119,7 @@ export default function Navbar() {
     const handleOpen = () => {
       setIsOpen(!isOpen);
     };
-    const Icons = ({ input }) => {
+    const Icons = ({ input }: { input: string }) => {
       if (input == "Beranda") return <FaHome className="text-[5vw]" />;
       if (input == "Dokumentasi") return <FaCamera className="text-[5vw]" />;
       if (input == "Materi") return <FaBook className="text-[5vw]" />;

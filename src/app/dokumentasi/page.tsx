@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import MainDokumentasi from "@/components/dokumentasi/main-dokumentasi";
 import Footer from "@/components/layout/footer";
@@ -10,6 +10,9 @@ import {
   Desktop_Left,
   Desktop_Center,
 } from "@/components/dokumentasi/desktop";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import image1 from "../../../public/images/dokumentasi/DSC06149.jpg";
 import image2 from "../../../public/images/dokumentasi/DSC07402.jpg";
@@ -23,6 +26,9 @@ import image9 from "../../../public/images/dokumentasi/IMG_4666.jpg";
 import image10 from "../../../public/images/dokumentasi/DSCF5801.jpg";
 import image11 from "../../../public/images/dokumentasi/DSCF6221.jpg";
 import image12 from "../../../public/images/dokumentasi/DSC05282.jpg";
+import image13 from "../../../public/images/dokumentasi/IMG_4706.jpg";
+import image14 from "../../../public/images/dokumentasi/DSCF5435.jpg";
+import image15 from "../../../public/images/dokumentasi/2023_0802_12552600.jpg";
 
 import ImageModal from "@/components/dokumentasi/image-modal";
 
@@ -34,6 +40,7 @@ export default function Dokumentasi() {
     [image4, image5, image6],
     [image7, image8, image9],
     [image10, image11, image12],
+    [image13, image14, image15],
   ];
 
   const imgArrayMobile: any = [
@@ -43,7 +50,13 @@ export default function Dokumentasi() {
     [image7, image8],
     [image9, image10],
     [image11, image12],
+    [image13, image14],
+    [image15],
   ];
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -82,11 +95,13 @@ export default function Dokumentasi() {
                 setModalIsOpen={setModalIsOpen}
                 setSelectedImage={setSelectedImage}
               />
-              <Tablet_B
-                img={item[1]}
-                setModalIsOpen={setModalIsOpen}
-                setSelectedImage={setSelectedImage}
-              />
+              {item[1] && (
+                <Tablet_B
+                  img={item[1]}
+                  setModalIsOpen={setModalIsOpen}
+                  setSelectedImage={setSelectedImage}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -100,11 +115,13 @@ export default function Dokumentasi() {
                 setModalIsOpen={setModalIsOpen}
                 setSelectedImage={setSelectedImage}
               />
-              <Mobile_B
-                img={item[1]}
-                setModalIsOpen={setModalIsOpen}
-                setSelectedImage={setSelectedImage}
-              />
+              {item[1] && (
+                <Mobile_B
+                  img={item[1]}
+                  setModalIsOpen={setModalIsOpen}
+                  setSelectedImage={setSelectedImage}
+                />
+              )}
             </div>
           ))}
         </div>
