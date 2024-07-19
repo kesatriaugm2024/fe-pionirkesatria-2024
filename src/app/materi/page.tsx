@@ -94,7 +94,7 @@ export default function MateriPage() {
                     }}
                     className="">
                     <div
-                        className={"bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-100 " + (activeSwiper == index ? "w-[15.6vw] h-[27.8vw]" : "w-[13vw] h-[23vw]")}>
+                        className={"bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[1.7vw] flex-shrink-0 border-[0.2vw] duration-100 hover:w-[15.6vw] hover:h-[27.8vw] w-[13vw] h-[23vw]"}>
                     </div>
                 </div>
             )

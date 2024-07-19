@@ -26,7 +26,7 @@ export default function ImageModal({
     return () => {
       window.removeEventListener("keydown", escKeyBehavior);
     };
-  });
+  }, []);
 
   useEffect(() => {
     document.addEventListener("click", modalBehavior);

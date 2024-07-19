@@ -21,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className + " bg-pattern-ungu-kesat bg-[size:25%] bg-repeat z-[-10]"
+          inter.className +
+          " z-[-10] bg-pattern-ungu-kesat bg-[size:25%] bg-repeat"
         }
       >
         <Navbar />

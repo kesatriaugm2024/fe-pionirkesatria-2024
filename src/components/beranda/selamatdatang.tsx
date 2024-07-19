@@ -16,7 +16,7 @@ const TransitiAtasSelamatDatang = () =>{
             height={816}
             />
             <Image
-            className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw]"
+            className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw] z-[1]"
             alt="Burung Emas Atas"
             src={'/images/assets_beranda_selamatdatang_burung.svg'}
             width={424}
@@ -37,7 +37,7 @@ const TransisiBawahSelamatDatang = () => {
             height={271}
             />
             <Image
-            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)]  max-lg:w-[77.5vw] max-lg:translate-y-[-100vw] lg:hidden z-[0]"
+            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden z-[0] max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungumobile.svg'}
             width={424}
