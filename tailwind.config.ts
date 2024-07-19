@@ -43,6 +43,7 @@ const config: Config = {
         "faq-background": "url('/images/background/faq-base-background.png')",
         "faq-background-1": "url('/images/background/faq-background-1.png')",
         "faq-background-2": "url('/images/background/faq-background-2.png')",
+        "faq-background-3": "url('/images/background/faq-background-3.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
