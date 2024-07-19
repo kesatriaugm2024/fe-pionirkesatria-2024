@@ -1,13 +1,17 @@
 "use client";
 import Image from "next/image";
 import { FaPlus } from "react-icons/fa6";
-import { useState } from "react";
-import {
-  listPertanyaanUmum,
-  listPertanyaanMateri,
-} from "@/app/faq/listPertanyaan";
+import { useState, useEffect } from "react";
+import { listPertanyaanUmum, listPertanyaanMateri } from "@/app/faq/listPertanyaan";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function DesignGuidelinePage() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat">
       <>
@@ -99,6 +103,10 @@ export function FAQ_Desktop({ className }: { className?: string }) {
       checkSearchResult();
     }
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <main
       className={`min-h-screen relative w-full flex-col bg-cover bg-top ${className} `}
@@ -111,11 +119,11 @@ export function FAQ_Desktop({ className }: { className?: string }) {
       className="absolute w-full z-[0]"
       />
       <div className={`flex w-full flex-col items-center justify-center`}>
-        <h1 className="ml-[4vw] mt-[12vw] self-center bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 data-aos="fade-up" className="ml-[4vw] mt-[12vw] self-center bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently Asked Question
         </h1>
 
-        <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
+        <div data-aos="fade-up" className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
           Punya Pertanyaan?
           <form
             className="flex h-[4vw] w-[86vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
@@ -195,6 +203,10 @@ export function FAQ_Tablet({ className }: { className?: string }) {
       checkSearchResult();
     }
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     // min-h-screen relative w-full flex-col bg-cover bg-top
     <main
@@ -208,14 +220,14 @@ export function FAQ_Tablet({ className }: { className?: string }) {
       className="absolute w-full z-[0]"
       />
       <div className={`flex w-full flex-col items-center justify-center `}>
-        <h1 className="ml-[4vw] mt-[24vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 data-aos="fade-up" className="ml-[4vw] mt-[24vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently
         </h1>
-        <h1 className="ml-[4vw] mt-[-3vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 data-aos="fade-up" className="ml-[4vw] mt-[-3vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Asked Question
         </h1>
 
-        <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[4vw] text-transparent">
+        <div data-aos="fade-up" className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[4vw] text-transparent">
           Punya Pertanyaan?
           <form
             className="flex h-[5vw] w-[94vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
@@ -296,6 +308,10 @@ export function FAQ_Mobile({ className }: { className?: string }) {
     }
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return(
     // min-h-screen relative w-full flex-col bg-cover bg-top
     <main
@@ -309,14 +325,14 @@ export function FAQ_Mobile({ className }: { className?: string }) {
       className="absolute w-full z-[0]"
       />
     <div className={`flex w-full flex-col items-center justify-center`}>
-    <h1 className="ml-[4vw] mt-[36vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
+    <h1 data-aos="fade-up" className="ml-[4vw] mt-[36vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
           Frequently
         </h1>
-        <h1 className="ml-[4vw] mt-[-3vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
+        <h1 data-aos="fade-up" className="ml-[4vw] mt-[-3vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
           Asked Question
         </h1>
 
-      <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[6vw] text-transparent">
+      <div data-aos="fade-up" className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[6vw] text-transparent">
         Punya Pertanyaan?
         <form
           className="flex h-[6vw] w-[94vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
