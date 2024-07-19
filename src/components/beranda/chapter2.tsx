@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CARDCONTENT = [
   {
@@ -62,11 +63,13 @@ const Chapter2_Desktop = () => {
             {title}
           </h2>
           <p className="w-[36vw] font-publica-sans text-[1.2vw] text-justify">{desc}</p>
-          <button className="w-fit rounded-[1.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[2.5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <Link
+          href={'/materi'}
+          className="w-fit rounded-[1.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[2.5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
             <p className="font-legendaire text-[1.5vw] text-[#5E1675]">
-              Baca Modul
+              Lihat Modul
             </p>
-          </button>
+          </Link>
         </div>
       </div>
     );
@@ -74,10 +77,10 @@ const Chapter2_Desktop = () => {
 
   return (
     <div className="flex min-h-screen flex-col place-content-center items-center gap-[2.5vw] pt-[5vw] max-lg:hidden">
-      <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[4vw] text-transparent">
+      <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[4vw] text-transparent custom-shadow-text">
         Bagian II: Lika-Liku Kesatria
       </h1>
-      <p className="w-[80vw] text-center font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+      <p className="w-[80vw] text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] px-[6vw]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -212,7 +215,7 @@ const Chapter2_Tablet =()=>{
 
   const Descrtiption=()=>{
     return(
-      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2.5vw]/[3.2vw] custom-shadow-text text-center">
+      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2.5vw]/[3.2vw] custom-shadow-text text-justify">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan kesibukan akademik dan di luar akademik yang cukup kompleks semasa kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik pada modul ini.
       </p>
     )
@@ -254,11 +257,13 @@ const Chapter2_Tablet =()=>{
     }
     const Button = () => {
       return(
-        <button className="w-fit rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <Link
+        href={'/materi'}
+        className="w-fit rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
           <p className="font-legendaire text-[3vw] text-[#5E1675]">
-            Baca Modul
+            Lihat Modul
           </p>
-        </button>
+        </Link>
       )
     }
     return(
@@ -377,7 +382,7 @@ const Chapter2_HP =()=>{
 
   const Descrtiption=()=>{
     return(
-      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[2vw]/[3vw] text-center">
+      <p className=" w-[70vw] font-publica-sans text-[#FFE5C7] text-[3.5vw]/[4.5vw] text-justify">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan kesibukan akademik dan di luar akademik yang cukup kompleks semasa kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik pada modul ini.
       </p>
     )
@@ -420,11 +425,13 @@ const Chapter2_HP =()=>{
 
     const Button = () => {
       return(
-        <button className="w-fit rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <Link 
+        href={'/materi'}
+        className="w-fit rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]">
           <p className="font-legendaire text-[3vw] text-[#5E1675]">
-            Baca Modul
+            Lihat Modul
           </p>
-        </button>
+        </Link>
       )
     }
 
@@ -481,7 +488,7 @@ const Chapter2_HP =()=>{
               />
             </button>
           </div>
-          <p className="px-[8vw] font-publica-sans text-[2.5vw]">
+          <p className="px-[8vw] font-publica-sans text-[2.5vw] text-justify">
             {desc}
           </p>
           <Button />

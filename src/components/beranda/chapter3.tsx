@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const CONTENT = [
   {
@@ -18,11 +19,11 @@ const CONTENT = [
 
 const JudulChapter = () => {
   return (
-    <div className="flex flex-col items-center max-lg:max-w-[71vw] max-md:hidden">
+    <div className="flex flex-col items-center max-lg:max-w-[65vw] max-md:hidden">
       <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw] text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000] max-lg:text-[4.8vw]">
         {CONTENT[0].title}
       </h1>
-      <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[3.2vw] text-justify custom-shadow-text">
+      <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[3.2vw] text-justify">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -41,7 +42,7 @@ const JudulChapterHP = () => {
           {CONTENT[0].titleHP[1]}
         </span>
       </h1>
-      <p className="text-justify font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text">
+      <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw]">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -58,11 +59,15 @@ const KesatriaMudaBerkarya = () => {
         <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
           {CONTENT[0].subtitle1desc}
         </p>
-        <button className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent z-[10]">
-            Baca Modul
+        <Link 
+        href={'/materi'}
+        className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent z-[10] text-center">
+            Lihat Modul
           </p>
-        </button>
+        </Link>
+
+        
       </div>
       <div className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]"></div>
     </div>
@@ -80,11 +85,13 @@ const KaryaAplikatif = () => {
         <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
           {CONTENT[0].subtitle2desc}
         </p>
-        <button className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F] z-[10]">
-          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent ">
-            Baca Modul
+        <Link 
+        href={'/materi'}
+        className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F] z-[10]">
+          <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent text-center">
+            Lihat Modul
           </p>
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -97,7 +104,7 @@ const KesatriaMudaBerkaryaTab = () => {
         <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] custom-shadow-text">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw]">
           {CONTENT[0].subtitle1desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -118,11 +125,13 @@ const KesatriaMudaBerkaryaTab = () => {
           <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
             {/* Tablet */}
           </div>
-          <button className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
-              Baca Modul
+          <Link 
+          href={'/materi'}
+          className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+              Lihat Modul
             </p>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -136,7 +145,7 @@ const KaryaAplikatifTab = () => {
         <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] custom-shadow-text">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw]">
           {CONTENT[0].subtitle2desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -157,11 +166,13 @@ const KaryaAplikatifTab = () => {
           <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
             {/* Tablet */}
           </div>
-          <button className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
-              Baca Modul
+          <Link 
+          href={'/materi'}
+          className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+              Lihat Modul
             </p>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -177,7 +188,7 @@ const KesatriaMudaBerkaryaHP = () => {
             {CONTENT[0].subtitle1}
           </span>
         </h1>
-        <p className="font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text text-justify">
+        <p className="font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7]  text-justify max-w-[72vw]">
           {CONTENT[0].subtitle1desc}
         </p>
       </div>
@@ -193,11 +204,13 @@ const KesatriaMudaBerkaryaHP = () => {
           height={100}
         />
       </div>
-      <button className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
-          Baca Modul
+      <Link 
+      href={'/materi'}
+      className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+          Lihat Modul
         </p>
-      </button>
+      </Link>
     </div>
   );
 };
@@ -211,7 +224,7 @@ const KaryaAplikasiHP = () => {
             {CONTENT[0].subtitle2}
           </span>
         </h1>
-        <p className="text-justify font-publica-sans text-[2vw]/[3vw] text-[#FFE5C7] custom-shadow-text">
+        <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw]">
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
@@ -227,11 +240,13 @@ const KaryaAplikasiHP = () => {
           height={100}
         />
       </div>
-      <button className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
-          Baca Modul
+      <Link 
+      href={'/materi'}
+      className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+          Lihat Modul
         </p>
-      </button>
+      </Link>
     </div>
   );
 };
