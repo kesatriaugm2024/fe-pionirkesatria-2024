@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
-import { Day1 } from "@/app/agenda/rundown/day1";
-import { Day2 } from "@/app/agenda/rundown/day2";
-import Image from "next/image";
+import { useState, useEffect } from "react";
+import Day from "@/app/agenda/rundown/day";
+import dataDay1 from "@/app/agenda/rundown/day1.json";
+import dataDay2 from "@/app/agenda/rundown/day2.json";
 import Footer from "@/components/layout/footer";
-// import AOS from "aos";
+import AOS from "aos";
 
 const BUTTONOPTION = [
   {
@@ -27,6 +27,10 @@ export default function Agenda() {
   function handleDay2() {
     setActivePage("Day2");
   }
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -52,8 +56,8 @@ export default function Agenda() {
         </div>
 
         <div className="py-[1vw]">
-          {activePage == "Day1" && <Day1 />}
-          {activePage == "Day2" && <Day2 />}
+          {activePage == "Day1" && <Day data={dataDay1} />}
+          {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
       </main>
       <Footer />

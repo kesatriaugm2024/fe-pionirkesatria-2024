@@ -25,7 +25,7 @@ export default function RootLayout({
           " z-[-10] bg-pattern-ungu-kesat bg-[size:25%] bg-repeat"
         }
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <Providers>{children}</Providers>
       </body>
     </html>

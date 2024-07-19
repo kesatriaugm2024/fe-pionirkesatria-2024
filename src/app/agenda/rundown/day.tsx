@@ -1,17 +1,14 @@
 "use client";
 import { useState } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import dataDay2 from "@/app/agenda/rundown/day2.json";
-import Image from "next/image";
 
-export const Day2 = () => {
+export default function Day({ data }: any) {
   return (
     <div
       data-aos="fade-up"
       className="mx-auto flex w-[90%] flex-col items-center gap-3 sm:w-[70%] lg:max-w-[700px] xl:max-w-[900px]"
     >
-      {dataDay2.map((item, index) => {
+      {data.map((item: any, index: number) => {
         return (
           <AgendaItem
             key={index}
@@ -23,7 +20,7 @@ export const Day2 = () => {
       })}
     </div>
   );
-};
+}
 
 interface AgendaItemProps {
   time: string;
@@ -45,10 +42,6 @@ const AgendaItem: React.FC<AgendaItemProps> = ({ time, agenda, desc }) => {
       >
         {time}
       </div>
-      {/* Buletan */}
-      {/* <div
-        className={`mt-2 h-[15px] w-[15px] rounded-full rounded-t-full ${state ? "bg-[#EA5571]" : "bg-[#CD4258]"}`}
-      ></div> */}
 
       <div className="w-full">
         <div
