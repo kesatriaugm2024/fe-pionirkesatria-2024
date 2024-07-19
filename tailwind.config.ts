@@ -88,7 +88,7 @@ const config: Config = {
           "text-shadow": "5px 5px 3px rgba(0, 0, 0, 0.2)",
         },
       };
-      addUtilities(newUtilities, ["responsive", "hover"]);
+      addUtilities(newUtilities);
     }),
   ],
 };

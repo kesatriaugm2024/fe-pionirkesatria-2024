@@ -60,7 +60,7 @@ export default function Agenda() {
           {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " z-[-10] bg-pattern-ungu-kesat bg-[size:25%] bg-repeat"
+          " z-[-10] bg-pattern-ungu-kesat bg-[size:50%] bg-repeat sm:bg-[size:37%] lg:bg-[size:25%]"
         }
       >
         <Navbar />

@@ -186,7 +186,7 @@ export default function Navbar() {
             (isOpen ? "h-[42vw] border-t-[0.5vw]" : "h-0 border-0")
           }
         >
-          <Image
+          {/* <Image
             className={
               "absolute translate-x-[-25vw] duration-200 " +
               (isOpen ? "w-[30vw]" : "w-0")
@@ -195,12 +195,13 @@ export default function Navbar() {
             src={"/vercel.svg"}
             width={100}
             height={100}
-          />
+          /> */}
           {MENU.map((item, index) => (
             <Link
               href={item.link}
               key={index}
               className="z-[1] flex w-full items-center justify-end gap-[2vw] px-[8vw] hover:underline"
+              onClick={() => setIsOpen(false)}
             >
               <p className="translate-y-[0.5vw] bg-gradient-to-r from-[#34144E] to-[#5E1675] bg-clip-text p-[1vw] text-[5vw]/[5vw] text-transparent">
                 {item.name}
