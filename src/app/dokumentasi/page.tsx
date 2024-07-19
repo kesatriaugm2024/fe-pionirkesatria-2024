@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import MainDokumentasi from "@/components/dokumentasi/main-dokumentasi";
 import Footer from "@/components/layout/footer";
@@ -10,6 +10,9 @@ import {
   Desktop_Left,
   Desktop_Center,
 } from "@/components/dokumentasi/desktop";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import image1 from "../../../public/images/dokumentasi/DSC06149.jpg";
 import image2 from "../../../public/images/dokumentasi/DSC07402.jpg";
@@ -44,6 +47,10 @@ export default function Dokumentasi() {
     [image9, image10],
     [image11, image12],
   ];
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
