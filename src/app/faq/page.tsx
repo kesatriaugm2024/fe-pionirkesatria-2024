@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { FaPlus } from "react-icons/fa6";
 import { useState } from "react";
 import {
@@ -8,7 +9,7 @@ import {
 
 export default function DesignGuidelinePage() {
   return (
-    <main className="min-h-screen w-full flex-col bg-pattern-krem-kesat bg-cover bg-top bg-repeat py-10">
+    <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat">
       <>
         <FAQ_Desktop className="hidden lg:block" />
         <FAQ_Tablet className="hidden sm:block lg:hidden" />
@@ -100,14 +101,21 @@ export function FAQ_Desktop({ className }: { className?: string }) {
   };
   return (
     <main
-      className={`min-h-screen w-full flex-col bg-faq-background-1 bg-top bg-repeat py-10 ${className} `}
+      className={`min-h-screen relative w-full flex-col bg-cover bg-top ${className} `}
     >
+      <Image
+      src={"/images/background/faq-background-1.png"}
+      alt="none"
+      width={1000}
+      height={1000}
+      className="absolute w-full z-[0]"
+      />
       <div className={`flex w-full flex-col items-center justify-center`}>
-        <h1 className="ml-[4vw] mt-[10vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 className="ml-[4vw] mt-[12vw] self-center bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently Asked Question
         </h1>
 
-        <div className="bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
+        <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
           Punya Pertanyaan?
           <form
             className="flex h-[4vw] w-[86vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
@@ -188,18 +196,26 @@ export function FAQ_Tablet({ className }: { className?: string }) {
     }
   };
   return (
+    // min-h-screen relative w-full flex-col bg-cover bg-top
     <main
-      className={`min-h-screen w-full flex-col bg-faq-background-2 bg-top bg-repeat py-10 ${className} `}
+      className={`min-h-screen relative w-full flex-col bg-cover bg-top ${className} `}
     >
-      <div className={`flex w-full flex-col items-center justify-center mt-[10vw]`}>
-        <h1 className="ml-[4vw] mt-[6vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+     <Image
+      src={"/images/background/faq-background-2.png"}
+      alt="none"
+      width={1000}
+      height={1000}
+      className="absolute w-full z-[0]"
+      />
+      <div className={`flex w-full flex-col items-center justify-center `}>
+        <h1 className="ml-[4vw] mt-[24vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Frequently
         </h1>
-        <h1 className="ml-[4vw] mt-[-3vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
+        <h1 className="ml-[4vw] mt-[-3vw] self-center z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent">
           Asked Question
         </h1>
 
-        <div className="bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[4vw] text-transparent">
+        <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[4vw] text-transparent">
           Punya Pertanyaan?
           <form
             className="flex h-[5vw] w-[94vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
@@ -214,7 +230,7 @@ export function FAQ_Tablet({ className }: { className?: string }) {
                 onChange={handleChange}
               />
             </div>
-            <button className="mr-[1vw] h-[3vw] w-[7vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+            <button className="mr-[1vw] h-[3vw] z-[1] w-[7vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
               <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent">
                 Search
               </div>
@@ -281,18 +297,26 @@ export function FAQ_Mobile({ className }: { className?: string }) {
   };
 
   return(
+    // min-h-screen relative w-full flex-col bg-cover bg-top
     <main
-    className={`min-h-screen w-full flex-col bg-faq-background-3 bg-top bg-repeat py-10 ${className} `}
+    className={`min-h-screen relative w-full flex-col bg-cover bg-top ${className} `}
   >
+    <Image
+      src={"/images/background/faq-background-3.png"}
+      alt="none"
+      width={1000}
+      height={1000}
+      className="absolute w-full z-[0]"
+      />
     <div className={`flex w-full flex-col items-center justify-center`}>
-    <h1 className="ml-[4vw] mt-[25vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
+    <h1 className="ml-[4vw] mt-[36vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
           Frequently
         </h1>
-        <h1 className="ml-[4vw] mt-[-3vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
+        <h1 className="ml-[4vw] mt-[-3vw] z-[1] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent">
           Asked Question
         </h1>
 
-      <div className="bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[6vw] text-transparent">
+      <div className="bg-gradient-to-b z-[1] from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[6vw] text-transparent">
         Punya Pertanyaan?
         <form
           className="flex h-[6vw] w-[94vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
