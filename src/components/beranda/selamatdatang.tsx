@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { ParallaxProvider, useParallax } from "react-scroll-parallax";
-import { motion } from "framer-motion";
+import { motion } from "framer";
 
 const TransitiAtasSelamatDatang = () =>{
     return(
