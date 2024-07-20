@@ -12,7 +12,7 @@ export default function DesignGuidelinePage() {
   }, []);
 
   return (
-    <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat sm:pt-[8vw] sm:pb-[6vw] lg:pb-[4vw] lg:pt-[0vw]">
+    <main className="bg-pattern-krem-kesat bg-[size:25%] pb-[6vw] bg-repeat sm:pt-[8vw] sm:pb-[6vw] lg:pb-[4vw] lg:pt-[0vw]">
       <>
         <FAQ_Desktop className="hidden lg:block" />
         <FAQ_Tablet className="hidden sm:block lg:hidden" />
@@ -46,7 +46,7 @@ const ItemPertanyaan = ({
         <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[3vw] lg:text-[1.4vw]">
           {question}
         </p>
-        <div className="mr-[2vw] h-[2vw] w-[2vw] sm:mr-[2vw] sm:h-[1.5vw] sm:w-[1.5vw] sm:items-end lg:mr-[1vw] lg:h-[1.25vw] lg:w-[1.25vw] lg:items-end">
+        <div className="mr-[3vw] h-[3vw] w-[3vw] sm:mr-[2.5vw] sm:h-[2.5vw] sm:w-[2.5vw] sm:items-end lg:mr-[1vw] lg:h-[1.25vw] lg:w-[1.25vw] lg:items-end">
           <FaPlus className="h-full text-black" />
         </div>
       </div>
@@ -263,7 +263,7 @@ function FAQ_Tablet({ className }: { className?: string }) {
               </div>
             </button>
           </form>
-          <div className="relative mt-[1.5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
+          <div className="relative mt-[5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
             <p className="mt-[-2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
