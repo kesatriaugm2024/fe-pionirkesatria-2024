@@ -5,6 +5,7 @@ import dataDay1 from "@/app/agenda/rundown/day1.json";
 import dataDay2 from "@/app/agenda/rundown/day2.json";
 import Footer from "@/components/layout/footer";
 import AOS from "aos";
+import Image from "next/image";
 
 const BUTTONOPTION = [
   {
@@ -34,7 +35,7 @@ export default function Agenda() {
 
   return (
     <>
-      <main className="flex min-h-[100dvh] w-full flex-col bg-pattern-krem-kesat bg-[size:20%] bg-repeat pb-[35vw] pt-[20vw] sm:pb-[30vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[20vw]">
+      <main className="flex min-h-[100vh] w-full flex-col bg-pattern-krem-kesat bg-[size:20%] bg-repeat pb-[50vw] pt-[20vw] sm:pb-[0vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[0vw]">
         <h1 className="bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
           Agenda
         </h1>
@@ -59,8 +60,28 @@ export default function Agenda() {
           {activePage == "Day1" && <Day data={dataDay1} />}
           {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
+
+        {/* Footer Manual Mobile */}
+        <div className={"fixed bottom-0 w-full sm:hidden"}>
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/footer-HP.svg"}
+            width={100}
+            height={100}
+          />
+        </div>
+
+        <div className={"bottom-0 hidden w-full sm:block"}>
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/background/footer-tab-desktop-agenda.png"}
+            width={2000}
+            height={2100}
+          />
+        </div>
       </main>
-      <Footer className="-mt-[30vw] sm:-mt-[30vw] md:-mt-[20vw] lg:-mt-[12vw]" />
     </>
   );
 }

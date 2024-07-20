@@ -188,7 +188,7 @@ const Chapter2_Desktop = () => {
             {CARDCONTENT.map((item, index) => (
               <div
                 className={
-                  "z-[1] flex w-full flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] duration-100 " +
+                  "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] duration-100 " +
                   (activeSwiper == index
                     ? "from-[#FFD23F] to-[#FFA514]"
                     : "from-[#491772] to-[#5E1675]")

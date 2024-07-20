@@ -79,7 +79,7 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
             prodi yang ada di FT UGM saat ini.
           </div>
           <Link
-            href={"/materi"}
+            href={"/materi/1w6AQyjaFXOSQpm_ZQe3RHZkU_80uNUHb"}
             className="absolute -bottom-[1.5vw] left-1/2 z-10 w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[3vw] py-[0.2vw] font-legendaire text-[2vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             Lihat Modul
@@ -339,9 +339,13 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
             dari masa perjuangan hingga kini, serta perkenalan departemen dan
             prodi yang ada di FT UGM saat ini.
           </div>
-          <div className="absolute -bottom-[4vw] left-1/2 z-[10] w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]">
+
+          <Link
+            className="absolute -bottom-[4vw] left-1/2 z-[10] w-fit -translate-x-1/2 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[3vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]"
+            href="/materi/1w6AQyjaFXOSQpm_ZQe3RHZkU_80uNUHb"
+          >
             Lihat Modul
-          </div>
+          </Link>
 
           <div className="absolute z-[1] h-full w-full rounded-[3vw] bg-[#FFE5C7] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.8)]"></div>
           {/* Dekor Pita Kiri */}
@@ -506,9 +510,9 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
 
       {/* Transisi Bawah*/}
       <div className="h-[0vh] w-full overflow-x-hidden pb-[18vw]">
-        <div className="absolute w-full -translate-y-[40vw]">
+        <div className="absolute w-full -translate-y-[30vw]">
           <Image
-            className="absolute z-[1] w-[100vw] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]"
+            className="absolute z-[1] w-[100vw] translate-y-[30vw] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]"
             alt=""
             src={"/images/beranda/asset-kain-ungu-2.png"}
             width={1920}
@@ -621,7 +625,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
             prodi yang ada di FT UGM saat ini.
           </div>
           <Link
-            href={"/materi"}
+            href={"/materi/1w6AQyjaFXOSQpm_ZQe3RHZkU_80uNUHb"}
             className="absolute -bottom-[7vw] z-10 transform cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[5vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             Lihat Modul
@@ -707,24 +711,22 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <div
-            className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]"
-            >
+            <div className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]">
               <motion.div
-              animate={{ rotate: 360 }}
-              transition={{
-                repeat: Infinity,
-                duration: 5,
-                ease: 'linear'
-              }}
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 5,
+                  ease: "linear",
+                }}
               >
                 <Image
-              src={"/images/beranda/gerigi-merah.png"}
-              alt=""
-              width={100}
-              height={100}
-              className="w-full"
-            />
+                  src={"/images/beranda/gerigi-merah.png"}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-full"
+                />
               </motion.div>
             </div>
           </div>
@@ -734,7 +736,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       {/* SEJARAH KESATRIA */}
       <div
         data-aos="fade-up"
-        className="mx-[8vw] mb-[7vw] flex flex-row items-center justify-center py-[5vw]"
+        className="mx-[8vw] mb-[16vw] flex flex-row items-center justify-center py-[5vw]"
       >
         <div className="relative flex w-full flex-col items-center justify-between gap-[0vw]">
           {/* Text Sejarah Kesatria */}
@@ -762,30 +764,29 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <div
-            className="absolute z-0 w-full -translate-x-[30vw] scale-[0.35]">
-            <motion.div
-            animate={{ rotate: 360 }}
-            transition={{
-              repeat: Infinity,
-              duration: 5,
-              ease: 'linear'
-            }}
-            >
-              <Image
-                src={"/images/beranda/gerigi-merah.png"}
-                alt=""
-                width={100}
-                height={100}
-                className="w-full"
-              />
-            </motion.div>
+            <div className="absolute z-0 w-full -translate-x-[30vw] scale-[0.35]">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 5,
+                  ease: "linear",
+                }}
+              >
+                <Image
+                  src={"/images/beranda/gerigi-merah.png"}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-full"
+                />
+              </motion.div>
             </div>
           </div>
 
           <Link
             href={"/filosofi"}
-            className="z-10 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[4vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]"
+            className="z-20 my-[5vw] cursor-pointer rounded-full bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[7vw] py-[0.5vw] font-legendaire text-[4vw] font-medium text-[#5E1675] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             Lihat Selengkapnya
           </Link>
@@ -796,7 +797,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       <div className="h-[0vh] w-full overflow-x-hidden pb-[18vw]">
         <div className="absolute w-full -translate-y-[30vw]">
           <Image
-            className="absolute z-[0] w-[100vw]"
+            className="absolute z-[0] w-[100vw] translate-y-[15vw]"
             alt=""
             src={"/images/beranda/asset-kain-ungu-3.png"}
             width={1920}
