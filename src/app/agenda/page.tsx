@@ -34,7 +34,7 @@ export default function Agenda() {
 
   return (
     <>
-      <main className="flex min-h-[100dvh] w-full flex-col bg-pattern-krem-kesat bg-[size:20%] bg-repeat py-[20vw] sm:py-[12vw] lg:py-[7vw]">
+      <main className="flex min-h-[100dvh] w-full flex-col bg-pattern-krem-kesat bg-[size:20%] bg-repeat pb-[35vw] pt-[20vw] sm:pb-[30vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[20vw]">
         <h1 className="bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
           Agenda
         </h1>
@@ -59,9 +59,8 @@ export default function Agenda() {
           {activePage == "Day1" && <Day data={dataDay1} />}
           {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
-        <Footer className={"absolute bottom-0"}/>
       </main>
-      
+      <Footer className="-mt-[30vw] sm:-mt-[30vw] md:-mt-[20vw] lg:-mt-[12vw]" />
     </>
   );
 }
