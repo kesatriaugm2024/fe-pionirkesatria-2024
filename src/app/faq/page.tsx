@@ -41,7 +41,7 @@ const ItemPertanyaan = ({
   return (
     <div
       className={`flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:w-[90vw] lg:w-[80vw] ${
-        isOpen ? "h-[6vw] sm:h-[18vw]" : "h-[3vw] sm:h-[9vw]"
+        isOpen ? "h-[6vw] lg:h-[6vw] sm:h-[18vw]" : "h-[3vw] lg:h-[3vw] sm:h-[9vw]"
       }`}
       onClick={handleClick}
     >
