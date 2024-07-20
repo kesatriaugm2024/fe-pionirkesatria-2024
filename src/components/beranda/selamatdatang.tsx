@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 const TransitiAtasSelamatDatang = () =>{
     return(
-        <div data-aos="fade-up">
         <div
         className="absolute w-full"
         >
@@ -17,15 +16,18 @@ const TransitiAtasSelamatDatang = () =>{
             width={1000}
             height={816}
             />
+            <div
+            className="absolute right-0 w-[17.5vw] top-0 max-lg:translate-x-[-5vw] translate-y-[5vw] z-[1] max-lg:translate-y-[20vw]"
+            >
             <Image
-            data-aos="fade-up"
-            className="absolute right-0 w-[17.5vw] top-0 drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:text-[23.4vw] max-lg:translate-x-[-5vw] translate-y-[5vw] z-[1]"
+            data-aos="fade-left"
+            className="drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] w-full"
             alt="Burung Emas Atas"
             src={'/images/assets_beranda_selamatdatang_burung.svg'}
             width={424}
             height={271}
             />
-        </div>
+            </div>
         </div>
     )
 }
@@ -34,7 +36,7 @@ const TransisiBawahSelamatDatang = () => {
     return(
         <div data-aos="">
         <div 
-        className="w-full h-[10vh] overflow-hidden">
+        className="w-full h-[10vh] overflow-hidden z-[0]">
             <Image
             className="absolute overflow-hidden right-0 w-[25vw] translate-y-[-30vw] drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] translate-x-[-7vw] max-lg:hidden"
             alt="Tugu"
@@ -43,8 +45,7 @@ const TransisiBawahSelamatDatang = () => {
             height={271}
             />
             <Image
-            data-aos=""
-            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] translate-x-[0vw]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
+            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] translate-x-[0vw]  max-sm:w-[77.5vw] max-sm:translate-y-[-100vw] lg:hidden max-lg:w-[50vw] max-lg:translate-y-[-70vw] z-[-1]"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungumobile.svg'}
             width={424}
@@ -96,7 +97,7 @@ const Content = () => {
             width={577}
             height={816}
             />
-            <div className="flex flex-col z-[1]">
+            <div className="flex flex-col z-[2]">
                 <h2
                 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent font-publica-sans text-[4vw]/[4vw] text-center font-normal drop-shadow-[0_0.5vw_0.1vw_#000000] max-lg:text-[5vw]/[5vw]"
                 >

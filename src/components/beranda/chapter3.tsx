@@ -70,7 +70,7 @@ const KesatriaMudaBerkarya = () => {
 
         
       </div>
-      <div data-aos="fade-left" className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]"></div>
+      <div data-aos="fade-left" className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000]"></div>
     </div>
   );
 };
@@ -78,9 +78,9 @@ const KesatriaMudaBerkarya = () => {
 const KaryaAplikatif = () => {
   return (
     <div className="flex w-full items-center justify-between max-lg:hidden">
-      <div data-aos="fade-right" className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]"></div>
+      <div data-aos="fade-right" className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000]"></div>
       <div data-aos="fade-left" className="flex max-w-[40vw] flex-col gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent text-left">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent text-right">
           {CONTENT[0].subtitle2}
         </h2>
         <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
@@ -123,7 +123,7 @@ const KesatriaMudaBerkaryaTab = () => {
             width={1965}
             height={880}
           />
-          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] ">
             {/* Tablet */}
           </div>
           <Link 

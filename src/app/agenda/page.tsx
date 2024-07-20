@@ -59,8 +59,9 @@ export default function Agenda() {
           {activePage == "Day1" && <Day data={dataDay1} />}
           {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
+        <Footer className={"absolute bottom-0"}/>
       </main>
-      {/* <Footer /> */}
+      
     </>
   );
 }

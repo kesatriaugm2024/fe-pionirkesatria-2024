@@ -6,6 +6,7 @@ import { Swiper as SwiperClass } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
+import Footer from "@/components/layout/footer";
 
 const DEPARTEMEN = [
   {
@@ -238,6 +239,7 @@ export default function ProdiPage() {
           </button>
         </div>
       </div>
+      <Footer className={"absolute bottom-0"}/>
     </main>
   );
 }

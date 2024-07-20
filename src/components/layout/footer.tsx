@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaYoutube, FaXTwitter, FaLine, FaTiktok, FaInstagram, FaTwitter} from "react-icons/fa6";
 
-const FooterTabDesktop = () => {
+const FooterTabDesktop = ({className}) => {
     const BackgroundFooterTabDesktop = () =>(
         <Image
         className="w-full absolute z-0"
@@ -35,7 +35,7 @@ const FooterTabDesktop = () => {
         </div>
     )
     return (
-        <div className="w-full flex items-center justify-between max-md:hidden">
+        <div className={"w-full flex items-center justify-between max-md:hidden " + className}>
             <BackgroundFooterTabDesktop />
             <Image className="w-[16vw] z-[1] translate-y-[5vw] translate-x-[2vw]" alt="" src={'/images/logo/logo_yellow.svg'} width={100} height={100}/>
             <Content/>
@@ -48,20 +48,20 @@ const FooterTabDesktop = () => {
     )
 }
 
-const FooterHP = () =>{
+const FooterHP = ({className}) =>{
     return(
-        <div className="w-full md:hidden">
+        <div className={"w-full md:hidden " + className}>
             <Image className="w-full absolute" alt="" src={'/images/footer-HP.svg'} width={100} height={100}/>
         </div>
     )
 }
 
 
-export default function Footer(){
+export default function Footer({className}){
     return(
         <>
-        <FooterTabDesktop/>
-        <FooterHP/>
+        <FooterTabDesktop className={className}/>
+        <FooterHP className={className}/>
         </>
     );
 }

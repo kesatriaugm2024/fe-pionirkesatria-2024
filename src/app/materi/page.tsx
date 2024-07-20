@@ -7,6 +7,7 @@ import { Swiper as SwiperClass } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
+import Footer from "@/components/layout/footer";
 
 export default function MateriPage() {
   const Transtition = () => {
@@ -113,8 +114,8 @@ export default function MateriPage() {
               className="h-full w-full rounded-[1.7vw]"
               alt=""
               src={imgpath}
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
             />
           </div>
         </Link>
@@ -189,7 +190,7 @@ export default function MateriPage() {
         <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[15vw] text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
           Materi
         </h1>
-        <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+        <p className="font-publica-sans text-[2.1vw]/[2.8vw] text-[#FFE5C7]">
           Halo Kesatria Muda! <br />
           Seluruh modul-modul berkaitan tentang <br />
           PIONIR Kesatria 2024 dapat dibaca di sini.
@@ -237,14 +238,14 @@ export default function MateriPage() {
             className="h-full w-full rounded-[1.7vw]"
             alt=""
             src={imgpath}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
         </div>
       </Link>
     );
     return (
-      <div className="flex min-h-screen w-full flex-col place-content-center items-center">
+      <div className="flex min-h-screen w-full flex-col place-content-center items-center lg:hidden sm:translate-y-[5vw]">
         <Title />
         <div className="w-screen">
           <Swiper
@@ -326,6 +327,7 @@ export default function MateriPage() {
       <Transtition />
       <MateriDesktop />
       <MateriMobile />
+      <Footer className={""}/>
     </>
   );
 }

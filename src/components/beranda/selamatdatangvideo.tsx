@@ -21,19 +21,19 @@ const Content = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex min-h-[90vh] flex-col place-content-center items-center py-[20vh]"
+      className="flex min-h-[90vh] flex-col place-content-center items-center py-[20vh] max-lg:gap-[5vw]"
     >
       <div
         data-aos="fade-up"
         className="z-[1] flex flex-col items-center font-legendaire"
       >
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[3vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[3vw] max-lg:text-[6vw] text-transparent">
           Selamat Datang
         </h2>
-        <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[4vw]/[4vw] text-transparent">
+        <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[4vw]/[4vw] max-lg:text-[8vw]/[8vw] text-transparent">
           Kesatria Muda{" "}
-          <span className="font-publica-sans text-[4.4vw] font-medium">
-            2024!
+          <span className="font-publica-sans text-[4.4vw] max-lg:text-[8vw] font-medium">
+            {/* 2024! */}
           </span>
         </h1>
       </div>

@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -57,6 +58,7 @@ export default function AttributePage() {
   return (
     <main className="min-w-screen flex min-h-screen flex-col place-content-center items-center">
       <DepartemenCardDesktop title={"Attribute"} prodi={PRODI} />
+      <Footer className={"absolute bottom-0"}/>
     </main>
   );
 }
