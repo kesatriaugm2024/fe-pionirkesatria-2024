@@ -2,7 +2,10 @@
 import Image from "next/image";
 import { FaPlus } from "react-icons/fa6";
 import { useState, useEffect } from "react";
-import { listPertanyaanUmum, listPertanyaanMateri } from "@/app/faq/listPertanyaan";
+import {
+  listPertanyaanUmum,
+  listPertanyaanMateri,
+} from "@/app/faq/listPertanyaan";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,12 +15,31 @@ export default function DesignGuidelinePage() {
   }, []);
 
   return (
-    <main className="bg-pattern-krem-kesat bg-[size:25%] pb-[6vw] bg-repeat sm:pt-[8vw] sm:pb-[6vw] lg:pb-[4vw] lg:pt-[0vw]">
-      <>
-        <FAQ_Desktop className="hidden lg:block" />
-        <FAQ_Tablet className="hidden sm:block lg:hidden" />
-        <FAQ_Mobile className="block sm:hidden" />
-      </>
+    <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat pb-[50vw] sm:pb-[0vw] sm:pt-[8vw] lg:pb-[0vw] lg:pt-[0vw]">
+      <FAQ_Desktop className="hidden lg:block" />
+      <FAQ_Tablet className="hidden sm:block lg:hidden" />
+      <FAQ_Mobile className="block sm:hidden" />
+
+      {/* Footer Manual Mobile */}
+      <div className={"fixed bottom-0 z-20 w-full sm:hidden"}>
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/footer-HP.svg"}
+          width={2000}
+          height={100}
+        />
+      </div>
+
+      <div className={"bottom-0 hidden w-full sm:block"}>
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/background/footer-tab-desktop-agenda.png"}
+          width={2000}
+          height={2100}
+        />
+      </div>
     </main>
   );
 }
@@ -37,21 +59,30 @@ const ItemPertanyaan = ({
 
   return (
     <div
-      className={`flex w-[88vw] cursor-pointer flex-col mr-[4vw] ml-[4vw] sm:mr-0 sm:ml-0 lg:mr-0 lg:ml-0 items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:w-[90vw] lg:w-[80vw] ${
-        isOpen ? "h-[32vw] lg:h-[7.5vw] sm:h-[18vw]" : "h-[16vw] lg:h-[3vw] sm:h-[9vw]"
+      className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
+        isOpen
+          ? "h-[32vw] sm:h-[18vw] lg:h-[7.5vw]"
+          : "h-[16vw] sm:h-[9vw] lg:h-[3vw]"
       }`}
       onClick={handleClick}
     >
-      <div className="flex w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] h-[16vw] sm:h-[9vw] lg:h-[3vw]">
+      <div className="flex h-[16vw] w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
         <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[3vw] lg:text-[1.4vw]">
           {question}
         </p>
-        <div className="mr-[3vw] h-[3vw] w-[3vw] sm:mr-[2.5vw] sm:h-[2.5vw] sm:w-[2.5vw] sm:items-end lg:mr-[1vw] lg:h-[1.25vw] lg:w-[1.25vw] lg:items-end">
-          <FaPlus className="h-full text-black" />
+        <div
+          className={
+            "mr-[3vw] h-[3vw] w-[3vw] sm:mr-[2.5vw] sm:h-[2.5vw] sm:w-[2.5vw] sm:items-end lg:mr-[1vw] lg:h-[1.25vw] lg:w-[1.25vw] lg:items-end"
+            // (isOpen ? "rotate-12" : "rotate-0")
+          }
+        >
+          <FaPlus
+            className={`h-full text-black transition duration-300 ${isOpen ? "rotate-45" : "rotate-0"}`}
+          />
         </div>
       </div>
       <div
-        className={`h-[6vw] w-full lg:"ml-4" items-start lg:items-start sm:h-[3vw] sm:items-start lg:h-[3vw] ${isOpen ? "flex" : "hidden"}`}
+        className={`lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"}`}
       >
         <p
           className={`px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"}`}
@@ -143,7 +174,7 @@ function FAQ_Desktop({ className }: { className?: string }) {
                 onChange={handleChange}
               />
             </div>
-            <button className="mr-[1vw] h-[3vw] w-[7vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+            <button className="mr-[1vw] h-[3vw] w-[7vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
               <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[2vw] text-transparent">
                 Search
               </div>
@@ -257,7 +288,7 @@ function FAQ_Tablet({ className }: { className?: string }) {
                 onChange={handleChange}
               />
             </div>
-            <button className="z-[1] mr-[1vw] h-[3.5vw] w-[9vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+            <button className="z-[1] mr-[1vw] h-[3.5vw] w-[9vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
               <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[2.5vw] text-transparent">
                 Search
               </div>
@@ -371,7 +402,7 @@ function FAQ_Mobile({ className }: { className?: string }) {
                 onChange={handleChange}
               />
             </div>
-            <button className="mr-[2vw] h-[5vw] w-[10vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+            <button className="mr-[2vw] h-[5vw] w-[10vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
               <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
                 Search
               </div>
