@@ -45,7 +45,7 @@ export default function MainDokumentasi() {
         </p>
         <div className="z-10" data-aos="zoom-in">
           <Parallax
-            translateY={[-10, 10]}
+            translateY={[10, 10]}
             translateX={[-10, -10]}
             scale={[1, 1]}
             easing="easeOutSine"
@@ -72,9 +72,9 @@ export default function MainDokumentasi() {
           <Image
             src="/images/dokumentasi/pita-merah.png"
             alt=""
-            width={`${position.width}`}
-            height={`${position.height}`}
-            className="scale-[0.75]"
+            width={1000}
+            height={100}
+            className="w-full scale-[0.75]"
           ></Image>
         </div>
         <div
@@ -85,9 +85,9 @@ export default function MainDokumentasi() {
           <Image
             src="/images/dokumentasi/pita-merah.png"
             alt=""
-            width={`${position.width}`}
-            height={`${position.height}`}
-            className="scale-x-[-0.75] scale-y-[0.75]"
+            width={1000}
+            height={100}
+            className="w-full scale-x-[-0.75] scale-y-[0.75]"
           ></Image>
         </div>
         {/* Kain Ungu */}
@@ -99,9 +99,9 @@ export default function MainDokumentasi() {
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""
-            width={`${position.width}`}
-            height={`${position.height}`}
-            className="sm:scale-[0.8] lg:-bottom-[2vw] lg:-right-[15vw] lg:scale-[0.5]"
+            width={1000}
+            height={100}
+            className="w-full sm:scale-[0.8] lg:-bottom-[2vw] lg:-right-[15vw] lg:scale-[0.5]"
           ></Image>
         </div>
         <div
@@ -112,9 +112,9 @@ export default function MainDokumentasi() {
           <Image
             src="/images/dokumentasi/pita-ungu.png"
             alt=""
-            width={`${position.width}`}
-            height={`${position.height}`}
-            className="sm:scale-[0.8] sm:scale-x-[-0.8] sm:scale-y-[0.8] lg:-bottom-[2vw] lg:-left-[15vw] lg:scale-[0.5] lg:scale-x-[-0.5]"
+            width={1000}
+            height={100}
+            className="w-full sm:scale-[0.8] sm:scale-x-[-0.8] sm:scale-y-[0.8] lg:-bottom-[2vw] lg:-left-[15vw] lg:scale-[0.5] lg:scale-x-[-0.5]"
           ></Image>
         </div>
       </div>
