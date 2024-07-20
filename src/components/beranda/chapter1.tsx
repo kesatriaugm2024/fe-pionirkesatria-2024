@@ -171,13 +171,26 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <Image
+            <div
+            className="absolute -bottom-[13.5vw] -right-[15vw] z-0 w-full scale-[0.35]"
+            >
+              <motion.div
+              animate={{rotate:360}}
+              transition={{
+                repeat:Infinity,
+                duration:5,
+                ease:'linear'
+              }}
+              >
+              <Image
               src={"/images/beranda/gerigi-merah.png"}
               alt=""
               width={100}
               height={100}
-              className="absolute -bottom-[13.5vw] -right-[15vw] z-0 w-full scale-[0.35]"
-            />
+              className="w-full"
+              />
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,13 +214,25 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <Image
-              src={"/images/beranda/gerigi-merah.png"}
-              alt=""
-              width={100}
-              height={100}
-              className="absolute -bottom-[13vw] -left-[12vw] z-0 w-full scale-[0.35]"
-            />
+            <div
+            className="absolute -bottom-[13vw] -left-[12vw] z-0 w-full scale-[0.35]">
+              <motion.div
+              animate={{rotate:360}}
+              transition={{
+                repeat:Infinity,
+                duration:5,
+                ease:'linear'
+              }}
+              >
+                <Image
+                  src={"/images/beranda/gerigi-merah.png"}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-full"
+                />
+              </motion.div>
+            </div>
           </div>
           {/* Tugu */}
           <div

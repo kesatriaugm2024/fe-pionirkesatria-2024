@@ -75,7 +75,7 @@ const Chapter2_Desktop = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-[1vw]">
+        <div className="flex flex-col gap-[0.5vw] h-[22vw] place-content-center">
           <h2 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[3vw] text-transparent">
             {title}
           </h2>
@@ -130,7 +130,7 @@ const Chapter2_Desktop = () => {
             width={528}
             height={549}
           />
-          <div className="z-[1] flex h-[25vw] w-[75vw] items-center justify-center gap-[1vw] rounded-[2vw] bg-[#FFE5C7]">
+          <div className="z-[1] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#FFE5C7]">
             <div
               className="flex h-full min-w-[3vw] items-center justify-center"
               onClick={() => {
@@ -140,7 +140,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="w-[4vw] duration-100 hover:w-[8vw] hover:translate-x-[-1vw]"
+                className="absolute w-[3vw] h-[8vw] duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kiri.svg"}
                 width={52.7}
@@ -176,7 +176,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="w-[4vw] duration-100 hover:w-[8vw] hover:translate-x-[1vw]"
+                className="absolute w-[3vw] h-[8vw] duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kanan.svg"}
                 width={52.7}
@@ -188,7 +188,7 @@ const Chapter2_Desktop = () => {
             {CARDCONTENT.map((item, index) => (
               <div
                 className={
-                  "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] duration-100 " +
+                  "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] duration-100 transition " +
                   (activeSwiper == index
                     ? "from-[#FFD23F] to-[#FFA514]"
                     : "from-[#491772] to-[#5E1675]")

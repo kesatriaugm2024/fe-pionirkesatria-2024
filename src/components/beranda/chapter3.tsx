@@ -303,13 +303,24 @@ const TransitiAtas = () => {
           width={100}
           height={100}
         />
+        <div className="absolute right-0 w-[17.5vw] translate-x-[5vw] translate-y-[-30.5vw] max-lg:hidden">
+          <motion.div 
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: 5,
+            ease: 'linear'
+          }}
+          >
         <Image
-          className="absolute right-0 w-[17.5vw] translate-x-[5vw] translate-y-[-30.5vw] max-lg:hidden"
+          className="w-full"
           alt=""
           src={"/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"}
           width={100}
           height={1000}
         />
+        </motion.div>
+        </div>
       </div>
     </div>
   );

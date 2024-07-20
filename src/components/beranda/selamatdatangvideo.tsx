@@ -79,7 +79,7 @@ const TransisiBawahSelamatDatangVideo = () => {
             animate={{rotate:360}}
             transition={{
               repeat: Infinity,
-              duration: 3,
+              duration: 5,
               ease: 'linear',
             }}
             >

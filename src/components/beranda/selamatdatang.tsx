@@ -54,13 +54,23 @@ const TransisiBawahSelamatDatang = () => {
           width={424}
           height={271}
         />
-        <Image
-          className="absolute left-0 w-[17.5vw] translate-y-[-16vw] drop-shadow-[0_0.5vw_1vw_#000000] max-lg:w-[25vw] max-lg:translate-x-[5vw]"
-          alt=""
-          src={"/images/assets_beranda_selamatdatang_gerigiungu.svg"}
-          width={424}
-          height={271}
-        />
+        <div className="absolute left-0 w-[14.5vw] translate-y-[-12vw] drop-shadow-[0_0.5vw_1vw_#000000] max-lg:w-[25vw] max-lg:translate-x-[5vw]">
+          <motion.div
+          animate={{rotate:360}}
+          transition={{
+            repeat:Infinity,
+            duration:5,
+            ease:'linear',
+          }}>
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/assets_beranda_selamatdatang_gerigiungu.svg"}
+            width={424}
+            height={271}
+          />
+          </motion.div>
+        </div>
         <Image
           className="absolute left-0 w-[10vw] translate-x-[5vw] translate-y-[-8.5vw] drop-shadow-[0_1vw_1vw_#000000] max-lg:w-[13.3vw] max-lg:translate-x-[20vw] max-lg:translate-y-[-15vw]"
           alt=""
