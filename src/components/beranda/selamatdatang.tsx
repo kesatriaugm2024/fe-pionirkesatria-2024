@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
 
 const TransitiAtasSelamatDatang = () =>{
     return(
@@ -43,7 +44,7 @@ const TransisiBawahSelamatDatang = () => {
             />
             <Image
             data-aos=""
-            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] translate-x-[2vw]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
+            className="absolute overflow-hidden right-0 w-[25vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] translate-x-[0vw]  max-md:w-[77.5vw] max-md:translate-y-[-100vw] lg:hidden max-lg:w-[50vw] max-lg:translate-y-[-70vw]"
             alt="Tugu"
             src={'/images/assets_beranda_selamatdatang_tuguungumobile.svg'}
             width={424}
@@ -86,10 +87,10 @@ const Content = () => {
     return(
         <div
         data-aos="fade-up"
-        className="min-h-[90vh] flex items-center justify-center max-lg:flex-col overflow-hidden z-[1]"
+        className="min-h-[90vh] flex items-center justify-center max-lg:flex-col overflow-hidden z-[1] py-[10vw]"
         >
             <Image
-            className="w-[27.5vw] drop-shadow-[0_1vw_1vw_#000000] z-[1] max-lg:w-[56.25vw] "
+            className="w-[27.5vw] drop-shadow-[0_1vw_1vw_#000000] z-[2] max-lg:w-[56.25vw] "
             alt=""
             src={'images/logo/Nala_melambai.svg'}
             width={577}

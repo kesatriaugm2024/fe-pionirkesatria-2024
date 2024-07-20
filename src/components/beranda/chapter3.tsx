@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const CONTENT = [
   {
@@ -196,13 +197,25 @@ const KesatriaMudaBerkaryaHP = () => {
         <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.5vw_1vw_#000000]">
           {/* Content */}
         </div>
+        <div
+        className="absolute z-[0] w-[25vw] translate-x-[-23vw] translate-y-[15vw]">
+        <motion.div
+        animate={{ rotate: 360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          ease: 'linear'
+        }}
+        >
         <Image
-          className="absolute z-[0] w-[25vw] translate-x-[-25vw] translate-y-[15vw]"
+          className="w-full"
           alt=""
           src={"/images/assets_beranda_chapter3_gerigimerah_hp.svg"}
           width={100}
           height={100}
         />
+        </motion.div>
+        </div>
       </div>
       <Link 
       data-aos="fade-up"
@@ -233,13 +246,25 @@ const KaryaAplikasiHP = () => {
         <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.5vw_1vw_#000000]">
           {/* Content */}
         </div>
+        <div
+        className="absolute z-[0] w-[25vw] translate-x-[25vw] translate-y-[15vw]">
+        <motion.div
+        animate={{ rotate: 360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          ease: 'linear'
+        }}
+        >
         <Image
-          className="absolute z-[0] w-[25vw] translate-x-[25vw] translate-y-[15vw]"
+          className="w-full"
           alt=""
           src={"/images/assets_beranda_chapter3_gerigimerah_hp.svg"}
           width={100}
           height={100}
         />
+        </motion.div>
+      </div>
       </div>
       <Link 
       data-aos="fade-up"
@@ -261,29 +286,29 @@ const TransitiAtas = () => {
           className="absolute right-0 w-[17.5vw] translate-x-[5vw] translate-y-[-30.5vw]"
           alt=""
           src={"/images/assets_beranda_selamatdatangvideo_buluemas.svg"}
-          width={1965}
-          height={880}
+          width={100}
+          height={100}
         />
         <Image
           className="w-[100vw]"
           alt=""
           src={"/images/assets_beranda_chapter3_kainunguatas.svg"}
-          width={1965}
-          height={880}
+          width={100}
+          height={1000}
         />
         <Image
           className="absolute w-[10vw] translate-x-[65vw] translate-y-[-35vw] max-lg:hidden"
           alt=""
           src={"/images/assets_beranda_chapter3_burungemas.svg"}
-          width={1965}
-          height={880}
+          width={100}
+          height={100}
         />
         <Image
           className="absolute right-0 w-[17.5vw] translate-x-[5vw] translate-y-[-30.5vw] max-lg:hidden"
           alt=""
           src={"/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"}
-          width={1965}
-          height={880}
+          width={100}
+          height={1000}
         />
       </div>
     </div>

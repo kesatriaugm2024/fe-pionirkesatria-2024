@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
 
 const Content = () => {
   const VideoSelamatDatang = () => {
@@ -71,13 +72,26 @@ const TransisiBawahSelamatDatangVideo = () => {
             width={317.2}
             height={501.35}
           />
-          <Image
-            className="absolute left-0 w-[17.5vw] translate-x-[5vw] translate-y-[7vw]"
-            alt=""
-            src={"/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"}
-            width={317.2}
-            height={501.35}
-          />
+          <div
+          className="absolute left-0 w-[17.5vw] translate-x-[5vw] translate-y-[7vw]"
+          >
+            <motion.div
+            animate={{rotate:360}}
+            transition={{
+              repeat: Infinity,
+              duration: 3,
+              ease: 'linear',
+            }}
+            >
+              <Image
+              className="w-full"
+              alt=""
+              src={"/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"}
+              width={317.2}
+              height={501.35}
+              />
+            </motion.div>
+          </div>
           <Image
             className="absolute w-[100vw] translate-y-[-2vw]"
             alt=""

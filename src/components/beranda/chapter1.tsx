@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Chapter1() {
   return (
@@ -529,7 +530,7 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
               className="absolute -bottom-[50vw] -left-[7vw] z-0 w-full scale-[1]"
             />
           </div>
-          <div className="absolute w-[1vw]" data-aos="fade-left">
+          <div className="absolute w-[1vw]" data-aos="fade-up">
             <Image
               src={"/images/beranda/gerigi-kuning-12.svg"}
               alt=""
@@ -706,13 +707,26 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <Image
+            <div
+            className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]"
+            >
+              <motion.div
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 5,
+                ease: 'linear'
+              }}
+              >
+                <Image
               src={"/images/beranda/gerigi-merah.png"}
               alt=""
               width={100}
               height={100}
-              className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]"
+              className="w-full"
             />
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
@@ -748,13 +762,25 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
                 allowFullScreen
               ></iframe>
             </div>
-            <Image
-              src={"/images/beranda/gerigi-merah.png"}
-              alt=""
-              width={100}
-              height={100}
-              className="absolute z-0 w-full -translate-x-[30vw] scale-[0.35]"
-            />
+            <div
+            className="absolute z-0 w-full -translate-x-[30vw] scale-[0.35]">
+            <motion.div
+            animate={{ rotate: 360 }}
+            transition={{
+              repeat: Infinity,
+              duration: 5,
+              ease: 'linear'
+            }}
+            >
+              <Image
+                src={"/images/beranda/gerigi-merah.png"}
+                alt=""
+                width={100}
+                height={100}
+                className="w-full"
+              />
+            </motion.div>
+            </div>
           </div>
 
           <Link
