@@ -37,20 +37,26 @@ const Content = () => {
           </span>
         </h1>
       </div>
+      <div className="absolute w-[25vw] translate-x-[-29vw] translate-y-[6vw]">
       <Image
-        className="absolute w-[25vw] translate-x-[-29vw] translate-y-[3vw]"
+      data-aos="fade-left"
+        className="w-full"
         alt=""
         src={"/images/assets_beranda_selamatdatangvideo_gunungankiri.svg"}
         width={317.2}
         height={501.35}
       />
+      </div>
+      <div className="absolute w-[25vw] translate-x-[29vw] translate-y-[6vw]">
       <Image
-        className="absolute w-[25vw] translate-x-[29vw] translate-y-[3vw]"
+        data-aos="fade-right"
+        className="w-full"
         alt=""
         src={"/images/assets_beranda_selamatdatangvideo_gunungankanan.svg"}
         width={317.2}
         height={501.35}
       />
+      </div>
       <div className="z-[1] flex h-[27vw] w-[48vw] items-center justify-center rounded-[1.8vw] bg-[#CD4258]">
         <div className="h-[25vw] w-[44vw] rounded-[1.8vw] bg-[#FFFFFF]">
           <VideoSelamatDatang />

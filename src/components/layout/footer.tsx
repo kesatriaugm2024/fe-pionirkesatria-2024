@@ -26,8 +26,8 @@ const FooterTabDesktop = ({ className }: { className?: string }) => {
             className="w-[21vw]"
             alt=""
             src={"/images/footer-logo.svg"}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
         </div>
         <div>
@@ -35,8 +35,8 @@ const FooterTabDesktop = ({ className }: { className?: string }) => {
             className="w-[35vw]"
             alt=""
             src={"/images/footer-OA.svg"}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
         </div>
       </div>

@@ -8,41 +8,47 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
 import Footer from "@/components/layout/footer";
+import AOS from 'aos';
 
 export default function MateriPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 100, // Durasi animasi dalam milidetik
+    });
+  }, []);
   const Transtition = () => {
     return (
       <>
         <Image
-          className="absolute top-0 z-[0] w-[100vw] max-md:hidden"
+          className="absolute top-0 z-[0] w-[100vw] max-md:hidden lg:translate-y-[-5vw]"
           alt=""
           src={"/images/assets_materi_kainungu_atask.svg"}
           width={100}
           height={100}
         />
         <Image
-          className="absolute left-0 top-0 z-[0] w-[100vw] max-md:hidden"
+          className="absolute left-0 top-0 z-[0] w-[100vw] max-md:hidden lg:translate-y-[-5vw]"
           alt=""
           src={"/images/assets_materi_kainmerah_ataskiri.svg"}
           width={100}
           height={100}
         />
         <Image
-          className="absolute right-0 top-0 z-[0] w-[100vw] max-md:hidden"
+          className="absolute right-0 top-0 z-[0] w-[100vw] max-md:hidden lg:translate-y-[-5vw]"
           alt=""
           src={"/images/assets_materi_kainmerah_ataskanan.svg"}
           width={100}
           height={100}
         />
         <Image
-          className="absolute top-0 z-[0] w-[100vw] md:hidden"
+          className="absolute top-0 z-[0] w-[100vw] md:hidden lg:translate-y-[-5vw]"
           alt=""
           src={"/images/assets_materi_kainungu_atask_mobile.svg"}
           width={100}
           height={100}
         />
         <Image
-          className="absolute top-0 z-[0] w-[100vw] md:hidden"
+          className="absolute top-0 z-[0] w-[100vw] md:hidden lg:translate-y-[-5vw]"
           alt=""
           src={"/images/assets_materi_kainmerah_ataskiri_mobile.svg"}
           width={100}
@@ -61,7 +67,7 @@ export default function MateriPage() {
       return (
         <div className="z-[0] flex w-full items-center justify-between px-[7vw]">
           <div className="flex w-full flex-col">
-            <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[8vw] text-transparent">
+            <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[8vw]/[8vw] text-transparent">
               Materi
             </h1>
             <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
@@ -70,7 +76,7 @@ export default function MateriPage() {
               PIONIR Kesatria 2024 dapat dibaca di sini.
             </p>
           </div>
-          <div className="flex w-full flex-col place-content-center items-center p-[2vw]">
+          <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center p-[2vw]">
             <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[5vw] text-transparent">
               {modulTitle}
             </h2>
@@ -122,10 +128,10 @@ export default function MateriPage() {
       );
     };
     return (
-      <div className="flex min-h-screen w-full flex-col place-content-center items-center py-[15vw] max-lg:hidden">
+      <div className="flex min-h-screen w-full flex-col place-content-center items-center pt-[5vw] max-lg:hidden">
         <TitleAndModul />
         <div className="flex w-[100vw] flex-col">
-          <div className="z-[1] flex flex-row justify-end gap-[2vw] px-[7vw]">
+          <div data-aos="fade-up" className="z-[1] flex flex-row justify-end gap-[2vw] px-[7vw]">
             <button
               onClick={() => {
                 if (swiper) swiper.slidePrev();
@@ -153,7 +159,7 @@ export default function MateriPage() {
               />
             </button>
           </div>
-          <div className="w-screen">
+          <div data-aos="fade-up" className="w-screen">
             <Swiper
               slidesPerView={6}
               spaceBetween={1}
@@ -327,7 +333,7 @@ export default function MateriPage() {
       <Transtition />
       <MateriDesktop />
       <MateriMobile />
-      <Footer className={"z-[0] mt-[10vw]"}/>
+      <Footer className={"z-[-1] absolute lg:mt-[0vw]"}/>
     </>
   );
 }

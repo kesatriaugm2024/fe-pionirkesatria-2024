@@ -220,8 +220,8 @@ const KesatriaMudaBerkaryaHP = () => {
       <Link 
       data-aos="fade-up"
       href={'/materi'}
-      className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+      className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[4vw] py-[0.5] text-transparent text-center px-[7vw]">
           Lihat Modul
         </p>
       </Link>
@@ -269,8 +269,8 @@ const KaryaAplikasiHP = () => {
       <Link 
       data-aos="fade-up"
       href={'/materi'}
-      className="z-[1] w-[33.3vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent text-center">
+      className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text font-legendaire text-[4vw] py-[0.5] text-transparent text-center px-[7vw]">
           Lihat Modul
         </p>
       </Link>
