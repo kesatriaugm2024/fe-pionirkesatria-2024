@@ -11,11 +11,16 @@ import AOS from 'aos';
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Durasi animasi dalam milidetik
+      duration: 700, // Durasi animasi dalam milidetik
     });
   }, []);
   return (
     <main className="min-h-screen">
+      {/* <title>Pionir Kesatria 2024</title>
+      <meta name="description" content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2024" />
+      <meta name="keywords" content="Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba" />
+      <link rel="icon" href="/images/logo/logo_yellow.svg"/> */}
+
       <SelamatDatang />
       <SelamatDatangVideo />
       <Chapter1 />
