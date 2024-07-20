@@ -562,7 +562,6 @@ function Filosofi_Mobile({ className }: { className?: string }) {
         data-aos="fade-up"
         data-aos-delay="300"
       />
-
       {/* Gambar Gunungan */}
       <div className="absolute -bottom-[63vw] -left-[15vw] z-[1] w-full -rotate-[20deg] scale-[0.25]">
         <Image
