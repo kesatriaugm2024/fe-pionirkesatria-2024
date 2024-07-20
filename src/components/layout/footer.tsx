@@ -78,9 +78,9 @@ const FooterHP = ({ className }: { className?: string }) => {
       <Image
         className="absolute w-full"
         alt=""
-        src={"/images/footer-HP.svg"}
-        width={100}
-        height={100}
+        src={"/images/footer-HP.png"}
+        width={10000}
+        height={10000}
       />
     </div>
   );

@@ -142,13 +142,13 @@ const DEPARTEMEN = [
 
 function DepartemenCardDesktop({ title, prodi }: any) {
   return (
-    <div className="flex flex-col place-content-center items-center gap-[4vw] lg:gap-0 px-[10vw] lg:py-[5vw]">
+    <div className="flex flex-col place-content-center items-center gap-[4vw] px-[10vw] lg:gap-0 lg:py-[5vw]">
       <div className="h-[10vw] w-full">
         <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-center font-legendaire text-[7vw]/[7vw] text-transparent lg:text-[5vw]/[5vw]">
           {title}
         </h1>
       </div>
-      <div className="flex h-[30vw] max-lg:h-[50vw] w-full items-center justify-center">
+      <div className="flex h-[30vw] w-full items-center justify-center max-lg:h-[50vw]">
         {prodi.map(
           (
             item: { namaprodi: string; link: string; imgpath: string },
@@ -159,7 +159,7 @@ function DepartemenCardDesktop({ title, prodi }: any) {
               className="flex w-full items-center justify-center"
               key={idx}
             >
-              <div className="h-[23vw] w-[13vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[27.8vw] hover:w-[15.6vw] max-lg:w-[20vw] max-lg:h-[40vw] max-lg:hover:h-[50vw] max-lg:hover:w-[25vw]">
+              <div className="h-[23vw] w-[13vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[27.8vw] hover:w-[15.6vw] max-lg:h-[40vw] max-lg:w-[20vw] max-lg:hover:h-[50vw] max-lg:hover:w-[25vw]">
                 <Image
                   className="h-full w-full rounded-[1.7vw]"
                   alt=""
@@ -230,7 +230,7 @@ export default function ProdiPage() {
             }}
           >
             <Image
-              className="w-[7.5vw] hover:w-[10vw] duration-100"
+              className="w-[7.5vw] duration-100 hover:w-[10vw]"
               alt=""
               src={"/images/assets_materi_arrow_kanan.svg"}
               height={1000}
@@ -239,7 +239,7 @@ export default function ProdiPage() {
           </button>
         </div>
       </div>
-      <Footer className={"mt-[5vw] z-[0] max-sm:absolute max-sm:bottom-0"}/>
+      <Footer className={"z-[0] mt-[5vw] max-sm:absolute max-sm:bottom-0"} />
     </main>
   );
 }
