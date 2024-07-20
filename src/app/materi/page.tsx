@@ -333,7 +333,7 @@ export default function MateriPage() {
       <Transtition />
       <MateriDesktop />
       <MateriMobile />
-      <Footer className={"z-[-1] absolute lg:mt-[0vw]"}/>
+      <Footer className={"z-[-1] absolute"}/>
     </>
   );
 }
