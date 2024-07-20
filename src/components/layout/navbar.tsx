@@ -144,38 +144,43 @@ export default function Navbar() {
               />
             </Link>
           </div>
+          {/* <div className="flex flex-col place-content-center items-center translate-y-[1vw]">
+            <p className="text-[2vw]/[2vw]">PIONIR</p>
+            <h2 className="font-legendaire text-[7vw]/[7vw]">KesatriA</h2>
+            <p className="text-[2vw]/[2vw]">2024</p>
+          </div> */}
           <div
             onClick={handleOpen}
-            className="z-[1] flex translate-y-[0.25vw] flex-col place-content-center items-center"
+            className="z-[1] flex translate-y-[0.25vw] flex-col place-content-center items-center px-[1.5vw]"
           >
             <div
               className={
-                "h-[1.5vw] w-[10vw] rounded-[1vw] bg-[#FFE5C7] bg-transparent duration-100 " +
+                "h-[1vw] w-[8vw] rounded-[0.2vw] bg-[#FFE5C7] bg-transparent duration-100 " +
                 (isOpen ? "rotate-45" : "rotate-0")
               }
             />
             <div
               className={
-                "absolute h-[1.5vw] w-[10vw] rounded-[1vw] bg-[#FFE5C7] duration-300 " +
+                "absolute h-[1vw] w-[8vw] rounded-[0.2vw] bg-[#FFE5C7] duration-300 " +
                 (isOpen ? "rotate-45" : "rotate-0")
               }
             />
             <div
               className={
-                "absolute h-[1.5vw] w-[10vw] rounded-[1vw] bg-[#FFE5C7] duration-300 " +
+                "absolute h-[1vw] w-[8vw] rounded-[0.2vw] bg-[#FFE5C7] duration-300 " +
                 (isOpen ? "-rotate-45" : "rotate-0")
               }
             />
             <div
               className={
-                "absolute h-[1.5vw] rounded-[1vw] bg-[#FFE5C7] duration-300 " +
-                (isOpen ? "w-0 translate-y-0" : "w-[10vw] translate-y-[-3vw]")
+                "absolute h-[1vw] rounded-[0.2vw] bg-[#FFE5C7] duration-300 " +
+                (isOpen ? "w-0 translate-y-0" : "w-[8vw] translate-y-[-3vw]")
               }
             />
             <div
               className={
-                "absolute h-[1.5vw] rounded-[1vw] bg-[#FFE5C7] duration-300 " +
-                (isOpen ? "w-0 translate-y-0" : "w-[10vw] translate-y-[3vw]")
+                "absolute h-[1vw] rounded-[0.2vw] bg-[#FFE5C7] duration-300 " +
+                (isOpen ? "w-0 translate-y-0" : "w-[8vw] translate-y-[3vw]")
               }
             />
           </div>
