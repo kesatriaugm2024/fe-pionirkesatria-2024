@@ -245,7 +245,7 @@ export default function MateriPage() {
       </Link>
     );
     return (
-      <div className="flex min-h-screen w-full flex-col place-content-center items-center lg:hidden sm:translate-y-[5vw]">
+      <div className="flex min-h-screen w-full flex-col place-content-center items-center lg:hidden sm:translate-y-[5vw] sm:py-[4vw]">
         <Title />
         <div className="w-screen">
           <Swiper
@@ -327,7 +327,7 @@ export default function MateriPage() {
       <Transtition />
       <MateriDesktop />
       <MateriMobile />
-      <Footer className={""}/>
+      <Footer className={"z-[0] mt-[10vw]"}/>
     </>
   );
 }
