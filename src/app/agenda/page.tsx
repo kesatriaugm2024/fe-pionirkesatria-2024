@@ -34,7 +34,7 @@ export default function Agenda() {
   }, []);
 
   return (
-    <main className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:20%] bg-repeat">
+    <main className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:40%] bg-repeat sm:bg-[size:30%] lg:bg-[size:15%]">
       {/* bg atas hp */}
       <div
         className="absolute top-[10vw] z-0 w-full sm:hidden"

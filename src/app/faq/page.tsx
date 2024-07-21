@@ -55,7 +55,7 @@ export default function DesignGuidelinePage() {
   };
 
   return (
-    <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat pb-[50vw] sm:pb-[0vw] sm:pt-[8vw] lg:pb-[0vw] lg:pt-[0vw]">
+    <main className="bg-pattern-krem-kesat bg-[size:40%] bg-repeat pb-[50vw] sm:bg-[size:30%] sm:pb-[0vw] sm:pt-[8vw] lg:bg-[size:15%] lg:pb-[0vw] lg:pt-[0vw]">
       <FAQ_Desktop
         className="hidden lg:block"
         handleSubmit={handleSubmit}
