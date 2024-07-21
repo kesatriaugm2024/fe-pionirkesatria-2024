@@ -6,6 +6,7 @@ export default function Day({ data }: any) {
   return (
     <div
       data-aos="fade-up"
+      data-aos-duration="500"
       className="mx-auto flex w-[90%] flex-col items-center gap-3 sm:w-[70%] lg:max-w-[700px] xl:max-w-[900px]"
     >
       {data.map((item: any, index: number) => {

@@ -36,7 +36,11 @@ export default function Agenda() {
   return (
     <main className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:20%] bg-repeat">
       {/* bg atas hp */}
-      <div className="absolute top-[10vw] z-0 w-full sm:hidden">
+      <div
+        className="absolute top-[10vw] z-0 w-full sm:hidden"
+        data-aos="fade-down"
+        data-aos-delay="700"
+      >
         <Image
           className="w-full"
           alt=""
@@ -46,7 +50,11 @@ export default function Agenda() {
         />
       </div>
       {/* bg atas tab */}
-      <div className="absolute top-[8vw] z-0 hidden w-full sm:block lg:hidden">
+      <div
+        className="absolute top-[8vw] z-0 hidden w-full sm:block lg:hidden"
+        data-aos="fade-down"
+        data-aos-delay="700"
+      >
         <Image
           className="w-full"
           alt=""
@@ -56,7 +64,11 @@ export default function Agenda() {
         />
       </div>
       {/* bg atas desktop */}
-      <div className="absolute top-[3.5vw] z-0 hidden w-full lg:block">
+      <div
+        className="absolute top-[3.5vw] z-0 hidden w-full lg:block"
+        data-aos="fade-down"
+        data-aos-delay="700"
+      >
         <Image
           className="w-full"
           alt=""
@@ -67,10 +79,17 @@ export default function Agenda() {
       </div>
 
       <div className="flex w-full flex-col pb-[50vw] pt-[30vw] sm:pb-[30vw] sm:pt-[20vw] lg:pb-[28vw] lg:pt-[10vw]">
-        <h1 className="z-10 bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
+        <h1
+          className="z-10 bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]"
+          data-aos="fade-up"
+        >
           Agenda
         </h1>
-        <div className="z-10 flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]">
+        <div
+          className="z-10 flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           {BUTTONOPTION.map((item, index) => (
             <button
               key={index}
@@ -93,7 +112,12 @@ export default function Agenda() {
         </div>
         <div></div>
         {/* Footer Manual Mobile */}
-        <div className={"fixed bottom-0 w-full sm:hidden"}>
+        <div
+          className={"fixed bottom-0 w-full sm:hidden"}
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-once="true"
+        >
           <Image
             className="w-full"
             alt=""
@@ -104,7 +128,13 @@ export default function Agenda() {
         </div>
       </div>
       {/* Footer Manual Desktop Tab */}
-      <div className={"absolute bottom-0 hidden w-full sm:block"}>
+      <div
+        className={"absolute bottom-0 hidden w-full sm:block"}
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-once="true"
+        data-aos-offset="-10000"
+      >
         <Image
           className="w-full"
           alt=""
