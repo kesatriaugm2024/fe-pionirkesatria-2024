@@ -122,12 +122,12 @@ const ItemPertanyaan = ({
     <div
       className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
         isOpen
-          ? "h-[33vw] sm:h-[19vw] lg:h-[8.5vw]"
+          ? "h-[35vw] sm:h-[19vw] lg:h-[8.5vw]"
           : "h-[16vw] sm:h-[9vw] lg:h-[3vw]"
       }`}
       onClick={handleClick}
     >
-      <div className="flex h-[16vw] shrink-0 w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
+      <div className="flex h-[16vw] w-full shrink-0 items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
         <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[3vw] lg:text-[1.4vw]">
           {question}
         </p>
@@ -142,16 +142,16 @@ const ItemPertanyaan = ({
           />
         </div>
       </div>
-      <div 
+      <div
         className={`w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw]`}
         // w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw] (Versi Baru)
         // lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"} (Versi Lama)
-        >
+      >
         <p
           className={`px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw]`}
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] (Versi Baru)
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"} (Versi Lama)
-          >
+        >
           {answer}
         </p>
       </div>
@@ -174,7 +174,6 @@ function FAQ_Desktop({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
- 
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -219,7 +218,7 @@ function FAQ_Desktop({
               </div>
             </button>
           </form>
-          <div className="relative mt-[1.5vw] mb-[6vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
+          <div className="relative mb-[6vw] mt-[1.5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
             <p className="mt-[-1.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
@@ -254,7 +253,6 @@ function FAQ_Tablet({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
-  
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -305,7 +303,7 @@ function FAQ_Tablet({
               </div>
             </button>
           </form>
-          <div className="relative mt-[5vw] mb-[6vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
+          <div className="relative mb-[6vw] mt-[5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
             <p className="mt-[-2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
@@ -340,7 +338,6 @@ function FAQ_Mobile({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
- 
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -373,25 +370,25 @@ function FAQ_Mobile({
         >
           Punya Pertanyaan?
           <form
-            className="flex h-[8vw] w-[96vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
+            className="flex h-[10vw] w-[96vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
             onSubmit={handleSubmit}
           >
             <div className="flex w-full items-center">
               <input
                 type="text"
                 placeholder="Cari di sini..."
-                className="ml-[2vw] w-full border-none bg-transparent font-publica-sans text-[3vw] text-[#FFB314] placeholder-[#FFB314] outline-none placeholder:text-[3vw]"
+                className="ml-[2vw] w-full border-none bg-transparent font-publica-sans text-[3.5vw] text-[#FFB314] placeholder-[#FFB314] outline-none placeholder:text-[3.5vw]"
                 value={userInput}
                 onChange={handleChange}
               />
             </div>
-            <button className="mr-[2vw] h-[5vw] w-[10vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
-              <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[3vw] text-transparent">
+            <button className="mr-[2vw] h-[6vw] w-[12vw] items-end rounded-[1vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]">
+              <div className="bg-gradient-to-b from-[#491772] to-[#5E1675] bg-clip-text font-legendaire text-[3.5vw] text-transparent">
                 Search
               </div>
             </button>
           </form>
-          <div className="relative mt-[5vw] flex mb-[6vw] flex-col items-center rounded-xl bg-[#5E1675] py-[6vw] hover:bg-[#5E1675]">
+          <div className="relative mb-[6vw] mt-[5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[6vw] hover:bg-[#5E1675]">
             <p className="mt-[-5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[8vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
