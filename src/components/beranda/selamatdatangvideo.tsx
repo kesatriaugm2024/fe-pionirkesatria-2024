@@ -21,41 +21,41 @@ const Content = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex min-h-[90vh] flex-col place-content-center items-center py-[20vh] max-lg:gap-[5vw]"
+      className="flex min-h-[90vh] flex-col place-content-center items-center py-[20vh] max-lg:gap-[5vw] max-sm:min-h-0 max-sm:pb-[20vw] max-sm:pt-[10vw]"
     >
       <div
         data-aos="fade-up"
-        className="z-[1] flex flex-col items-center font-legendaire custom-shadow-text"
+        className="custom-shadow-text z-[1] flex flex-col items-center font-legendaire"
       >
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[3vw] max-lg:text-[6vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[3vw] text-transparent max-lg:text-[6vw]">
           Selamat Datang
         </h2>
-        <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[4vw]/[4vw] max-lg:text-[8vw]/[8vw] text-transparent">
+        <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[4vw]/[4vw] text-transparent max-lg:text-[8vw]/[8vw]">
           Kesatria Muda{" "}
-          <span className="font-publica-sans text-[4.4vw] max-lg:text-[8vw] font-medium">
+          <span className="font-publica-sans text-[4.4vw] font-medium max-lg:text-[8vw]">
             {/* 2024! */}
           </span>
         </h1>
       </div>
       <div className="absolute w-[25vw] translate-x-[-29vw] translate-y-[6vw]">
-      <Image
-      data-aos="fade-left"
-        className="w-full"
-        alt=""
-        src={"/images/assets_beranda_selamatdatangvideo_gunungankiri.svg"}
-        width={317.2}
-        height={501.35}
-      />
+        <Image
+          data-aos="fade-left"
+          className="w-full"
+          alt=""
+          src={"/images/assets_beranda_selamatdatangvideo_gunungankiri.svg"}
+          width={317.2}
+          height={501.35}
+        />
       </div>
       <div className="absolute w-[25vw] translate-x-[29vw] translate-y-[6vw]">
-      <Image
-        data-aos="fade-right"
-        className="w-full"
-        alt=""
-        src={"/images/assets_beranda_selamatdatangvideo_gunungankanan.svg"}
-        width={317.2}
-        height={501.35}
-      />
+        <Image
+          data-aos="fade-right"
+          className="w-full"
+          alt=""
+          src={"/images/assets_beranda_selamatdatangvideo_gunungankanan.svg"}
+          width={317.2}
+          height={501.35}
+        />
       </div>
       <div className="z-[1] flex h-[27vw] w-[48vw] items-center justify-center rounded-[1.8vw] bg-[#CD4258]">
         <div className="h-[25vw] w-[44vw] rounded-[1.8vw] bg-[#FFFFFF]">
@@ -78,23 +78,23 @@ const TransisiBawahSelamatDatangVideo = () => {
             width={317.2}
             height={501.35}
           />
-          <div
-          className="absolute left-0 w-[17.5vw] translate-x-[5vw] translate-y-[7vw]"
-          >
+          <div className="absolute left-0 w-[17.5vw] translate-x-[5vw] translate-y-[7vw]">
             <motion.div
-            animate={{rotate:360}}
-            transition={{
-              repeat: Infinity,
-              duration: 5,
-              ease: 'linear',
-            }}
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 5,
+                ease: "linear",
+              }}
             >
               <Image
-              className="w-full"
-              alt=""
-              src={"/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"}
-              width={317.2}
-              height={501.35}
+                className="w-full"
+                alt=""
+                src={
+                  "/images/assets_beranda_selamatdatangvideo_gerigimerah.svg"
+                }
+                width={317.2}
+                height={501.35}
               />
             </motion.div>
           </div>
