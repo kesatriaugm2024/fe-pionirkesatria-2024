@@ -34,12 +34,43 @@ export default function Agenda() {
   }, []);
 
   return (
-    <div className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:20%] bg-repeat">
-      <main className="flex w-full flex-col pb-[50vw] pt-[20vw] sm:pb-[30vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[28vw]">
-        <h1 className="bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
+    <main className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:20%] bg-repeat">
+      {/* bg atas hp */}
+      <div className="absolute top-[10vw] z-0 w-full sm:hidden">
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/agenda/atas-hp.svg"}
+          width={1000}
+          height={1000}
+        />
+      </div>
+      {/* bg atas tab */}
+      <div className="absolute top-[8vw] z-0 hidden w-full sm:block lg:hidden">
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/agenda/atas-tab.svg"}
+          width={2000}
+          height={1000}
+        />
+      </div>
+      {/* bg atas desktop */}
+      <div className="absolute top-[3.5vw] z-0 hidden w-full lg:block">
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/agenda/atas-desktop.svg"}
+          width={2000}
+          height={1000}
+        />
+      </div>
+
+      <div className="flex w-full flex-col pb-[50vw] pt-[30vw] sm:pb-[30vw] sm:pt-[20vw] lg:pb-[28vw] lg:pt-[10vw]">
+        <h1 className="z-10 bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
           Agenda
         </h1>
-        <div className="flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]">
+        <div className="z-10 flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]">
           {BUTTONOPTION.map((item, index) => (
             <button
               key={index}
@@ -60,28 +91,28 @@ export default function Agenda() {
           {activePage == "Day1" && <Day data={dataDay1} />}
           {activePage == "Day2" && <Day data={dataDay2} />}
         </div>
-
+        <div></div>
         {/* Footer Manual Mobile */}
         <div className={"fixed bottom-0 w-full sm:hidden"}>
           <Image
             className="w-full"
             alt=""
             src={"/images/footer-HP.svg"}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
         </div>
-        {/* Footer Manual Desktop Tab */}
-      </main>
+      </div>
+      {/* Footer Manual Desktop Tab */}
       <div className={"absolute bottom-0 hidden w-full sm:block"}>
         <Image
           className="w-full"
           alt=""
           src={"/images/background/footer-tab-desktop-agenda.png"}
           width={2000}
-          height={2100}
+          height={2000}
         />
       </div>
-    </div>
+    </main>
   );
 }
