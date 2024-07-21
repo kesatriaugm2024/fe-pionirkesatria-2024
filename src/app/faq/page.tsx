@@ -14,11 +14,72 @@ export default function DesignGuidelinePage() {
     AOS.init();
   }, []);
 
+  const [userInput, setUserInput] = useState("");
+  const [foundPertanyaanUmum, setFoundPertanyaanUmum] =
+    useState(listPertanyaanUmum);
+  const [foundPertanyaanMateri, setFoundPertanyaanMateri] =
+    useState(listPertanyaanMateri);
+
+  const checkSearchResult = (input: string) => {
+    let questionUmum: any[] = [];
+    let questionMateri: any[] = [];
+    listPertanyaanUmum.forEach((item) => {
+      let _question = item.question.toUpperCase();
+      if (_question.includes(input.toUpperCase())) {
+        questionUmum.push(item);
+      }
+    });
+    listPertanyaanMateri.forEach((item) => {
+      let _question = item.question.toUpperCase();
+      if (_question.includes(input.toUpperCase())) {
+        questionMateri.push(item);
+      }
+    });
+    setFoundPertanyaanUmum(questionUmum);
+    setFoundPertanyaanMateri(questionMateri);
+  };
+
+  const handleChange = (e: any) => {
+    setUserInput(e.target.value);
+    checkSearchResult(e.target.value);
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (userInput === "") {
+      setFoundPertanyaanUmum(listPertanyaanUmum);
+      setFoundPertanyaanMateri(listPertanyaanMateri);
+    } else {
+      checkSearchResult(userInput);
+    }
+  };
+
   return (
     <main className="bg-pattern-krem-kesat bg-[size:25%] bg-repeat pb-[50vw] sm:pb-[0vw] sm:pt-[8vw] lg:pb-[0vw] lg:pt-[0vw]">
-      <FAQ_Desktop className="hidden lg:block" />
-      <FAQ_Tablet className="hidden sm:block lg:hidden" />
-      <FAQ_Mobile className="block sm:hidden" />
+      <FAQ_Desktop
+        className="hidden lg:block"
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        userInput={userInput}
+        foundPertanyaanUmum={foundPertanyaanUmum}
+        foundPertanyaanMateri={foundPertanyaanMateri}
+      />
+      <FAQ_Tablet
+        className="hidden sm:block lg:hidden"
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        userInput={userInput}
+        foundPertanyaanUmum={foundPertanyaanUmum}
+        foundPertanyaanMateri={foundPertanyaanMateri}
+      />
+      <FAQ_Mobile
+        className="block sm:hidden"
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        userInput={userInput}
+        foundPertanyaanUmum={foundPertanyaanUmum}
+        foundPertanyaanMateri={foundPertanyaanMateri}
+      />
 
       {/* Footer Manual Mobile */}
       <div className={"fixed bottom-0 z-20 w-full sm:hidden"}>
@@ -94,49 +155,25 @@ const ItemPertanyaan = ({
   );
 };
 
-function FAQ_Desktop({ className }: { className?: string }) {
-  const [userInput, setUserInput] = useState("");
-  const [foundPertanyaanUmum, setFoundPertanyaanUmum] =
-    useState(listPertanyaanUmum);
-  const [foundPertanyaanMateri, setFoundPertanyaanMateri] =
-    useState(listPertanyaanMateri);
-
-  const checkSearchResult = () => {
-    let questionUmum: any[] = [];
-    let questionMateri: any[] = [];
-    listPertanyaanUmum.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionUmum.push(item);
-      }
-    });
-    listPertanyaanMateri.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionMateri.push(item);
-      }
-    });
-    setFoundPertanyaanUmum(questionUmum);
-    setFoundPertanyaanMateri(questionMateri);
-  };
-
-  const handleChange = (e: any) => {
-    setUserInput(e.target.value);
-  };
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    if (userInput === "") {
-      setFoundPertanyaanUmum(listPertanyaanUmum);
-      setFoundPertanyaanMateri(listPertanyaanMateri);
-    } else {
-      checkSearchResult();
-    }
-  };
-
+function FAQ_Desktop({
+  className,
+  handleSubmit,
+  handleChange,
+  userInput,
+  foundPertanyaanMateri,
+  foundPertanyaanUmum,
+}: {
+  className?: string;
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  userInput: string;
+  foundPertanyaanMateri: any[];
+  foundPertanyaanUmum: any[];
+}) {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -200,52 +237,25 @@ function FAQ_Desktop({ className }: { className?: string }) {
   );
 }
 
-function FAQ_Tablet({ className }: { className?: string }) {
-  const [userInput, setUserInput] = useState("");
-  const [foundPertanyaanUmum, setFoundPertanyaanUmum] =
-    useState(listPertanyaanUmum);
-  const [foundPertanyaanMateri, setFoundPertanyaanMateri] =
-    useState(listPertanyaanMateri);
-
-  const checkSearchResult = () => {
-    let questionUmum: any[] = [];
-    let questionMateri: any[] = [];
-    listPertanyaanUmum.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionUmum.push(item);
-      }
-    });
-    listPertanyaanMateri.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionMateri.push(item);
-      }
-    });
-    setFoundPertanyaanUmum(questionUmum);
-    setFoundPertanyaanMateri(questionMateri);
-  };
-
-  const handleChange = (e: any) => {
-    setUserInput(e.target.value);
-  };
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    if (userInput === "") {
-      setFoundPertanyaanUmum(listPertanyaanUmum);
-      setFoundPertanyaanMateri(listPertanyaanMateri);
-    } else {
-      checkSearchResult();
-    }
-  };
-
+function FAQ_Tablet({
+  className,
+  handleSubmit,
+  handleChange,
+  userInput,
+  foundPertanyaanMateri,
+  foundPertanyaanUmum,
+}: {
+  className?: string;
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  userInput: string;
+  foundPertanyaanMateri: any[];
+  foundPertanyaanUmum: any[];
+}) {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    // min-h-screen relative w-full flex-col bg-cover bg-top
-    // relative w-full h-auto flex-col bg-cover bg-top ${className}
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
     >
@@ -314,52 +324,26 @@ function FAQ_Tablet({ className }: { className?: string }) {
   );
 }
 
-function FAQ_Mobile({ className }: { className?: string }) {
-  const [userInput, setUserInput] = useState("");
-  const [foundPertanyaanUmum, setFoundPertanyaanUmum] =
-    useState(listPertanyaanUmum);
-  const [foundPertanyaanMateri, setFoundPertanyaanMateri] =
-    useState(listPertanyaanMateri);
-
-  const checkSearchResult = () => {
-    let questionUmum: any[] = [];
-    let questionMateri: any[] = [];
-    listPertanyaanUmum.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionUmum.push(item);
-      }
-    });
-    listPertanyaanMateri.forEach((item) => {
-      let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
-        questionMateri.push(item);
-      }
-    });
-    setFoundPertanyaanUmum(questionUmum);
-    setFoundPertanyaanMateri(questionMateri);
-  };
-
-  const handleChange = (e: any) => {
-    setUserInput(e.target.value);
-  };
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    if (userInput === "") {
-      setFoundPertanyaanUmum(listPertanyaanUmum);
-      setFoundPertanyaanMateri(listPertanyaanMateri);
-    } else {
-      checkSearchResult();
-    }
-  };
-
+function FAQ_Mobile({
+  className,
+  handleSubmit,
+  handleChange,
+  userInput,
+  foundPertanyaanMateri,
+  foundPertanyaanUmum,
+}: {
+  className?: string;
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  userInput: string;
+  foundPertanyaanMateri: any[];
+  foundPertanyaanUmum: any[];
+}) {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    // min-h-screen relative w-full flex-col bg-cover bg-top
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
     >
