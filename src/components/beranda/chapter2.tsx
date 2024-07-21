@@ -388,6 +388,7 @@ const Chapter2_Tablet = () => {
           onSlideChange={(swiper) => {
             setActiveSwiper(swiper.activeIndex);
           }}
+          loop={true}
         >
           {CARDCONTENT.map((item, index) => (
             <SwiperSlide key={index}>
@@ -571,6 +572,7 @@ const Chapter2_HP = () => {
           onSlideChange={(swiper) => {
             setActiveSwiper(swiper.activeIndex);
           }}
+          loop={true}
         >
           {CARDCONTENT.map((item, index) => (
             <SwiperSlide key={index}>
