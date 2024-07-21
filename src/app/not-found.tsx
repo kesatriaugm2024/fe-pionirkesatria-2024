@@ -35,7 +35,14 @@ export default function Agenda() {
       <main className="flex w-full flex-col">
         <NotFound />
         {/* Footer Manual Mobile */}
-        <div className={"fixed bottom-0 w-full sm:hidden"} data-aos="fade-up">
+        <div
+          className={"fixed bottom-0 w-full sm:hidden"}
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-once="true"
+          data-aos-duration="800"
+          data-aos-offset="-1000"
+        >
           <Image
             className="w-full"
             alt=""
@@ -49,6 +56,10 @@ export default function Agenda() {
       <div
         className={"absolute bottom-0 hidden w-full sm:block"}
         data-aos="fade-up"
+        data-aos-delay="700"
+        data-aos-once="true"
+        data-aos-duration="800"
+        data-aos-offset="-1000"
       >
         <Image
           className="w-full"
