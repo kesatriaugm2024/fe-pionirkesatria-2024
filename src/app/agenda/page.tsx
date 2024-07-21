@@ -34,12 +34,12 @@ export default function Agenda() {
   }, []);
 
   return (
-    <>
-      <main className="flex min-h-[100vh] w-full flex-col bg-pattern-krem-kesat bg-[size:20%] bg-repeat pb-[50vw] pt-[20vw] sm:pb-[0vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[0vw]">
+    <div className="relative min-h-[100vh] w-full bg-pattern-krem-kesat bg-[size:20%] bg-repeat">
+      <main className="flex w-full flex-col pb-[50vw] pt-[20vw] sm:pb-[30vw] sm:pt-[12vw] lg:py-[7vw] lg:pb-[28vw]">
         <h1 className="bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent sm:text-[10vw] lg:text-[8vw]">
           Agenda
         </h1>
-        <div className="flex w-full justify-center gap-x-[1vw] pb-[2vw] pt-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]">
+        <div className="flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]">
           {BUTTONOPTION.map((item, index) => (
             <button
               key={index}
@@ -71,17 +71,17 @@ export default function Agenda() {
             height={100}
           />
         </div>
-
-        <div className={"bottom-0 hidden w-full sm:block"}>
-          <Image
-            className="w-full"
-            alt=""
-            src={"/images/background/footer-tab-desktop-agenda.png"}
-            width={2000}
-            height={2100}
-          />
-        </div>
+        {/* Footer Manual Desktop Tab */}
       </main>
-    </>
+      <div className={"absolute bottom-0 hidden w-full sm:block"}>
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/background/footer-tab-desktop-agenda.png"}
+          width={2000}
+          height={2100}
+        />
+      </div>
+    </div>
   );
 }

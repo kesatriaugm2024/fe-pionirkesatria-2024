@@ -634,7 +634,7 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
               />
             </div>
           </div>
-          <div className="z-10 flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[2.5vw] font-medium text-[#491772]">
+          <div className="z-10 flex-grow px-[2vw] py-[2vw] text-justify font-publica-sans text-[2.8vw]/[3.8vw] font-medium text-[#491772]">
             Personal Branding dapat diartikan sebagai sebuah proses pengenalan
             potensi yang dimiliki seorang individu dalam masyarakat. Personal
             branding meliputi aspek seperti kepribadian, kemampuan, kekuatan
