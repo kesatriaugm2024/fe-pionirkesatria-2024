@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 import MainDokumentasi from "@/components/dokumentasi/main-dokumentasi";
-import Footer from "@/components/layout/footer";
 import { Mobile_A, Mobile_B } from "@/components/dokumentasi/mobile";
 import { Tablet_A, Tablet_B } from "@/components/dokumentasi/tablet";
 import {
@@ -60,7 +60,7 @@ export default function Dokumentasi() {
 
   return (
     <>
-      <div className="relative w-full bg-top bg-repeat pt-32">
+      <div className="relative w-full pb-[60vw]">
         {/* Main Section */}
         <MainDokumentasi />
         {/* Desktop */}
@@ -107,7 +107,7 @@ export default function Dokumentasi() {
         </div>
 
         {/* Mobile */}
-        <div className="-mb-[20vw] flex w-full flex-col items-center justify-center overflow-x-clip sm:hidden">
+        <div className="flex w-full flex-col items-center justify-center overflow-x-clip sm:hidden">
           {imgArrayMobile.map((item: any, index: number) => (
             <div className="flex w-full flex-wrap justify-center" key={index}>
               <Mobile_A
@@ -130,7 +130,37 @@ export default function Dokumentasi() {
         <ImageModal image={selectedImage} setModalIsOpen={setModalIsOpen} />
       )}
 
-      <Footer />
+      {/* Footer Manual Mobile */}
+      <div
+        className={"fixed bottom-0 w-full sm:hidden"}
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-once="true"
+      >
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/footer-HP.svg"}
+          width={1000}
+          height={1000}
+        />
+      </div>
+      {/* Footer Manual Desktop Tab */}
+      <div
+        className={"fixed bottom-0 hidden w-full sm:block"}
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-once="true"
+        data-aos-offset="-10000"
+      >
+        <Image
+          className="w-full"
+          alt=""
+          src={"/images/background/footer-tab-desktop-agenda.png"}
+          width={2000}
+          height={2000}
+        />
+      </div>
     </>
   );
 }
