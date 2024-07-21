@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   }, []);
 
   return (
-    <div className="relative h-[100vh] w-full bg-pattern-krem-kesat bg-[size:40%] bg-repeat sm:bg-[size:30%] lg:bg-[size:15%]">
+    <div className="relative h-[100dvh] w-full bg-pattern-krem-kesat bg-[size:40%] bg-repeat sm:bg-[size:30%] lg:bg-[size:15%]">
       <main className="flex w-full flex-col">
         <NotFound />
         {/* Footer Manual Mobile */}
