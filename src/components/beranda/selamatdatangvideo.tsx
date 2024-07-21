@@ -25,7 +25,7 @@ const Content = () => {
     >
       <div
         data-aos="fade-up"
-        className="z-[1] flex flex-col items-center font-legendaire"
+        className="z-[1] flex flex-col items-center font-legendaire custom-shadow-text"
       >
         <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-[3vw] max-lg:text-[6vw] text-transparent">
           Selamat Datang

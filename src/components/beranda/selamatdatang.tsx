@@ -7,13 +7,16 @@ import { motion } from "framer";
 const TransitiAtasSelamatDatang = () => {
   return (
     <div className="absolute w-full">
+      <div className="absolute w-[100vw] translate-y-[-5vw]">
       <Image
-        className="absolute w-[100vw] translate-y-[-5vw] drop-shadow-[0_0.1vw_10vw_#000000]"
+        data-aos="fade-up"
+        className="w-full drop-shadow-[0_0.1vw_10vw_#000000]"
         alt=""
         src={"/images/assets_beranda_selamatdatang_kainmerahpendek.svg"}
         width={1000}
         height={816}
       />
+      </div>
       <div className="absolute right-0 top-0 z-[1] w-[17.5vw] translate-y-[5vw] max-lg:translate-x-[-5vw] max-lg:translate-y-[20vw]">
         <Image
           data-aos="fade-up"
@@ -31,15 +34,17 @@ const TransitiAtasSelamatDatang = () => {
 
 const TransisiBawahSelamatDatang = () => {
   return (
-    <div data-aos="">
+    <div>
       <div className="z-[0] h-[10vh] w-full overflow-hidden">
-        <Image
-          className="absolute right-0 w-[25vw] translate-x-[-7vw] translate-y-[-30vw] overflow-hidden drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] max-lg:hidden"
-          alt="Tugu"
-          src={"/images/assets_beranda_selamatdatang_tuguungu.svg"}
-          width={424}
-          height={271}
-        />
+        <div className="absolute right-0 w-[25vw] translate-x-[-7vw] translate-y-[-30vw] overflow-hidden max-lg:hidden">
+          <Image
+            className="w-full drop-shadow-[0_0.1vw_10vw_rgba(0,0,0,0.1)] "
+            alt="Tugu"
+            src={"/images/assets_beranda_selamatdatang_tuguungu.svg"}
+            width={424}
+            height={271}
+          />
+        </div>
         <Image
           className="absolute right-0 z-[-1] w-[25vw] translate-x-[0vw] overflow-hidden drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.1)] max-lg:w-[50vw] max-lg:translate-y-[-70vw] max-sm:w-[77.5vw] max-sm:translate-y-[-100vw] lg:hidden"
           alt="Tugu"
@@ -56,19 +61,20 @@ const TransisiBawahSelamatDatang = () => {
         />
         <div className="absolute left-0 w-[14.5vw] translate-y-[-12vw] drop-shadow-[0_0.5vw_1vw_#000000] max-lg:w-[25vw] max-lg:translate-x-[5vw]">
           <motion.div
-          animate={{rotate:360}}
-          transition={{
-            repeat:Infinity,
-            duration:5,
-            ease:'linear',
-          }}>
-          <Image
-            className="w-full"
-            alt=""
-            src={"/images/assets_beranda_selamatdatang_gerigiungu.svg"}
-            width={424}
-            height={271}
-          />
+            animate={{ rotate: 360 }}
+            transition={{
+              repeat: Infinity,
+              duration: 5,
+              ease: "linear",
+            }}
+          >
+            <Image
+              className="w-full"
+              alt=""
+              src={"/images/assets_beranda_selamatdatang_gerigiungu.svg"}
+              width={424}
+              height={271}
+            />
           </motion.div>
         </div>
         <Image

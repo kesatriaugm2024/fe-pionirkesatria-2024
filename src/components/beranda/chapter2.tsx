@@ -103,7 +103,7 @@ const Chapter2_Desktop = () => {
       <h1 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[4vw] text-transparent">
         Bagian II: Lika-Liku Kesatria
       </h1>
-      <p className="w-[80vw] px-[6vw] text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+      <p className="w-[80vw] px-[6vw] text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] font-light drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -240,7 +240,7 @@ const Chapter2_Tablet = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="custom-shadow-text w-[70vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7]">
+      <p className="custom-shadow-text w-[70vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -319,7 +319,7 @@ const Chapter2_Tablet = () => {
           height={549}
         />
         <div className="z-[1] flex h-[55vw] w-[65vw] flex-col place-content-center items-center gap-[2vw] rounded-[2vw] bg-[#FFE5C7] drop-shadow-[0_0.5vw_1vw_#000000]">
-          <h1 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[5vw] text-transparent">
+          <h1 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[5vw] text-transparent ">
             {title}
           </h1>
           <div className="flex items-center justify-center gap-[6vw]">
@@ -419,7 +419,7 @@ const Chapter2_HP = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="w-[70vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7]">
+      <p className="w-[70vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] font-light pt-[3vw] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -435,8 +435,8 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }: any) => {
     const Gambar = () => {
       return (
-        <div className="relative h-[13.5vw] w-[20vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[2vw] bg-cover">
-          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
+        <div className="relative h-[13.5vw] w-[20vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[2vw] bg-cover flex justify-center items-center">
+          <div className="absolute h-[90%] w-[92%] rounded-[2vw] overflow-hidden">
           <Image
             className="h-full"
             alt=""
@@ -446,7 +446,7 @@ const Chapter2_HP = () => {
           />
           </div>
           <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            {/* opacity */}
+            {/* // opacity */}
           </div>
           <div className="absolute -right-[7vw] -top-[8vw] w-full">
             <Image

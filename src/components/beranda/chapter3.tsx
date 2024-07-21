@@ -24,7 +24,7 @@ const JudulChapter = () => {
       <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw] text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000] max-lg:text-[4.8vw]">
         {CONTENT[0].title}
       </h1>
-      <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[3.2vw] text-justify">
+      <p className="font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] max-lg:text-[2.5vw]/[3.2vw] text-justify font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -43,7 +43,7 @@ const JudulChapterHP = () => {
           {CONTENT[0].titleHP[1]}
         </span>
       </h1>
-      <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw]">
+      <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] font-light">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -54,10 +54,10 @@ const KesatriaMudaBerkarya = () => {
   return (
     <div className="flex w-full items-center justify-between max-lg:hidden">
       <div data-aos="fade-right" className="flex max-w-[40vw] flex-col gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] font-light drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           {CONTENT[0].subtitle1desc}
         </p>
         <Link 
@@ -80,10 +80,10 @@ const KaryaAplikatif = () => {
     <div className="flex w-full items-center justify-between max-lg:hidden">
       <div data-aos="fade-right" className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000]"></div>
       <div data-aos="fade-left" className="flex max-w-[40vw] flex-col gap-[1vw]">
-        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent text-right">
+        <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent text-right custom-shadow-text">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7]">
+        <p className="text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] font-light drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           {CONTENT[0].subtitle2desc}
         </p>
         <Link 
@@ -105,7 +105,7 @@ const KesatriaMudaBerkaryaTab = () => {
         <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw]">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle1desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -146,7 +146,7 @@ const KaryaAplikatifTab = () => {
         <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent custom-shadow-text">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw]">
+        <p className="text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] max-w-[65vw] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -183,18 +183,18 @@ const KaryaAplikatifTab = () => {
 const KesatriaMudaBerkaryaHP = () => {
   return (
     <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] sm:hidden">
-      <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center sm:hidden">
+      <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden">
         <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle1}
           </span>
         </h1>
-        <p className="font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7]  text-justify max-w-[72vw]">
+        <p className="font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7]  text-justify max-w-[72vw] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle1desc}
         </p>
       </div>
       <div data-aos="fade-up" className="flex w-full justify-center">
-        <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.5vw_1vw_#000000]">
+        <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)]">
           {/* Content */}
         </div>
         <div
@@ -232,18 +232,18 @@ const KesatriaMudaBerkaryaHP = () => {
 const KaryaAplikasiHP = () => {
   return (
     <div className="flex w-full flex-col place-content-center items-center gap-[2.5vw] sm:hidden">
-      <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center sm:hidden">
+      <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden">
         <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle2}
           </span>
         </h1>
-        <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw]">
+        <p className="text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] max-w-[72vw] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
       <div data-aos="fade-up" className="flex w-full justify-center">
-        <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.5vw_1vw_#000000]">
+        <div className="z-[1] h-[33.3vw] w-[50vw] rounded-[4.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)]">
           {/* Content */}
         </div>
         <div
