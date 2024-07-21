@@ -59,8 +59,51 @@ export default function Dokumentasi() {
   }, []);
 
   return (
-    <>
-      <div className="relative w-full pb-[60vw]">
+    <div className="relative w-full">
+      <div className="relative w-full pb-[60vw] sm:pb-[35vw] lg:pb-[23vw]">
+        {/* bg atas hp */}
+        <div
+          className="absolute top-[10vw] z-0 w-full sm:hidden"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/agenda/atas-hp.svg"}
+            width={1000}
+            height={1000}
+          />
+        </div>
+        {/* bg atas tab */}
+        <div
+          className="absolute top-[8vw] z-0 hidden w-full sm:block lg:hidden"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/agenda/atas-tab.svg"}
+            width={2000}
+            height={1000}
+          />
+        </div>
+        {/* bg atas desktop */}
+        <div
+          className="absolute top-[3.5vw] z-0 hidden w-full lg:block"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
+          <Image
+            className="w-full"
+            alt=""
+            src={"/images/agenda/atas-desktop.svg"}
+            width={2000}
+            height={1000}
+          />
+        </div>
+
         {/* Main Section */}
         <MainDokumentasi />
         {/* Desktop */}
@@ -147,7 +190,7 @@ export default function Dokumentasi() {
       </div>
       {/* Footer Manual Desktop Tab */}
       <div
-        className={"fixed bottom-0 hidden w-full sm:block"}
+        className={"fixed bottom-0 hidden w-full sm:block lg:absolute"}
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-once="true"
@@ -161,6 +204,6 @@ export default function Dokumentasi() {
           height={2000}
         />
       </div>
-    </>
+    </div>
   );
 }
