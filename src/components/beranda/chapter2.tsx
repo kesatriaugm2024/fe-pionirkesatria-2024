@@ -11,31 +11,31 @@ const CARDCONTENT = [
     title: "Lika-Liku Kesatria",
     desc: "Perkuliahan adalah jenjang lebih tinggi yang diambil oleh seseorang setelah menyelesaikan pendidikan menengah atas (SMA/SMK) atau sederajat. Sebelum memasuki dunia perkuliahan, sebaiknya kesatria muda harus mengenal terlebih dahulu seputar perkuliahan sehingga nantinya dapat mempersiapkan diri untuk menyesuaikan diri dengan lingkungan yang baru.",
     link: "/",
-    imgpath: "/vercel.svg",
+    imgpath: "/images/chapter 2/lika-liku.jpg",
   },
   {
     title: "Pengenalan Jurusan",
     desc: "Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!",
     link: "/",
-    imgpath: "/next.svg",
+    imgpath: "/images/chapter 2/pengenalan.jpg",
   },
   {
     title: "Jelajah Lembaga",
     desc: "Fakultas Teknik tidak hanya bergerak dan berprestasi di bidang akademik saja, namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya. Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut sebagai bekal bagi Kesatria Muda!",
     link: "/",
-    imgpath: "/next.svg",
+    imgpath: "/images/chapter 2/jelajah.jpg",
   },
   {
     title: "Pameran Karya",
     desc: "Fakultas Teknik tidak terlepas dari segudang prestasinya. Penasaran siapa saja tim-tim yang bergerak di belakang untuk mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!",
     link: "/",
-    imgpath: "/next.svg",
+    imgpath: "/images/chapter 2/pameran.jpg",
   },
   {
     title: "Fasilitas Teknik",
     desc: "Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!",
     link: "/",
-    imgpath: "/next.svg",
+    imgpath: "/images/chapter 2/teknik.jpg",
   },
 ];
 
@@ -50,11 +50,11 @@ const Chapter2_Desktop = () => {
             className="absolute h-full w-full rounded-[2vw]"
             alt=""
             src={imgpath}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           ></Image>
           <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            {/* Opacity */}
+            {/* opacity */}
           </div>
           <div className="absolute -right-[7vw] -top-[8vw] w-full">
             <Image
@@ -256,16 +256,18 @@ const Chapter2_Tablet = () => {
   const SwiperCard = ({ title, desc, imgpath, link }: any) => {
     const Gambar = () => {
       return (
-        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover">
+        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover bg-gradient-to-b from-[#FFD23F] to-[#FFA514] flex items-center justify-center">
+          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
           <Image
-            className="absolute h-full w-full rounded-[2vw]"
+            className="h-full"
             alt=""
             src={imgpath}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
+          </div>
           <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            {/* Opacity */}
+            
           </div>
           <div className="absolute -right-[7vw] -top-[8vw] w-full">
             <Image
@@ -433,16 +435,18 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }: any) => {
     const Gambar = () => {
       return (
-        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover">
+        <div className="relative h-[13.5vw] w-[20vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[2vw] bg-cover">
+          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
           <Image
-            className="absolute h-full w-full rounded-[2vw]"
+            className="h-full"
             alt=""
             src={imgpath}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
+          </div>
           <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            {/* Opacity */}
+            {/* opacity */}
           </div>
           <div className="absolute -right-[7vw] -top-[8vw] w-full">
             <Image
@@ -453,7 +457,7 @@ const Chapter2_HP = () => {
               className="w-full scale-[0.5]"
             />
           </div>
-          <div className="absolute -bottom-[5.9vw] -left-[7.9vw] w-full">
+          <div className="absolute -bottom-[5.95vw] -left-[7.9vw] w-full">
             <Image
               src="/images/beranda/pita-box-ungu-2.png"
               alt=""
