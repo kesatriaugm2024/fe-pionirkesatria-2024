@@ -122,12 +122,12 @@ const ItemPertanyaan = ({
     <div
       className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
         isOpen
-          ? "h-[32vw] sm:h-[18vw] lg:h-[7.5vw]"
+          ? "h-[33vw] sm:h-[19vw] lg:h-[8vw]"
           : "h-[16vw] sm:h-[9vw] lg:h-[3vw]"
       }`}
       onClick={handleClick}
     >
-      <div className="flex h-[16vw] w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
+      <div className="flex h-[16vw] shrink-0 w-full items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
         <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[3vw] lg:text-[1.4vw]">
           {question}
         </p>
@@ -142,12 +142,16 @@ const ItemPertanyaan = ({
           />
         </div>
       </div>
-      <div
-        className={`lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"}`}
-      >
-        <p
-          className={`px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"}`}
+      <div 
+        className={`w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw]`}
+        // w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw] (Versi Baru)
+        // lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"} (Versi Lama)
         >
+        <p
+          className={`px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw]`}
+          // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] (Versi Baru)
+          // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"} (Versi Lama)
+          >
           {answer}
         </p>
       </div>
@@ -170,10 +174,7 @@ function FAQ_Desktop({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+ 
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -183,6 +184,7 @@ function FAQ_Desktop({
         alt="none"
         width={1000}
         height={1000}
+        data-aos="fade-down"
         className="absolute z-[0] w-full"
       />
       <div className={`flex w-full flex-col items-center justify-center`}>
@@ -217,7 +219,7 @@ function FAQ_Desktop({
               </div>
             </button>
           </form>
-          <div className="relative mt-[1.5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
+          <div className="relative mt-[1.5vw] mb-[6vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
             <p className="mt-[-1.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[3vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
@@ -252,9 +254,7 @@ function FAQ_Tablet({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -264,6 +264,7 @@ function FAQ_Tablet({
         alt="none"
         width={1000}
         height={1000}
+        data-aos="fade-down"
         className="absolute z-[0] w-full"
       />
       <div className={`flex w-full flex-col items-center justify-center`}>
@@ -304,7 +305,7 @@ function FAQ_Tablet({
               </div>
             </button>
           </form>
-          <div className="relative mt-[5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
+          <div className="relative mt-[5vw] mb-[6vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[3vw] hover:bg-[#5E1675]">
             <p className="mt-[-2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
@@ -339,10 +340,7 @@ function FAQ_Mobile({
   foundPertanyaanMateri: any[];
   foundPertanyaanUmum: any[];
 }) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+ 
   return (
     <main
       className={`relative min-h-screen w-full flex-col bg-cover bg-top ${className} `}
@@ -351,6 +349,7 @@ function FAQ_Mobile({
         src={"/images/background/faq-background-3.png"}
         alt="none"
         width={1000}
+        data-aos="fade-down"
         height={1000}
         className="absolute z-[0] w-full"
       />
@@ -392,7 +391,7 @@ function FAQ_Mobile({
               </div>
             </button>
           </form>
-          <div className="relative mt-[5vw] flex flex-col items-center rounded-xl bg-[#5E1675] py-[6vw] hover:bg-[#5E1675]">
+          <div className="relative mt-[5vw] flex mb-[6vw] flex-col items-center rounded-xl bg-[#5E1675] py-[6vw] hover:bg-[#5E1675]">
             <p className="mt-[-5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[8vw] text-transparent drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
               Pertanyaan Umum
             </p>
