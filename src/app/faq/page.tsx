@@ -122,7 +122,7 @@ const ItemPertanyaan = ({
     <div
       className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
         isOpen
-          ? "h-[33vw] sm:h-[19vw] lg:h-[8vw]"
+          ? "h-[33vw] sm:h-[19vw] lg:h-[8.5vw]"
           : "h-[16vw] sm:h-[9vw] lg:h-[3vw]"
       }`}
       onClick={handleClick}
