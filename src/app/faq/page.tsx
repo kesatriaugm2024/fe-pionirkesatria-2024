@@ -120,10 +120,10 @@ const ItemPertanyaan = ({
 
   return (
     <div
-      className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-200 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
+      className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-500 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
         isOpen
-          ? "h-[35vw] sm:h-[19vw] lg:h-[8.5vw]"
-          : "h-[16vw] sm:h-[9vw] lg:h-[3vw]"
+          ? "max-h-screen sm:max-h-screen lg:max-h-screen"
+          : "max-h-[16vw] sm:max-h-[9vw] lg:max-h-[3vw]"
       }`}
       onClick={handleClick}
     >
@@ -143,12 +143,12 @@ const ItemPertanyaan = ({
         </div>
       </div>
       <div
-        className={`w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw]`}
+        className={`flex w-full items-start overflow-hidden`}
         // w-full ${isOpen ? "flex" : "hidden"} items-start py-[2vw] sm:py-[1.5vw] lg:py-[1vw] (Versi Baru)
         // lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"} (Versi Lama)
       >
         <p
-          className={`px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw]`}
+          className={`px-[2vw] py-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:py-[1.5vw] sm:text-[3vw] lg:py-[1vw] lg:text-[1.4vw]`}
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] (Versi Baru)
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"} (Versi Lama)
         >
