@@ -32,24 +32,7 @@ export default function NotFoundPage() {
         </div>
         {/* Footer Component Desktop */}
       </main>
-      <FooterTabDesktop />
-      {/* Footer Manual Tab */}
-      <div
-        className={"absolute bottom-0 hidden w-full sm:block lg:hidden"}
-        data-aos="fade-up"
-        data-aos-delay="700"
-        data-aos-once="true"
-        data-aos-duration="800"
-        data-aos-offset="-1000"
-      >
-        <Image
-          className="w-full"
-          alt=""
-          src={"/images/background/footer-tab-desktop-agenda.png"}
-          width={1000}
-          height={1000}
-        />
-      </div>
+      <FooterTabDesktop className="hidden sm:flex" />
     </div>
   );
 }
@@ -115,6 +98,11 @@ const FooterTabDesktop = ({ className }: { className?: string }) => {
         "absolute bottom-0 flex w-full items-center justify-between max-md:hidden " +
         className
       }
+      data-aos="fade-up"
+      data-aos-delay="700"
+      data-aos-once="true"
+      data-aos-duration="800"
+      data-aos-offset="-1000"
     >
       <BackgroundFooterTabDesktop />
       <Image
