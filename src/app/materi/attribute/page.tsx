@@ -43,8 +43,8 @@ function DepartemenCardDesktop({
                 className="h-full w-full rounded-[1.7vw]"
                 alt=""
                 src={item.imgpath}
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
               />
             </div>
           </Link>
