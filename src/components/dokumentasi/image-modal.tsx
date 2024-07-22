@@ -40,7 +40,7 @@ export default function ImageModal({
       className="min-w-screen fixed inset-0 left-0 top-0 z-[1000] flex h-screen items-center justify-center outline-none transition-all duration-150 ease-in-out"
       id="modal-id"
     >
-      <div className="z-1 absolute inset-0 bg-black opacity-80"></div>
+      <div className="z-1 absolute inset-0 cursor-pointer bg-black opacity-80"></div>
       <div className="relative w-full max-w-[90vw] rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[1.5vw] sm:max-w-[80vw] sm:rounded-[2vw] sm:p-[1vw] lg:max-w-[55vw] lg:rounded-[1vw] lg:p-[1vw]">
         {/* Image Content */}
         <div className="">
