@@ -41,19 +41,19 @@ export default function ImageModal({
       id="modal-id"
     >
       <div className="z-1 absolute inset-0 cursor-pointer bg-black opacity-80"></div>
-      <div className="relative w-full max-w-[90vw] rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[1.5vw] sm:max-w-[80vw] sm:rounded-[2vw] sm:p-[1vw] lg:max-w-[55vw] lg:rounded-[1vw] lg:p-[1vw]">
+      <div className="relative w-full max-w-[90vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[1.5vw] sm:max-w-[80vw] sm:rounded-[2vw] sm:p-[1vw] lg:max-w-[55vw] lg:rounded-[1vw] lg:p-[1vw]">
         {/* Image Content */}
         <div className="">
           <Image
             src={image}
             alt="image"
-            className="h-full w-full rounded-[3.5vw] sm:rounded-[2vw] lg:rounded-[1vw]"
+            className="h-full w-full rounded-[3vw] sm:rounded-[2vw] lg:rounded-[1vw]"
           />
         </div>
 
         {/* Close Button */}
-        {/* <div
-          className="absolute right-[2vw] top-[2vw] -mr-6 -mt-6 h-10 w-10 rounded-full bg-gradient-to-b from-[#EA5571] to-[#843040] transition hover:scale-110 hover:cursor-pointer active:scale-100"
+        <div
+          className="absolute -right-[3vw] -top-[3vw] rounded-full bg-gradient-to-b from-[#EA5571] to-[#843040] transition hover:scale-110 hover:cursor-pointer active:scale-100 sm:-right-[2vw] sm:-top-[2vw] lg:-right-[1.2vw] lg:-top-[1.2vw]"
           onClick={() => setModalIsOpen(false)}
         >
           <svg
@@ -68,7 +68,7 @@ export default function ImageModal({
           >
             <path d="M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z"></path>
           </svg>
-        </div> */}
+        </div>
       </div>
     </div>
   );
