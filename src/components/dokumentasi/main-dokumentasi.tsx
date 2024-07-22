@@ -1,19 +1,10 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer";
 export default function MainDokumentasi() {
   return (
     <>
-      <div className="relative flex h-[100vh] w-full flex-col-reverse items-center justify-center gap-[0vw] overflow-x-clip lg:gap-[3vw] lg:pt-[5vw]">
-        {/* TEXT Dokumentasi */}
-        <p
-          className="z-[11] font-legendaire text-[6vh] drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] gradient-text-yellow-up-down lg:text-[4vw]"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="300"
-        >
-          Dokumentasi
-        </p>
-
+      <div className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-x-clip lg:gap-[0vw] lg:pt-[6vw]">
         {/* LOGO Nala Kamera */}
         <div className="z-0 sm:z-10" data-aos="zoom-in-up">
           <Image
@@ -24,7 +15,52 @@ export default function MainDokumentasi() {
             className="w-[55vw] -translate-x-[7vw] drop-shadow-[0_0.1vw_1vw_rgba(0,0,0,0.6)] sm:w-[50vw] sm:translate-y-[0vw] lg:w-[20vw] lg:translate-x-[-2.5vw] lg:translate-y-[0vw]"
           ></Image>
         </div>
-
+        {/* TEXT Dokumentasi */}
+        <p
+          className="z-[11] font-legendaire text-[6vh] drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] gradient-text-yellow-up-down lg:text-[4vw]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="300"
+        >
+          Dokumentasi
+        </p>
+        {/* Arrow Down */}
+        <motion.div
+          className="z-0 w-[10vw] text-red-150 drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] sm:w-[6vw] lg:w-[3vw]"
+          initial={{ y: 0 }}
+          animate={{ y: 20 }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            id="caret-double-down"
+            fill="#ffb314"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              fill="none"
+              stroke="#ffb314"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+              points="208 128 128 208 48 128"
+            ></polyline>
+            <polyline
+              fill="none"
+              stroke="#ffb314"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+              points="208 48 128 128 48 48"
+            ></polyline>
+          </svg>
+        </motion.div>
         {/* ABSOLUTE Kain Merah */}
         {/* <div
           className="absolute -bottom-[12vw] -right-[30vw] z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl lg:flex"
