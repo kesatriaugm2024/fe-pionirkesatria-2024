@@ -53,9 +53,9 @@ const Chapter2_Desktop = () => {
             width={1000}
             height={1000}
           ></Image>
-          <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            {/* opacity */}
-          </div>
+          {/* <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
+            opacity
+          </div> */}
           <div className="absolute -right-[7vw] -top-[8vw] w-full">
             <Image
               src="/images/beranda/pita-box-ungu-1.png"

@@ -80,17 +80,9 @@ const KesatriaMudaBerkarya = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000]"
+        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center"
       >
-        <iframe
-                className="h-full w-full px-[1vw] py-[1vw] rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+        <Image className="w-[50%] aspect-auto object-cover " alt="" src={'/nala1.png'} width={1000} height={1000} />
       </div>
     </div>
   );
@@ -101,21 +93,13 @@ const KaryaAplikatif = () => {
     <div className="flex w-full items-center justify-between max-lg:hidden">
       <div
         data-aos="fade-right"
-        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000]"
+        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center"
       >
-        <iframe
-                className="h-full w-full px-[1vw] py-[1vw] rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+        <Image className="w-[60%] aspect-auto object-cover " alt="" src={'/nala2.png'} width={1000} height={1000} />
       </div>
       <div
         data-aos="fade-left"
-        className="flex max-w-[40vw] flex-col gap-[1vw]"
+        className="flex max-w-[40vw] flex-col gap-[1vw] items-start"
       >
         <h2 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-right font-legendaire text-[3vw] text-transparent">
           {CONTENT[0].subtitle2}
@@ -164,17 +148,9 @@ const KesatriaMudaBerkaryaTab = () => {
             width={1965}
             height={880}
           />
-          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] flex items-center justify-center">
             {/* Tablet */}
-            <iframe
-                className="h-full w-full px-[1vw] py-[1vw] rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <Image className="w-[40%] aspect-auto object-cover " alt="" src={'/nala1.png'} width={1000} height={1000} />
           </div>
           <Link
             href={"/materi"}
@@ -218,17 +194,9 @@ const KaryaAplikatifTab = () => {
             width={1965}
             height={880}
           />
-          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514]">
+          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] flex items-center justify-center">
             {/* Tablet */}
-            <iframe
-                className="h-full w-full px-[1vw] py-[1vw] rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <Image className="w-[50%] aspect-auto object-cover " alt="" src={'/nala2.png'} width={1000} height={1000} />
           </div>
           <Link
             href={"/materi"}
@@ -261,16 +229,8 @@ const KesatriaMudaBerkaryaHP = () => {
         </p>
       </div>
       <div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)]">
-              <iframe
-                className="h-full w-full rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] flex items-center justify-center">
+            <Image className="w-[40%] aspect-auto object-cover " alt="" src={'/nala1.png'} width={1000} height={1000} />
             </div>
             <div className="absolute z-0 w-full translate-x-[-30vw] scale-[0.35]">
               <motion.div
@@ -321,16 +281,8 @@ const KaryaAplikasiHP = () => {
         </p>
       </div>
       <div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)]">
-              <iframe
-                className="h-full w-full rounded-[4vw]"
-                src="https://www.youtube.com/embed/XrgvvCpavbU"
-                title="[GET TO KNOW TEKNIK : SEJARAH TEKNIK]"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] flex items-center justify-center">
+              <Image className="w-[50%] aspect-auto object-cover " alt="" src={'/nala2.png'} width={1000} height={1000} />
             </div>
             <div className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]">
               <motion.div

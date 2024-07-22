@@ -5,7 +5,7 @@ export const MODUL = [
   {
     title: "Attribute",
     link: "/attribute",
-    imgpath: "/next.svg",
+    imgpath: "/Atribut.png",
     desc: "",
   },
   {
@@ -44,7 +44,7 @@ export const MODUL = [
     title: "Pengenalan Jurusan",
     desc: "Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!",
     link: "/prodi",
-    imgpath: "/next.svg",
+    imgpath: "/Pengenalan Jurusan.png",
   },
   {
     title: "Jelajah Lembaga",
