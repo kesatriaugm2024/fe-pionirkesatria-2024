@@ -437,7 +437,7 @@ const Chapter2_HP = () => {
     const Gambar = () => {
       return (
         <div className="relative h-[13.5vw] w-[20vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[2vw] bg-cover flex justify-center items-center">
-          <div className="absolute h-[90%] w-[92%] rounded-[2vw] overflow-hidden">
+          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
           <Image
             className="h-full"
             alt=""

@@ -47,6 +47,10 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
       >
         <div className="relative flex w-full flex-row items-center px-[0vw] py-[3.5vw]">
           <div className="relative z-10 ml-[4vw] h-[13.5vw] w-[20vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.4vw_0.4vw_rgba(0,0,0,0.2)]">
+            <div className="font-legendaire text-[5vw]/[5vw] text-center flex items-center w-full h-full bg-gradient-to-b from-purple-250 to-purple-50 bg-clip-text text-transparent">
+              Personal Branding
+              {/* Input Gambar disini */}
+            </div>
             <div className="absolute -right-[7vw] -top-[8vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
@@ -330,6 +334,10 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
       >
         <div className="relative flex w-full flex-col items-center rounded-[3vw] px-[4vw] py-[2vw]">
           <div className="relative z-[10] mt-[5vw] aspect-[4/3] w-1/2 rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.4vw_0.4vw_rgba(0,0,0,0.2)]">
+            <div className="font-legendaire text-[7vw]/[7vw] text-center flex items-center w-full h-full bg-gradient-to-b from-purple-250 to-purple-50 bg-clip-text text-transparent">
+                Personal Branding
+                {/* Input Gambar disini */}
+            </div>
             <div className="absolute -right-[12vw] -top-[13vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
@@ -615,6 +623,10 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
       >
         <div className="relative flex w-full flex-col items-center gap-[2vw] rounded-[5vw] px-[7vw] py-[4vw]">
           <div className="relative z-10 mt-[8vw] aspect-[4/3] w-3/4 rounded-[4vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.2)]">
+            <div className="font-legendaire text-[5vw]/[5vw] place-content-center flex items-center w-full h-full bg-gradient-to-b from-purple-250 to-purple-50 bg-clip-text text-transparent">
+                Personal Branding
+                {/* Input Gambar disini */}
+            </div>
             <div className="absolute -right-[13.6vw] -top-[16vw] w-full">
               <Image
                 src="/images/beranda/pita-box-ungu-1.png"
