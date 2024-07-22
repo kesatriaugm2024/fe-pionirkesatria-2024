@@ -189,7 +189,7 @@ function FAQ_Desktop({
       <div className={`flex w-full flex-col items-center justify-center`}>
         <h1
           data-aos="fade-up"
-          className="z-[1] ml-[4vw] mt-[12vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent"
+          className="z-[1] ml-[4vw] mt-[12vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[7vw] text-transparent drop-shadow-[0.4vw_0.3vw_0.1vw_rgba(0,0,0,0.5)]"
         >
           Frequently Asked Question
         </h1>
@@ -268,13 +268,13 @@ function FAQ_Tablet({
       <div className={`flex w-full flex-col items-center justify-center`}>
         <h1
           data-aos="fade-up"
-          className="z-[1] ml-[4vw] mt-[26vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent"
+          className="z-[1] ml-[4vw] mt-[26vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent drop-shadow-[0.4vw_0.3vw_0.1vw_rgba(0,0,0,0.5)]"
         >
           Frequently
         </h1>
         <h1
           data-aos="fade-up"
-          className="z-[1] ml-[4vw] mt-[-3vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent"
+          className="z-[1] ml-[4vw] mt-[-5vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[10vw] text-transparent drop-shadow-[0.4vw_0.3vw_0.1vw_rgba(0,0,0,0.5)]"
         >
           Asked Question
         </h1>
@@ -353,13 +353,13 @@ function FAQ_Mobile({
       <div className={`flex w-full flex-col items-center justify-center`}>
         <h1
           data-aos="fade-up"
-          className="z-[1] ml-[4vw] mt-[40vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[12vw] text-transparent"
+          className="z-[1] ml-[4vw] mt-[40vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[12vw] text-transparent drop-shadow-[0.4vw_0.3vw_0.1vw_rgba(0,0,0,0.5)]"
         >
           Frequently
         </h1>
         <h1
           data-aos="fade-up"
-          className="z-[1] ml-[4vw] mt-[-3vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[12vw] text-transparent"
+          className="z-[1] ml-[4vw] mt-[-6vw] self-center bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[12vw] text-transparent drop-shadow-[0.4vw_0.3vw_0.1vw_rgba(0,0,0,0.5)]"
         >
           Asked Question
         </h1>
