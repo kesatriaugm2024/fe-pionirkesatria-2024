@@ -46,7 +46,7 @@ const AgendaItem: React.FC<AgendaItemProps> = ({ time, agenda, desc }) => {
 
       <div className="w-full">
         <div
-          className={`relative z-[1] flex w-full flex-col rounded-t-[3vw] text-[#FFE5C7] duration-200 sm:rounded-t-[2vw] lg:rounded-t-[1vw] ${state ? "rounded-b-none" : "rounded-b-[3vw] sm:rounded-b-[2vw] lg:rounded-b-[1vw]"} ${state ? "bg-[#EA5571]" : "bg-[#CD4258]"}`}
+          className={`relative z-[1] flex w-full flex-col rounded-t-[3vw] text-[#FFE5C7] duration-200 sm:rounded-t-[2vw] lg:rounded-t-[1vw] ${state ? "rounded-b-none" : "rounded-b-[3vw] sm:rounded-b-[2vw] lg:rounded-b-[1vw]"} ${state ? "bg-[#CD4258]" : "bg-[#CD4258]"}`}
         >
           <div className="relative flex w-full select-none flex-row items-center justify-between p-[2.5vw] font-publica-sans font-normal sm:px-[2vw] sm:py-[1.5vw] lg:py-[0.8vw] lg:pl-[1.2vw] lg:pr-[1vw]">
             <div className="flex flex-row items-center justify-start gap-[2vw]">
@@ -76,7 +76,7 @@ const AgendaItem: React.FC<AgendaItemProps> = ({ time, agenda, desc }) => {
         </div>
         <div
           className={
-            "grid -translate-y-[3vw] select-none rounded-b-[3vw] bg-[#EA5571] p-[2.5vw] text-[#FFE5C7] drop-shadow-lg transition-[grid-template-rows] duration-200 sm:-translate-y-[2.5vw] sm:rounded-b-[2vw] lg:-translate-y-[1.5vw] lg:rounded-b-[1vw] lg:px-[1.2vw] lg:py-[1.5vw] " +
+            "grid -translate-y-[4vw] select-none rounded-b-[3vw] bg-[#EA5571] p-[2.5vw] pt-[5.5vw] text-[#FFE5C7] drop-shadow-lg transition-all duration-200 sm:-translate-y-[2.5vw] sm:rounded-b-[2vw] sm:pt-[4vw] lg:-translate-y-[1.5vw] lg:rounded-b-[1vw] lg:px-[1.2vw] lg:py-[1.5vw] lg:pt-[2.5vw] " +
             (state ? "grid-rows-[1fr]" : "grid-rows-[0fr] !p-0 !pt-0")
           }
         >

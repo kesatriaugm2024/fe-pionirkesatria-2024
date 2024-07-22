@@ -86,22 +86,21 @@ export default function Agenda() {
           Agenda
         </h1>
         <div
-          className="z-10 flex w-full justify-center gap-x-[4vw] pb-[3vw] pt-[2vw] sm:gap-x-[2vw] md:pb-[1vw] md:pt-[1vw] lg:pb-[1vw]"
+          className="z-10 flex w-full justify-center gap-x-[0vw] pb-[3vw] pt-[2vw] sm:gap-x-[0vw] md:pb-[1vw] md:pt-[1vw] lg:gap-x-[0vw] lg:pb-[1vw]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {BUTTONOPTION.map((item, index) => (
             <button
               key={index}
-              className={
-                "h-[8vw] w-[28vw] rounded-[10vw] font-publica-sans text-[3vw] font-medium text-[#FFE5C7] sm:h-[6vw] sm:w-[24vw] sm:text-[2.5vw] md:h-[5vw] md:text-[2vw] lg:h-[3.5vw] lg:w-[15vw] lg:text-[1.4vw] 2xl:h-[2.5vw] 2xl:w-[12vw] 2xl:text-[1vw] " +
-                (activePage == item.name
-                  ? "bg-[#EA5571]"
-                  : "bg-[#CD4258] hover:bg-[#EA5571]")
-              }
+              className={`group relative mb-2 me-2 inline-flex w-[28vw] items-center justify-center overflow-hidden rounded-full bg-[#CD4258] p-0.5 text-[3vw] font-medium hover:text-[#FFE5C7] sm:w-[24vw] sm:text-[2vw] lg:w-[15vw] lg:text-[1.2vw] ${activePage === item.name ? "text-[#FFE5C7]" : "text-[#CD4258]"}`}
               onClick={item.name == "Day1" ? handleDay1 : handleDay2}
             >
-              {item.label}
+              <span
+                className={`relative w-[28vw] rounded-full bg-[#FFE5C7] px-[3.5vw] py-[1vw] font-publica-sans transition-all duration-75 ease-in group-hover:bg-opacity-0 lg:px-0 lg:py-[0.5vw] ${activePage === item.name ? "bg-opacity-0" : "bg-opacity-100"}`}
+              >
+                {item.label}
+              </span>
             </button>
           ))}
         </div>

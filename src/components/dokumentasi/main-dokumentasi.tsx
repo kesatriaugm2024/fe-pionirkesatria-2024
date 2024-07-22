@@ -11,7 +11,7 @@ export default function MainDokumentasi() {
           data-aos-delay="300"
           data-aos-duration="300"
         >
-          DokumentasI
+          Dokumentasi
         </p>
 
         {/* LOGO Nala Kamera */}
