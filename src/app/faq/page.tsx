@@ -9,7 +9,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function DesignGuidelinePage() {
+export default function FAQ() {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -120,15 +120,15 @@ const ItemPertanyaan = ({
 
   return (
     <div
-      className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-500 sm:ml-0 sm:mr-0 sm:w-[90vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
+      className={`ml-[4vw] mr-[4vw] flex w-[88vw] cursor-pointer flex-col items-start rounded-[1.5vw] bg-gradient-to-r from-[#B22635] to-[#EA5571] duration-500 sm:ml-0 sm:mr-0 sm:w-[80vw] lg:ml-0 lg:mr-0 lg:w-[80vw] ${
         isOpen
           ? "max-h-screen sm:max-h-screen lg:max-h-screen"
-          : "max-h-[16vw] sm:max-h-[9vw] lg:max-h-[3vw]"
+          : "max-h-[16vw] sm:max-h-[6vw] lg:max-h-[3vw]"
       }`}
       onClick={handleClick}
     >
-      <div className="flex h-[16vw] w-full shrink-0 items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[9vw] lg:h-[3vw]">
-        <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[3vw] lg:text-[1.4vw]">
+      <div className="flex h-[16vw] w-full shrink-0 items-center justify-between rounded-[1.5vw] bg-gradient-to-b from-[#FFA514] to-[#FFD23F] pr-[1.5vw] sm:h-[6vw] sm:w-[80vw] lg:h-[3vw]">
+        <p className="px-[2vw] font-publica-sans text-[3.5vw] font-medium text-[#5E1675] sm:text-[2vw] lg:text-[1.4vw]">
           {question}
         </p>
         <div
@@ -148,7 +148,7 @@ const ItemPertanyaan = ({
         // lg:"ml-4" h-[6vw] w-full items-start sm:h-[3vw] sm:items-start lg:h-[3vw] lg:items-start ${isOpen ? "flex" : "hidden"} (Versi Lama)
       >
         <p
-          className={`px-[2vw] py-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:py-[1.5vw] sm:text-[3vw] lg:py-[1vw] lg:text-[1.4vw]`}
+          className={`px-[2vw] py-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:py-[1.5vw] sm:text-[2vw] lg:py-[1vw] lg:text-[1.4vw]`}
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] (Versi Baru)
           // px-[2vw] font-publica-sans text-[3.5vw] font-medium gradient-text-yellow-up-down sm:text-[3vw] lg:text-[1.4vw] ${isOpen ? "block" : "hidden"} (Versi Lama)
         >
@@ -281,18 +281,18 @@ function FAQ_Tablet({
 
         <div
           data-aos="fade-up"
-          className="z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[6vw] text-transparent"
+          className="z-[1] bg-gradient-to-b from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text font-legendaire text-[4vw] text-transparent"
         >
           Punya Pertanyaan?
           <form
-            className="flex h-[6vw] w-[94vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
+            className="flex h-[6vw] w-[90vw] items-center justify-between gap-[1vw] rounded-xl bg-[#5E1675] px-[1vw]"
             onSubmit={handleSubmit}
           >
             <div className="flex w-full items-center">
               <input
                 type="text"
                 placeholder="Cari di sini..."
-                className="ml-[2vw] w-full border-none bg-transparent font-publica-sans text-[3vw] text-[#FFB314] placeholder-[#FFB314] outline-none placeholder:text-[3vw]"
+                className="ml-[2vw] w-full border-none bg-transparent font-publica-sans text-[2vw] text-[#FFB314] placeholder-[#FFB314] outline-none placeholder:text-[2vw]"
                 value={userInput}
                 onChange={handleChange}
               />
