@@ -257,10 +257,10 @@ export function Chapter1_Desktop({ className }: { className?: string }) {
               Sejarah Kesatria
             </h1>
             <p className="text-justify font-publica-sans text-[1.5vw]/[1.8vw] font-light text-[#FFE5C7] drop-shadow-[0_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
-              Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
-              perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB
+              Tahukah kalian kalau Pionir Kesatria pernah mengalami beberapa
+              perubahan dari tahun ke tahun? Pionir Kesatria sebagai Pionir
               Fakultas terbesar di Universitas Gadjah Mada memiliki segudang
-              filosofi di dalamnya. Penasaran bagaimana PPSMB Kesatria dapat
+              filosofi di dalamnya. Penasaran bagaimana Pionir Kesatria dapat
               mempertahankan esensinya? Yuk, simak video berikut untuk memahami
               lebih dalam!
             </p>
@@ -494,10 +494,10 @@ export function Chapter1_Tablet({ className }: { className?: string }) {
           </h2>
           {/* Text */}
           <p className="z-10 mx-[8vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
-            Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
-            perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
+            Tahukah kalian kalau Pionir Kesatria pernah mengalami beberapa
+            perubahan dari tahun ke tahun? Pionir Kesatria sebagai Pionir Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
-            dalamnya. Penasaran bagaimana PPSMB Kesatria dapat mempertahankan
+            dalamnya. Penasaran bagaimana Pionir Kesatria dapat mempertahankan
             esensinya? Yuk, simak video berikut untuk memahami lebih dalam!
           </p>
           {/* BOX */}
@@ -779,10 +779,10 @@ export function Chapter1_Mobile({ className }: { className?: string }) {
           </h2>
           {/* Text */}
           <p className="z-10 mx-[8vw] mb-[4vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[0_4px_5px_rgba(0,0,0,0.7)]">
-            Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa
-            perubahan dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas
+            Tahukah kalian kalau Pionir Kesatria pernah mengalami beberapa
+            perubahan dari tahun ke tahun? Pionir Kesatria sebagai Pionir Fakultas
             terbesar di Universitas Gadjah Mada memiliki segudang filosofi di
-            dalamnya. Penasaran bagaimana PPSMB Kesatria dapat mempertahankan
+            dalamnya. Penasaran bagaimana Pionir Kesatria dapat mempertahankan
             esensinya? Yuk, simak video berikut untuk memahami lebih dalam!
           </p>
           {/* BOX */}

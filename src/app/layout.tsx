@@ -8,7 +8,7 @@ import { Providers } from "@/app/providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pionir Kesatria",
+  title: "Pionir Kesatria 2024",
   description: "Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2024",
   keywords: [
     "PPSMB",
