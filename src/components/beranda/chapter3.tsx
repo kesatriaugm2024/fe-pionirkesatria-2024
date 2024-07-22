@@ -70,7 +70,7 @@ const KesatriaMudaBerkarya = () => {
           {CONTENT[0].subtitle1desc}
         </p>
         <Link
-          href={"/materi"}
+          href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
           className="w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
         >
           <p className="z-[10] bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[2vw] text-transparent">
@@ -108,7 +108,7 @@ const KaryaAplikatif = () => {
           {CONTENT[0].subtitle2desc}
         </p>
         <Link
-          href={"/materi"}
+          href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
           className="z-[10] w-[16.5vw] rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
         >
           <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[2vw] text-transparent">
@@ -153,7 +153,7 @@ const KesatriaMudaBerkaryaTab = () => {
             <Image className="w-[40%] aspect-auto object-cover " alt="" src={'/nala1.png'} width={1000} height={1000} />
           </div>
           <Link
-            href={"/materi"}
+            href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
             className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[3vw] text-transparent">
@@ -199,7 +199,7 @@ const KaryaAplikatifTab = () => {
             <Image className="w-[50%] aspect-auto object-cover " alt="" src={'/nala2.png'} width={1000} height={1000} />
           </div>
           <Link
-            href={"/materi"}
+            href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
             className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[3vw] text-transparent">
@@ -253,7 +253,7 @@ const KesatriaMudaBerkaryaHP = () => {
           </div>
       <Link
         data-aos="fade-up"
-        href={"/materi"}
+        href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
         className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
       >
         <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-legendaire text-[4vw] text-transparent">
@@ -305,7 +305,7 @@ const KaryaAplikasiHP = () => {
           </div>
       <Link
         data-aos="fade-up"
-        href={"/materi"}
+        href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
         className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
       >
         <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-legendaire text-[4vw] text-transparent">
