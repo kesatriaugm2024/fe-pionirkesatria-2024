@@ -25,42 +25,45 @@ export default function MainDokumentasi() {
           Dokumentasi
         </p>
         {/* Arrow Down */}
-        <motion.div
-          className="z-0 w-[10vw] text-red-150 drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] sm:w-[6vw] lg:w-[3vw]"
-          initial={{ y: 0 }}
-          animate={{ y: 20 }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
-            id="caret-double-down"
-            fill="#ffb314"
+        <div data-aos="zoom-in-down" data-aos-delay="1000">
+          <motion.div
+            className="z-0 w-[10vw] text-red-150 drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] sm:w-[6vw] lg:w-[3vw]"
+            initial={{ y: 0 }}
+            animate={{ y: 20 }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
           >
-            <rect width="256" height="256" fill="none"></rect>
-            <polyline
-              fill="none"
-              stroke="#ffb314"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-              points="208 128 128 208 48 128"
-            ></polyline>
-            <polyline
-              fill="none"
-              stroke="#ffb314"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-              points="208 48 128 128 48 48"
-            ></polyline>
-          </svg>
-        </motion.div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              id="caret-double-down"
+              fill="#ffb314"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                fill="none"
+                stroke="#ffb314"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+                points="208 128 128 208 48 128"
+              ></polyline>
+              <polyline
+                fill="none"
+                stroke="#ffb314"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+                points="208 48 128 128 48 48"
+              ></polyline>
+            </svg>
+          </motion.div>
+        </div>
+
         {/* ABSOLUTE Kain Merah */}
         {/* <div
           className="absolute -bottom-[12vw] -right-[30vw] z-0 hidden h-full w-full items-center justify-center drop-shadow-2xl lg:flex"
