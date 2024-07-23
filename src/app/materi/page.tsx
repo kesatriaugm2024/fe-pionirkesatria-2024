@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
 import Footer from "@/components/layout/footer";
-import AOS from 'aos';
+import AOS from "aos";
 
 export default function MateriPage() {
   useEffect(() => {
@@ -76,7 +76,10 @@ export default function MateriPage() {
               PIONIR Kesatria 2024 dapat dibaca di sini.
             </p>
           </div>
-          <div data-aos="fade-up" className="flex w-full flex-col place-content-center items-center p-[2vw]">
+          <div
+            data-aos="fade-up"
+            className="flex w-full flex-col place-content-center items-center p-[2vw]"
+          >
             <h2 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[5vw] text-transparent">
               {modulTitle}
             </h2>
@@ -131,7 +134,10 @@ export default function MateriPage() {
       <div className="flex min-h-screen w-full flex-col place-content-center items-center pt-[5vw] max-lg:hidden">
         <TitleAndModul />
         <div className="flex w-[100vw] flex-col">
-          <div data-aos="fade-up" className="z-[1] flex flex-row justify-end gap-[2vw] px-[7vw]">
+          <div
+            data-aos="fade-up"
+            className="z-[1] flex flex-row justify-end gap-[2vw] px-[7vw]"
+          >
             <button
               onClick={() => {
                 if (swiper) swiper.slidePrev();
@@ -251,7 +257,7 @@ export default function MateriPage() {
       </Link>
     );
     return (
-      <div className="flex min-h-screen w-full flex-col place-content-center items-center lg:hidden sm:translate-y-[5vw] sm:py-[4vw]">
+      <div className="flex min-h-screen w-full flex-col place-content-center items-center sm:translate-y-[5vw] sm:py-[4vw] lg:hidden">
         <Title />
         <div className="w-screen">
           <Swiper
@@ -333,7 +339,7 @@ export default function MateriPage() {
       <Transtition />
       <MateriDesktop />
       <MateriMobile />
-      <Footer className={"z-[-1] absolute"}/>
+      <Footer className={"absolute z-[-1]"} />
     </>
   );
 }
