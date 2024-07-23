@@ -24,12 +24,16 @@ export default function MainDokumentasi() {
         >
           Dokumentasi
         </p>
-        {/* Arrow Down */}
-        <div data-aos="zoom-in-down" data-aos-delay="1000">
+        {/* Arrow Up */}
+        <div
+          data-aos="zoom-in-up"
+          data-aos-delay="1000"
+          className="flex flex-col items-center justify-center"
+        >
           <motion.div
             className="z-0 w-[10vw] text-red-150 drop-shadow-[0_1vw_1vw_rgba(0,0,0,1)] sm:w-[6vw] lg:w-[3vw]"
-            initial={{ y: 0 }}
-            animate={{ y: 20 }}
+            initial={{ y: 0, rotate: 180 }}
+            animate={{ y: 20, rotate: 180 }}
             transition={{
               duration: 1,
               repeat: Infinity,
@@ -62,6 +66,9 @@ export default function MainDokumentasi() {
               ></polyline>
             </svg>
           </motion.div>
+          <p className="z-10 mt-[5vw] font-publica-sans text-[5vw] gradient-text-yellow sm:mt-[3vw] sm:text-[4vw] lg:mt-[1vw] lg:text-[2vw]">
+            Scroll Up
+          </p>
         </div>
 
         {/* ABSOLUTE Kain Merah */}
