@@ -140,7 +140,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="absolute h-[8vw] w-[3vw] duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
+                className="absolute h-[8vw] w-[3vw] cursor-pointer duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kiri.svg"}
                 width={52.7}
@@ -176,7 +176,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="absolute h-[8vw] w-[3vw] duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
+                className="absolute h-[8vw] w-[3vw] cursor-pointer duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kanan.svg"}
                 width={52.7}

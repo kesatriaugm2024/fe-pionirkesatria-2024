@@ -31,7 +31,7 @@ const DEPARTEMEN = [
     prodi: [
       {
         namaprodi: "Teknik Elektro",
-        link: "WqCID-FAz3zm8PxOoot7Ial3rf9bpsPI",
+        link: "1WqCID-FAz3zm8PxOoot7Ial3rf9bpsPI",
         imgpath:
           "/images/covermodul2/Pages from Modul Prodi Teknik Elektro (DONE).docx.pdf.png",
       },
@@ -147,8 +147,8 @@ export default function ProdiPage() {
 
   function DepartemenCardDesktop({ title, prodi }: any) {
     return (
-      <div className="flex flex-col place-content-center items-center gap-[4vw] px-[10vw] lg:gap-0 lg:py-[5vw]">
-        <div className="h-[10vw] lg:flex lg:w-full lg:items-center lg:justify-between">
+      <div className="flex flex-col place-content-center items-center gap-[2vw] px-[10vw] sm:gap-[4vw] lg:gap-0 lg:pb-[10vw]">
+        <div className="flex h-[20vw] items-end sm:h-[10vw] lg:w-full lg:items-center lg:justify-between">
           <div className="flex min-h-[10vw] w-[4vw] items-center justify-center max-lg:hidden">
             <button
               onClick={() => {
@@ -169,7 +169,7 @@ export default function ProdiPage() {
           </div>
 
           {/*  */}
-          <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-center font-legendaire text-[7vw]/[7vw] text-transparent lg:text-[4vw]/[4vw]">
+          <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-center font-legendaire text-[7vw]/[7vw] text-transparent sm:text-[5vw]/[5vw] lg:text-[4vw]/[4vw]">
             {title}
           </h1>
           {/*  */}
@@ -192,7 +192,7 @@ export default function ProdiPage() {
             </button>
           </div>
         </div>
-        <div className="flex h-[30vw] w-full items-center justify-center max-lg:h-[50vw]">
+        <div className="flex h-[45vw] w-[87vw] items-center justify-center gap-[2vw] sm:h-[40vw] lg:h-[20vw]">
           {prodi.map(
             (
               item: { namaprodi: string; link: string; imgpath: string },
@@ -200,10 +200,10 @@ export default function ProdiPage() {
             ) => (
               <Link
                 href={"/materi/" + item.link}
-                className="flex w-full items-center justify-center"
+                className="flex w-[26vw] items-center justify-center lg:w-[13vw]"
                 key={idx}
               >
-                <div className="h-[23vw] w-[13vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[27.8vw] hover:w-[15.6vw] max-lg:h-[40vw] max-lg:w-[20vw] max-lg:hover:h-[50vw] max-lg:hover:w-[25vw]">
+                <div className="h-[35.64vw] w-[25.2vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[38.61vw] hover:w-[27.3vw] lg:h-[17.82vw] lg:w-[12.6vw] lg:hover:h-[21.681vw] lg:hover:w-[15.33vw]">
                   <Image
                     className="h-full w-full rounded-[1.7vw]"
                     alt=""
@@ -222,7 +222,7 @@ export default function ProdiPage() {
 
   return (
     <main className="min-w-screen flex min-h-screen flex-col place-content-center items-center lg:pt-[3vw]">
-      <div className="w-full max-lg:py-[10vw]">
+      <div className="w-full">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -279,7 +279,7 @@ export default function ProdiPage() {
           </button>
         </div>
       </div>
-      <Footer className={"z-[0] mt-[5vw] max-sm:absolute max-sm:bottom-0"} />
+      <Footer className={"absolute bottom-0 z-[0] mt-[5vw]"} />
     </main>
   );
 }

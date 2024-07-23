@@ -116,7 +116,7 @@ export default function MateriPage() {
         >
           <div
             className={
-              "h-[17.82vw] w-[12.6vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[19.6vw] hover:w-[13.86vw]"
+              "h-[17.82vw] w-[12.6vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[21.681vw] hover:w-[15.33vw]"
             }
           >
             <Image
