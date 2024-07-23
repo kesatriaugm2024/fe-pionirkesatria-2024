@@ -81,7 +81,7 @@ export default function Agenda() {
       <div className="flex w-full flex-col pb-[50vw] pt-[30vw] sm:pb-[30vw] sm:pt-[20vw] lg:pb-[28vw] lg:pt-[10vw]">
         <h1
           className="z-10 bg-gradient-to-t from-[#5E1675] via-[#982D66] to-[#CD4258] bg-clip-text text-center font-legendaire text-[15vw] text-transparent drop-shadow-[0.5vw_0.5vw_0.1vw_rgba(0,0,0,0.3)] sm:text-[10vw] sm:drop-shadow-[0.3vw_0.3vw_0.05vw_rgba(0,0,0,0.3)] lg:text-[8vw] lg:drop-shadow-[0.3vw_0.3vw_0.05vw_rgba(0,0,0,0.3)]"
-          // data-aos="fade-up"
+          data-aos="fade-up"
         >
           Agenda
         </h1>
