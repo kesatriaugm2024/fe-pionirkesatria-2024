@@ -230,6 +230,7 @@ function FAQ_Desktop({
                   answer={`A: ${pertanyaan.answer}`}
                 />
               ))}
+              {foundPertanyaanUmum.length === 0 && <NotFound />}
             </div>
           </div>
         </div>
@@ -315,6 +316,7 @@ function FAQ_Tablet({
                   answer={`A: ${pertanyaan.answer}`}
                 />
               ))}
+              {foundPertanyaanUmum.length === 0 && <NotFound />}
             </div>
           </div>
         </div>
@@ -400,10 +402,19 @@ function FAQ_Mobile({
                   answer={`A: ${pertanyaan.answer}`}
                 />
               ))}
+              {foundPertanyaanUmum.length === 0 && <NotFound />}
             </div>
           </div>
         </div>
       </div>
     </main>
+  );
+}
+
+function NotFound() {
+  return (
+    <p className="mt-[2vw] font-publica-sans text-[3.5vw] sm:text-[2vw] lg:text-[1.5vw] text-[#FFB314]">
+      Hasil Pencarian Tidak Ditemukan
+    </p>
   );
 }
