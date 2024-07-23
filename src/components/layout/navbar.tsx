@@ -58,7 +58,7 @@ export default function Navbar() {
     return (
       <nav
         className={
-          "fixed z-[999] flex w-full justify-between bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[3.75vw] py-[0.25vw] font-publica-sans text-[1.25vw]/[1.5vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-100 max-lg:hidden"
+          "fixed z-[100] flex w-full justify-between bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[3.75vw] py-[0.25vw] font-publica-sans text-[1.25vw]/[1.5vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-100 max-lg:hidden"
         }
       >
         <div className="font- flex items-center gap-x-[0.5vw]">
@@ -88,7 +88,7 @@ export default function Navbar() {
     return (
       <nav
         className={
-          "fixed z-[999] flex w-full justify-between bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[2vw] py-[1vw] font-publica-sans text-[2vw]/[2vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-300 max-sm:hidden lg:hidden"
+          "fixed z-[100] flex w-full justify-between bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[2vw] py-[1vw] font-publica-sans text-[2vw]/[2vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] duration-300 max-sm:hidden lg:hidden"
         }
       >
         <div className="font- flex items-center gap-x-[0.5vw]">
@@ -129,7 +129,7 @@ export default function Navbar() {
     return (
       <nav
         className={
-          "fixed z-[999] flex w-full flex-col bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[2vw] py-[1vw] font-publica-sans text-[2vw]/[2vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] sm:hidden"
+          "fixed z-[100] flex w-full flex-col bg-gradient-to-r from-[#34144E] from-50% to-[#5E1675] px-[2vw] py-[1vw] font-publica-sans text-[2vw]/[2vw] text-[#FFE5C7] shadow-[0_0.6vw_10vw_0_#000000] sm:hidden"
         }
       >
         <div className="flex w-full justify-between px-[]">

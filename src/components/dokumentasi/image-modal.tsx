@@ -3,9 +3,11 @@ import { useEffect } from "react";
 
 export default function ImageModal({
   image,
+  modalIsOpen,
   setModalIsOpen,
 }: {
   image: StaticImageData;
+  modalIsOpen: boolean;
   setModalIsOpen: (value: boolean) => void;
 }) {
   // Function to close the modal if the user clicks outside of it
@@ -36,12 +38,13 @@ export default function ImageModal({
   }, []);
 
   return (
-    <div
-      className="min-w-screen fixed inset-0 left-0 top-0 z-[1000] flex h-screen items-center justify-center outline-none transition-all duration-150 ease-in-out"
-      id="modal-id"
-    >
-      <div className="z-1 absolute inset-0 cursor-pointer bg-black opacity-80"></div>
-      <div className="relative w-full max-w-[90vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[1.5vw] sm:max-w-[80vw] sm:rounded-[2vw] sm:p-[1vw] lg:max-w-[55vw] lg:rounded-[1vw] lg:p-[1vw]">
+    <div className="">
+      <div className={`z-1 close-modal-context absolute inset-0`}></div>
+      <div
+        className={`relative w-full max-w-[90vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] p-[1.5vw] transition-all duration-[0.4s] ease-in-out sm:max-w-[80vw] sm:rounded-[2vw] sm:p-[1vw] lg:max-w-[55vw] lg:rounded-[1vw] lg:p-[1vw] ${
+          modalIsOpen ? "translate-y-[0vh]" : "-translate-y-[100vh]"
+        }`}
+      >
         {/* Image Content */}
         <div className="">
           <Image

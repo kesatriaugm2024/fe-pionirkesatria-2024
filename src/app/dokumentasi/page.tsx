@@ -169,9 +169,15 @@ export default function Dokumentasi() {
           ))}
         </div>
       </div>
-      {modalIsOpen && (
-        <ImageModal image={selectedImage} setModalIsOpen={setModalIsOpen} />
-      )}
+      <div
+        className={`min-w-screen fixed left-0 top-0 flex h-screen w-full items-center justify-center transition-all duration-300 ease-in-out ${modalIsOpen ? "z-[1000] bg-black/80" : "z-[-1] bg-black/0"}`}
+      >
+        <ImageModal
+          image={selectedImage}
+          modalIsOpen={modalIsOpen}
+          setModalIsOpen={setModalIsOpen}
+        />
+      </div>
 
       {/* Footer Manual Mobile */}
       <div
