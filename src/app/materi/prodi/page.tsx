@@ -146,9 +146,9 @@ export default function ProdiPage() {
 
   function DepartemenCardDesktop({ title, prodi }: any) {
     return (
-      <div className="flex flex-col place-content-center items-center gap-[4vw] lg:gap-0 px-[10vw] lg:py-[5vw]">
-        <div className="h-[10vw] lg:w-full lg:flex lg:items-center lg:justify-between">
-          <div className="flex min-h-[10vw] items-center justify-center w-[4vw] max-lg:hidden">
+      <div className="flex flex-col place-content-center items-center gap-[4vw] px-[10vw] lg:gap-0 lg:py-[5vw]">
+        <div className="h-[10vw] lg:flex lg:w-full lg:items-center lg:justify-between">
+          <div className="flex min-h-[10vw] w-[4vw] items-center justify-center max-lg:hidden">
             <button
               onClick={() => {
                 if (swiper) swiper.slidePrev();
@@ -158,7 +158,7 @@ export default function ProdiPage() {
               }}
             >
               <Image
-                className="w-[7.5vw] hover:w-[10vw] lg:w-[3vw] lg:hover:w-[4vw] duration-100"
+                className="w-[7.5vw] duration-100 hover:w-[10vw] lg:w-[3vw] lg:hover:w-[4vw]"
                 alt=""
                 src={"/images/assets_materi_arrow_kiri.svg"}
                 height={100}
@@ -172,17 +172,17 @@ export default function ProdiPage() {
             {title}
           </h1>
           {/*  */}
-          <div className="flex min-h-[10vw] items-center justify-center w-[4vw] max-lg:hidden">
+          <div className="flex min-h-[10vw] w-[4vw] items-center justify-center max-lg:hidden">
             <button
               onClick={() => {
-                if (swiper) swiper.slidePrev();
+                if (swiper) swiper.slideNext();
                 setActiveSwiper((prev) =>
-                  prev === 0 ? DEPARTEMEN.length - 1 : prev - 1,
+                  prev === DEPARTEMEN.length - 1 ? 0 : prev + 1,
                 );
               }}
             >
               <Image
-                className="w-[7.5vw] hover:w-[10vw] lg:w-[3vw] lg:hover:w-[4vw] duration-100"
+                className="w-[7.5vw] duration-100 hover:w-[10vw] lg:w-[3vw] lg:hover:w-[4vw]"
                 alt=""
                 src={"/images/assets_materi_arrow_kanan.svg"}
                 height={100}
@@ -191,7 +191,7 @@ export default function ProdiPage() {
             </button>
           </div>
         </div>
-        <div className="flex h-[30vw] max-lg:h-[50vw] w-full items-center justify-center">
+        <div className="flex h-[30vw] w-full items-center justify-center max-lg:h-[50vw]">
           {prodi.map(
             (
               item: { namaprodi: string; link: string; imgpath: string },
@@ -202,7 +202,7 @@ export default function ProdiPage() {
                 className="flex w-full items-center justify-center"
                 key={idx}
               >
-                <div className="h-[23vw] w-[13vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[27.8vw] hover:w-[15.6vw] max-lg:w-[20vw] max-lg:h-[40vw] max-lg:hover:h-[50vw] max-lg:hover:w-[25vw]">
+                <div className="h-[23vw] w-[13vw] flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-100 hover:h-[27.8vw] hover:w-[15.6vw] max-lg:h-[40vw] max-lg:w-[20vw] max-lg:hover:h-[50vw] max-lg:hover:w-[25vw]">
                   <Image
                     className="h-full w-full rounded-[1.7vw]"
                     alt=""
@@ -251,7 +251,7 @@ export default function ProdiPage() {
             }}
           >
             <Image
-              className="w-[7.5vw] hover:w-[10vw] lg:w-[6vw] lg:hover:w-[8vw] duration-100"
+              className="w-[7.5vw] duration-100 hover:w-[10vw] lg:w-[6vw] lg:hover:w-[8vw]"
               alt=""
               src={"/images/assets_materi_arrow_kiri.svg"}
               height={100}
@@ -269,7 +269,7 @@ export default function ProdiPage() {
             }}
           >
             <Image
-              className="w-[7.5vw] hover:w-[10vw] lg:w-[6vw] lg:hover:w-[8vw] duration-100"
+              className="w-[7.5vw] duration-100 hover:w-[10vw] lg:w-[6vw] lg:hover:w-[8vw]"
               alt=""
               src={"/images/assets_materi_arrow_kanan.svg"}
               height={1000}
@@ -278,7 +278,7 @@ export default function ProdiPage() {
           </button>
         </div>
       </div>
-      <Footer className={"mt-[5vw] z-[0] max-sm:absolute max-sm:bottom-0"}/>
+      <Footer className={"z-[0] mt-[5vw] max-sm:absolute max-sm:bottom-0"} />
     </main>
   );
 }
