@@ -75,7 +75,7 @@ const Chapter2_Desktop = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-[0.5vw] h-[22vw] place-content-center">
+        <div className="flex h-[22vw] flex-col place-content-center gap-[0.5vw]">
           <h2 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[3vw] text-transparent">
             {title}
           </h2>
@@ -83,7 +83,7 @@ const Chapter2_Desktop = () => {
             {desc}
           </p>
           <Link
-            href={"/materi/"+link}
+            href={"/materi/" + link}
             className="w-fit rounded-[1.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[2.5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
             <p className="font-legendaire text-[1.5vw] text-[#5E1675]">
@@ -103,7 +103,7 @@ const Chapter2_Desktop = () => {
       <h1 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[4vw]/[4vw] text-transparent">
         Bagian II: Lika-Liku Kesatria
       </h1>
-      <p className="w-[80vw] px-[6vw] text-justify font-publica-sans text-[1.5vw]/[2vw] text-[#FFE5C7] font-light drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+      <p className="w-[80vw] px-[6vw] text-justify font-publica-sans text-[1.5vw]/[2vw] font-light text-[#FFE5C7] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -140,7 +140,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="absolute w-[3vw] h-[8vw] duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
+                className="absolute h-[8vw] w-[3vw] duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kiri.svg"}
                 width={52.7}
@@ -176,7 +176,7 @@ const Chapter2_Desktop = () => {
               }}
             >
               <Image
-                className="absolute w-[3vw] h-[8vw] duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
+                className="absolute h-[8vw] w-[3vw] duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
                 alt=""
                 src={"/images/assets_beranda_chapter2_arrow_kanan.svg"}
                 width={52.7}
@@ -188,7 +188,7 @@ const Chapter2_Desktop = () => {
             {CARDCONTENT.map((item, index) => (
               <div
                 className={
-                  "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] duration-100 transition " +
+                  "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.5vw] bg-gradient-to-b drop-shadow-[0_0.5vw_1vw_#000000] transition duration-100 " +
                   (activeSwiper == index
                     ? "from-[#FFD23F] to-[#FFA514]"
                     : "from-[#491772] to-[#5E1675]")
@@ -240,7 +240,7 @@ const Chapter2_Tablet = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="custom-shadow-text w-[70vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] text-[#FFE5C7] font-light drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="custom-shadow-text w-[70vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -256,15 +256,15 @@ const Chapter2_Tablet = () => {
   const SwiperCard = ({ title, desc, imgpath, link }: any) => {
     const Gambar = () => {
       return (
-        <div className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-cover bg-gradient-to-b from-[#FFD23F] to-[#FFA514] flex items-center justify-center">
-          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
-          <Image
-            className="h-full"
-            alt=""
-            src={imgpath}
-            width={1000}
-            height={1000}
-          />
+        <div className="relative flex h-[13.5vw] w-[20vw] items-center justify-center rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-cover">
+          <div className="absolute h-full w-full overflow-hidden rounded-[2vw]">
+            <Image
+              className="h-full"
+              alt=""
+              src={imgpath}
+              width={1000}
+              height={1000}
+            />
           </div>
           {/* <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
             
@@ -319,7 +319,7 @@ const Chapter2_Tablet = () => {
           height={549}
         />
         <div className="z-[1] flex h-[55vw] w-[65vw] flex-col place-content-center items-center gap-[2vw] rounded-[2vw] bg-[#FFE5C7] drop-shadow-[0_0.5vw_1vw_#000000]">
-          <h1 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[5vw] text-transparent ">
+          <h1 className="bg-gradient-to-r from-[#5E1675] to-[#B22635] bg-clip-text font-legendaire text-[5vw] text-transparent">
             {title}
           </h1>
           <div className="flex items-center justify-center gap-[6vw]">
@@ -420,7 +420,7 @@ const Chapter2_HP = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="w-[70vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] text-[#FFE5C7] font-light pt-[3vw] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="w-[70vw] pt-[3vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -436,15 +436,15 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }: any) => {
     const Gambar = () => {
       return (
-        <div className="relative h-[13.5vw] w-[20vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] rounded-[2vw] bg-cover flex justify-center items-center">
-          <div className="absolute h-full w-full rounded-[2vw] overflow-hidden">
-          <Image
-            className="h-full"
-            alt=""
-            src={imgpath}
-            width={1000}
-            height={1000}
-          />
+        <div className="relative flex h-[13.5vw] w-[20vw] items-center justify-center rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-cover">
+          <div className="absolute h-full w-full overflow-hidden rounded-[2vw]">
+            <Image
+              className="h-full"
+              alt=""
+              src={imgpath}
+              width={1000}
+              height={1000}
+            />
           </div>
           {/* <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
             opacity
@@ -474,7 +474,7 @@ const Chapter2_HP = () => {
     const Button = () => {
       return (
         <Link
-          href={"/materi"+link}
+          href={"/materi" + link}
           className="w-fit rounded-[4.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] px-[5vw] duration-100 hover:from-[#FFA514] hover:to-[#FFD23F]"
         >
           <p className="font-legendaire text-[3vw] text-[#5E1675]">
