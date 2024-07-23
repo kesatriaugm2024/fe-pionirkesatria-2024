@@ -4,7 +4,7 @@ import { title } from "process";
 export const MODUL = [
   {
     title: "Attribute",
-    link: "/attribute",
+    link: "attribute",
     imgpath: "/Atribut.png",
     desc: "",
   },
