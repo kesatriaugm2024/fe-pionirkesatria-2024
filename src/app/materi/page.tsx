@@ -202,7 +202,7 @@ export default function MateriPage() {
         <h1 className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[15vw] text-transparent drop-shadow-[0_0.5vw_0.2vw_#000000]">
           Materi
         </h1>
-        <p className="font-publica-sans text-[2.1vw]/[2.8vw] text-[#FFE5C7]">
+        <p className="font-publica-sans text-[3vw]/[3.5vw] text-[#FFE5C7]">
           Halo Kesatria Muda! <br />
           Seluruh modul-modul berkaitan tentang <br />
           PIONIR Kesatria 2024 dapat dibaca di sini.
@@ -243,7 +243,9 @@ export default function MateriPage() {
         <div
           className={
             "flex-shrink-0 rounded-[1.7vw] border-[0.2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] duration-200 " +
-            (activeSwiper === index ? "h-[50vw] w-[25vw]" : "h-[40vw] w-[20vw]")
+            (activeSwiper === index
+              ? "h-[41.5vw] w-[29.5vw]"
+              : "h-[29.7vw] w-[21vw]")
           }
         >
           <Image
