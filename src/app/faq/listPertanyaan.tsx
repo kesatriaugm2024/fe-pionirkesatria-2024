@@ -5,7 +5,7 @@ export const listPertanyaanUmum = [
     answer: "Disarankan untuk polos tetapi apabila tidak memungkinkan setidaknya terlihat dominan hitam",
   },
   {
-    question: "Pembagian forum dan akses eLOk dapat dilihat dimana ?",
+    question: "Pembagian forum dan akses eLOK dapat dilihat dimana ?",
     answer:
       "Di Simaster (Kemahasiswaan -> Pionir Gadjah Mada (d.h. PPSMB) -> Fakultas/Sekolah Vokasi ",
   },
